@@ -60,3 +60,22 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
 .category-tabs button{flex-shrink:0}
 .material-list button{font-size:10px}
 @media(max-width:820px){body.builder-mode .tabs{width:210px}body.builder-mode .tabs button{font-size:12px}body.builder-mode .palette.compact .panel-nav{display:none}}
+
+/* Mobile builder: keep the canvas and controls above a bounded, touch-scrollable panel. */
+@media(max-width:820px){
+ html:has(body.builder-mode),body.builder-mode{height:100%;min-height:0;overflow:hidden}
+ body.builder-mode main{height:100vh;height:-webkit-fill-available;height:100dvh;min-height:0;padding:0;overflow:hidden}
+ body.builder-mode #builder,body.builder-mode #builder-workspace{height:100%;min-height:0;overflow:hidden}
+ body.builder-mode .builder-layout{height:100%;min-height:0;overflow:hidden}
+ body.builder-mode .workspace{display:flex;flex:0 0 auto;flex-direction:column;min-width:0;min-height:0}
+ body.builder-mode .canvas-shell{flex:0 0 52vh;flex-basis:52dvh;height:52vh;height:52dvh;min-height:0;max-height:58vh;max-height:58dvh;align-items:center}
+ body.builder-mode .new-builder .builder-canvas{width:min(100vw,52vh);width:min(100vw,52dvh);height:min(100vw,52vh);height:min(100vw,52dvh)}
+ body.builder-mode #builder-toolbar,body.builder-mode #variant-controls{min-width:0;min-height:0;flex:0 0 auto}
+ body.builder-mode #variant-controls{width:100%;overflow-x:auto;overflow-y:hidden;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent)}
+ body.builder-mode #variant-controls::-webkit-scrollbar{display:none}
+ body.builder-mode #variant-controls>span{position:sticky;left:0;z-index:1;flex:0 1 auto;max-width:30%;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:#065657}
+ body.builder-mode .new-builder .palette,body.builder-mode .new-builder .palette.drawer-open{display:flex;flex-direction:column;flex:1 1 auto;min-width:0;min-height:0;padding:4px 8px;padding-bottom:calc(4px + env(safe-area-inset-bottom, 0px));overflow:hidden}
+ body.builder-mode .new-builder .palette .drawer-body,body.builder-mode .new-builder .palette.drawer-open .drawer-body{height:auto;flex:1 1 auto;min-height:0}
+ body.builder-mode .material-list,body.builder-mode .palette.drawer-open .material-list{align-content:start;grid-auto-rows:min-content;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+ body.builder-mode #wish-editor,body.builder-mode #gallery-sheet{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
+}
