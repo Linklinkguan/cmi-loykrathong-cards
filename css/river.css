@@ -262,3 +262,18 @@ footer .footer-primary,footer .footer-credits{text-align:center}
 footer .footer-primary a,footer .footer-credits a{display:inline;color:#f3d389;margin:0;font-size:inherit}
 footer .footer-credits{font-size:10px;line-height:1.6}
 @media(max-width:600px){body:not(.builder-mode) header img{width:64px;height:64px}}
+
+@media(max-width:480px){
+  body:not(.builder-mode) .tabs{width:calc(100% + 36px);max-width:none;margin-left:-18px;margin-right:-18px;padding:0 16px;box-sizing:border-box;gap:8px}
+  body:not(.builder-mode) .tabs button,body:not(.builder-mode) .tabs button[data-tab=river]{flex:1;flex-direction:column;gap:2px;height:84px;min-height:84px;padding:5px 4px;border-radius:16px;text-align:center}
+  body:not(.builder-mode) .tabs svg{width:24px;height:24px}
+  body:not(.builder-mode) .tab-copy{width:100%;text-align:center;gap:0;background:transparent;box-shadow:none}
+  body:not(.builder-mode) .tabs button[data-tab=river] .tab-copy{background:transparent;box-shadow:none}
+  body:not(.builder-mode) .tab-title{display:block;width:100%;font-size:15px;font-weight:700;white-space:nowrap}
+  body:not(.builder-mode) .tab-subtitle{display:block;width:100%;font-size:11px;opacity:.6;white-space:nowrap}
+}
+@media(max-width:600px){
+  footer .footer-primary{display:flex;flex-direction:column;align-items:center}
+  footer .footer-primary > span[aria-hidden=true]{display:none}
+  footer .footer-primary a{white-space:nowrap}
+}
