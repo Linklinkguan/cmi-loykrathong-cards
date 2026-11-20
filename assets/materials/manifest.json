@@ -1,0 +1,1532 @@
+{
+  "version": 1,
+  "categories": [
+    {
+      "id": "wish",
+      "name": {
+        "zh": "许愿池",
+        "en": "Wishing Pool",
+        "th": "บ่ออธิษฐาน"
+      },
+      "icon": "✧",
+      "order": 0
+    },
+    {
+      "id": "traditional",
+      "name": {
+        "zh": "传统",
+        "en": "Traditional",
+        "th": "แบบดั้งเดิม"
+      },
+      "icon": "❀",
+      "order": 1
+    },
+    {
+      "id": "craft",
+      "name": {
+        "zh": "固定小物",
+        "en": "Craft bits",
+        "th": "อุปกรณ์ติด"
+      },
+      "icon": "⌁",
+      "order": 2
+    },
+    {
+      "id": "creative",
+      "name": {
+        "zh": "创意库",
+        "en": "Creative Library",
+        "th": "คลังไอเดีย"
+      },
+      "icon": "✦",
+      "order": 3
+    }
+  ],
+  "items": [
+    {
+      "id": "note",
+      "category": "wish",
+      "name": {
+        "zh": "折叠心愿纸",
+        "en": "Folded note",
+        "th": "กระดาษคำอธิษฐาน"
+      },
+      "keywords": {
+        "zh": "折叠心愿纸",
+        "en": "folded note",
+        "th": "กระดาษคำอธิษฐาน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/note-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/note-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/note-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/note-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/note-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/note-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "scroll",
+      "category": "wish",
+      "name": {
+        "zh": "卷轴",
+        "en": "Scroll",
+        "th": "ม้วนกระดาษ"
+      },
+      "keywords": {
+        "zh": "卷轴",
+        "en": "scroll",
+        "th": "ม้วนกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/scroll-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/scroll-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/scroll-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/scroll-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/scroll-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/scroll-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "flag",
+      "category": "wish",
+      "name": {
+        "zh": "心愿小旗",
+        "en": "Wish flag",
+        "th": "ธงคำอธิษฐาน"
+      },
+      "keywords": {
+        "zh": "心愿小旗",
+        "en": "wish flag",
+        "th": "ธงคำอธิษฐาน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/flag-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/flag-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/flag-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/flag-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/flag-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/flag-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "heart-tag",
+      "category": "wish",
+      "name": {
+        "zh": "爱心吊牌",
+        "en": "Heart tag",
+        "th": "ป้ายหัวใจ"
+      },
+      "keywords": {
+        "zh": "爱心吊牌",
+        "en": "heart tag",
+        "th": "ป้ายหัวใจ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/heart-tag-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/heart-tag-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/heart-tag-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/heart-tag-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/heart-tag-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/heart-tag-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "tung",
+      "category": "wish",
+      "name": {
+        "zh": "兰纳纸条",
+        "en": "Lanna paper strip",
+        "th": "ตุงกระดาษ"
+      },
+      "keywords": {
+        "zh": "兰纳纸条",
+        "en": "lanna paper strip",
+        "th": "ตุงกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/tung-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/tung-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/tung-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/tung-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/tung-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/tung-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "envelope",
+      "category": "wish",
+      "name": {
+        "zh": "小信封",
+        "en": "Envelope",
+        "th": "ซองจดหมาย"
+      },
+      "keywords": {
+        "zh": "小信封",
+        "en": "envelope",
+        "th": "ซองจดหมาย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/envelope-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "wish/envelope-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "wish/envelope-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "wish/envelope-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "wish/envelope-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "wish/envelope-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "base",
+      "category": "traditional",
+      "name": {
+        "zh": "香蕉杆",
+        "en": "Banana trunk",
+        "th": "หยวกกล้วย"
+      },
+      "keywords": {
+        "zh": "香蕉杆",
+        "en": "banana trunk",
+        "th": "หยวกกล้วย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/base-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/base-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/base-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/base-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/base-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/base-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 0,
+      "snap": "base",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wrap",
+      "category": "traditional",
+      "name": {
+        "zh": "蕉叶围边",
+        "en": "Leaf wrap",
+        "th": "ใบตองพันรอบ"
+      },
+      "keywords": {
+        "zh": "蕉叶围边",
+        "en": "leaf wrap",
+        "th": "ใบตองพันรอบ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/wrap-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/wrap-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/wrap-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/wrap-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/wrap-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/wrap-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 10,
+      "snap": "wrap",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "petals",
+      "category": "traditional",
+      "name": {
+        "zh": "蕉叶折瓣",
+        "en": "Folded petals",
+        "th": "กลีบใบตอง"
+      },
+      "keywords": {
+        "zh": "蕉叶折瓣",
+        "en": "folded petals",
+        "th": "กลีบใบตอง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/petals-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/petals-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/petals-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/petals-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/petals-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/petals-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 20,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "candle",
+      "category": "traditional",
+      "name": {
+        "zh": "蜡烛",
+        "en": "Candle",
+        "th": "เทียน"
+      },
+      "keywords": {
+        "zh": "蜡烛",
+        "en": "candle",
+        "th": "เทียน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/candle-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/candle-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/candle-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/candle-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/candle-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/candle-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "incense",
+      "category": "traditional",
+      "name": {
+        "zh": "线香",
+        "en": "Incense",
+        "th": "ธูป"
+      },
+      "keywords": {
+        "zh": "线香",
+        "en": "incense",
+        "th": "ธูป"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/incense-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/incense-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/incense-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/incense-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/incense-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/incense-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "buddha",
+      "category": "traditional",
+      "name": {
+        "zh": "小佛像",
+        "en": "Small Buddha",
+        "th": "พระพุทธรูปองค์เล็ก"
+      },
+      "keywords": {
+        "zh": "小佛像",
+        "en": "small buddha",
+        "th": "พระพุทธรูปองค์เล็ก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/buddha-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/buddha-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/buddha-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/buddha-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/buddha-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/buddha-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "marigold",
+      "category": "traditional",
+      "name": {
+        "zh": "万寿菊",
+        "en": "Marigold",
+        "th": "ดาวเรือง"
+      },
+      "keywords": {
+        "zh": "万寿菊",
+        "en": "marigold",
+        "th": "ดาวเรือง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/marigold-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/marigold-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/marigold-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/marigold-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/marigold-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/marigold-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "orchid",
+      "category": "traditional",
+      "name": {
+        "zh": "兰花",
+        "en": "Orchid",
+        "th": "กล้วยไม้"
+      },
+      "keywords": {
+        "zh": "兰花",
+        "en": "orchid",
+        "th": "กล้วยไม้"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/orchid-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/orchid-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/orchid-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/orchid-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/orchid-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/orchid-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "jasmine",
+      "category": "traditional",
+      "name": {
+        "zh": "茉莉",
+        "en": "Jasmine",
+        "th": "มะลิ"
+      },
+      "keywords": {
+        "zh": "茉莉",
+        "en": "jasmine",
+        "th": "มะลิ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/jasmine-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/jasmine-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/jasmine-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/jasmine-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/jasmine-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/jasmine-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "lotus",
+      "category": "traditional",
+      "name": {
+        "zh": "莲花苞",
+        "en": "Lotus bud",
+        "th": "ดอกบัวตูม"
+      },
+      "keywords": {
+        "zh": "莲花苞",
+        "en": "lotus bud",
+        "th": "ดอกบัวตูม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/lotus-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/lotus-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/lotus-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/lotus-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/lotus-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/lotus-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "amaranth",
+      "category": "traditional",
+      "name": {
+        "zh": "千日红",
+        "en": "Globe amaranth",
+        "th": "บานไม่รู้โรย"
+      },
+      "keywords": {
+        "zh": "千日红",
+        "en": "globe amaranth",
+        "th": "บานไม่รู้โรย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/amaranth-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/amaranth-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/amaranth-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/amaranth-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/amaranth-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/amaranth-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "rose",
+      "category": "traditional",
+      "name": {
+        "zh": "缎带玫瑰",
+        "en": "Ribbon rose",
+        "th": "กุหลาบริบบิ้น"
+      },
+      "keywords": {
+        "zh": "缎带玫瑰",
+        "en": "ribbon rose",
+        "th": "กุหลาบริบบิ้น"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/rose-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/rose-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/rose-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/rose-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/rose-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/rose-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "star",
+      "category": "traditional",
+      "name": {
+        "zh": "星星纸",
+        "en": "Paper star",
+        "th": "ดาวกระดาษ"
+      },
+      "keywords": {
+        "zh": "星星纸",
+        "en": "paper star",
+        "th": "ดาวกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/star-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "traditional/star-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "traditional/star-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "traditional/star-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "traditional/star-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "traditional/star-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "pin",
+      "category": "craft",
+      "name": {
+        "zh": "珠头针",
+        "en": "Sewing pin",
+        "th": "เข็มหมุด"
+      },
+      "keywords": {
+        "zh": "珠头针",
+        "en": "sewing pin",
+        "th": "เข็มหมุด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "craft/pin-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "craft/pin-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "craft/pin-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "craft/pin-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "craft/pin-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "craft/pin-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 90,
+      "snap": "pin",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "staple",
+      "category": "craft",
+      "name": {
+        "zh": "订书钉",
+        "en": "Staple",
+        "th": "ลวดเย็บ"
+      },
+      "keywords": {
+        "zh": "订书钉",
+        "en": "staple",
+        "th": "ลวดเย็บ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "craft/staple-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "craft/staple-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "craft/staple-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "craft/staple-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "craft/staple-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "craft/staple-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 90,
+      "snap": "pin",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "thread",
+      "category": "craft",
+      "name": {
+        "zh": "棉线",
+        "en": "Thread",
+        "th": "ด้าย"
+      },
+      "keywords": {
+        "zh": "棉线",
+        "en": "thread",
+        "th": "ด้าย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "craft/thread-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "craft/thread-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "craft/thread-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "craft/thread-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "craft/thread-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "craft/thread-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 90,
+      "snap": "pin",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "skewer",
+      "category": "craft",
+      "name": {
+        "zh": "竹签",
+        "en": "Bamboo skewer",
+        "th": "ไม้กลัด"
+      },
+      "keywords": {
+        "zh": "竹签",
+        "en": "bamboo skewer",
+        "th": "ไม้กลัด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "craft/skewer-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "craft/skewer-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "craft/skewer-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "craft/skewer-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "craft/skewer-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "craft/skewer-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 90,
+      "snap": "pin",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "toothpick",
+      "category": "craft",
+      "name": {
+        "zh": "牙签",
+        "en": "Toothpick",
+        "th": "ไม้จิ้มฟัน"
+      },
+      "keywords": {
+        "zh": "牙签",
+        "en": "toothpick",
+        "th": "ไม้จิ้มฟัน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "craft/toothpick-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "craft/toothpick-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "craft/toothpick-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "craft/toothpick-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "craft/toothpick-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "craft/toothpick-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 90,
+      "snap": "pin",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "heart",
+      "category": "creative",
+      "name": {
+        "zh": "爱心",
+        "en": "Heart",
+        "th": "หัวใจ"
+      },
+      "keywords": {
+        "zh": "爱心",
+        "en": "heart",
+        "th": "หัวใจ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/heart-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "creative/heart-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "creative/heart-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "creative/heart-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "creative/heart-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "creative/heart-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "moon",
+      "category": "creative",
+      "name": {
+        "zh": "月亮",
+        "en": "Moon",
+        "th": "พระจันทร์"
+      },
+      "keywords": {
+        "zh": "月亮",
+        "en": "moon",
+        "th": "พระจันทร์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/moon-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "creative/moon-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "creative/moon-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "creative/moon-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "creative/moon-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "creative/moon-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "sparkle",
+      "category": "creative",
+      "name": {
+        "zh": "闪光",
+        "en": "Sparkle",
+        "th": "ประกาย"
+      },
+      "keywords": {
+        "zh": "闪光",
+        "en": "sparkle",
+        "th": "ประกาย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/sparkle-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "1",
+          "file": "creative/sparkle-1.svg",
+          "colour": "#e9a7ac"
+        },
+        {
+          "id": "2",
+          "file": "creative/sparkle-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "3",
+          "file": "creative/sparkle-3.svg",
+          "colour": "#9ac5d3"
+        },
+        {
+          "id": "4",
+          "file": "creative/sparkle-4.svg",
+          "colour": "#8fb26b"
+        },
+        {
+          "id": "5",
+          "file": "creative/sparkle-5.svg",
+          "colour": "#d8786c"
+        }
+      ],
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    }
+  ]
+}
