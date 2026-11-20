@@ -95,3 +95,9 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
 body.builder-mode #variant-controls{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent)}
 .category-tabs.at-end,#variant-controls.at-end,body.builder-mode #variant-controls.at-end{-webkit-mask-image:none;mask-image:none}
 #variant-controls .tint-locked{font-size:12px;opacity:.8;color:#e8c77a;white-space:nowrap}
+
+/* v12 event links (about page; reserved slot for upload / float mode) */
+.event-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:12px auto 4px;max-width:100%;padding:0 10px}
+.event-link{display:inline-block;max-width:100%;padding:7px 14px;border:1px solid #e8c77a;border-radius:99px;color:#e8c77a;background:#033d3f99;text-decoration:none;font-size:13px;line-height:1.35;text-align:center}
+.event-link:hover,.event-link:focus-visible{background:#e8c77a;color:#063f40}
+body.builder-mode .event-links{display:none}
