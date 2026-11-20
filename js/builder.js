@@ -45,9 +45,21 @@
   const lang=getLang(), segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter(lang,{granularity:lang==='zh'?'grapheme':'word'}):null;
   let lines=[];for(const paragraph of value.split('\n')){let line='';const tokens=segmenter?Array.from(segmenter.segment(paragraph),x=>x.segment):lang==='en'?paragraph.split(/(\s+)/):Array.from(paragraph);for(const token of tokens){if(line&&ctx.measureText(line+token).width>width){lines.push(line.trimEnd());line=token.trimStart()}else line+=token}lines.push(line.trimEnd())}return lines;
  }
- function fitWish(node){let text=node.findOne('Text');if(!text)return;let value=node.getAttr('data').wish||'',height=text.height(),width=text.width(),size=18,lines;const layout=v=>wrapWish(v,width,size);while(size>14){lines=layout(value);if(lines.length*size*1.2<=height&&lines.every(l=>text.measureSize(l).width<=width))break;size-=.5;text.fontSize(size)}lines=layout(value);if(lines.length*size*1.2>height||lines.some(l=>text.measureSize(l).width>width)){let chars=Array.from(value);while(chars.length){chars.pop();lines=layout(chars.join('').trimEnd()+'…');if(lines.length*size*1.2<=height&&lines.every(l=>text.measureSize(l).width<=width))break}}text.fontSize(size);text.wrap('none');text.text(lines.join('\n'));text.height(height)}
+ function fitWish(node){
+  const text=node.findOne('Text');if(!text)return;
+  const value=(node.getAttr('data').wish||'').trim().replace(/\s+/g,' '), width=text.width(),height=text.height(),lang=getLang();
+  const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter(lang,{granularity:lang==='zh'?'grapheme':'word'}):null;
+  let tokens=segmenter?Array.from(segmenter.segment(value),x=>x.segment):lang==='en'?value.split(/(\s+)/):Array.from(value);
+  if(lang==='zh'&&tokens.length>8)tokens=tokens.slice(0,8).concat('…');
+  const fits=(lines,size)=>lines.length<=2&&lines.length*size*1.2<=height&&lines.every(line=>{text.fontSize(size);return text.measureSize(line).width<=width});
+  let candidate=tokens.join(''),size=18,lines;
+  for(;size>10;size-=.5){lines=wrapWish(candidate,width,size);if(fits(lines,size))break}
+  lines=wrapWish(candidate,width,size);
+  if(!fits(lines,size)){tokens=tokens.filter((_,i)=>!(i===tokens.length-1&&tokens[i]==='…'));while(tokens.length){tokens.pop();candidate=tokens.join('').trimEnd()+'…';lines=wrapWish(candidate,width,size);if(fits(lines,size))break}if(!fits(lines,size)){candidate='✦';lines=[candidate]}}
+  text.fontSize(size);text.lineHeight(1.2);text.wrap('none');text.text(lines.join('\n'));text.height(height);
+ }
  function showWish(node,item){let box=host.querySelector('#wish-editor');if(!node||item?.category!=='wish'){box.innerHTML='';return}let l=wishLabels[getLang()],data=node.getAttr('data');box.innerHTML=`<div class="wish-panel"><h3>${l.heading} ✧</h3><label>${l.for}<input id="wish-recipient" maxlength="80"></label><label>${l.heading}<textarea id="wish-text" maxlength="350" rows="4" placeholder="${l.placeholder}"></textarea></label><p>${l.privacy}</p><div class="builder-controls"><button class="primary" id="wish-card">${l.make}</button><button id="wish-friend">${l.friend}</button></div></div>`;let field=box.querySelector('#wish-text'),recipient=box.querySelector('#wish-recipient');field.value=data.wish||'';recipient.value=data.recipient||'';field.onfocus=recipient.onfocus=checkpoint;field.oninput=()=>{data.wish=field.value;fitWish(node);persist();layer.batchDraw()};recipient.oninput=()=>{data.recipient=recipient.value;persist()};box.querySelector('#wish-card').onclick=()=>makeWish(false);box.querySelector('#wish-friend').onclick=()=>makeWish(true)}
- window.builderWishSelect=showWish;window.builderWishTranslate=()=>{if(selected)showWish(selected,itemById(selected.getAttr('data').id))};
+ window.builderWishSelect=showWish;window.builderWishTranslate=()=>{layer.getChildren().forEach(fitWish);layer.batchDraw();if(selected)showWish(selected,itemById(selected.getAttr('data').id))};
  async function setLighting(value){lit=value;for(let n of layer.getChildren()){let d=n.getAttr('data'),item=itemById(d.id);if(!item||!item.id.startsWith('candle'))continue;let v=item.variants.find(x=>x.id===d.variant)||item.variants[0];d.lit=value;applyTint(n,await getImage(!value&&v.unlitFile?v.unlitFile:v.file));n.getChildren()[0].shadowBlur(value?20:0);n.getChildren()[0].shadowColor(value?'#ffc969':'transparent')}layer.batchDraw();persist()}
  async function ensureKrathong(){
   const ids=layer.getChildren().map(n=>n.getAttr('data').id);

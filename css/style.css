@@ -54,3 +54,9 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
 @media(min-width:821px){.opening-boat{transform:translate(500px,110px) scale(2.4)}}
 .opening-boat,.greeting .opening-boat{position:absolute;width:min(27vw,360px);height:auto;left:50%;bottom:7%;transform:translateX(-50%);overflow:visible;z-index:1;filter:drop-shadow(0 12px 7px #e7c27377)}
 @media(max-width:820px){body.builder-mode .drawer-toggle{height:12px;min-height:12px;margin:0!important;padding:0;border:0;background:none;line-height:8px}body.builder-mode .drawer-toggle:before{line-height:8px}body.builder-mode .new-builder .palette .drawer-body,body.builder-mode .new-builder .palette.drawer-open .drawer-body{height:calc(100% - 12px)} }
+/* Keep navigation and horizontal palettes readable on small screens. */
+.tabs button{white-space:nowrap;word-break:keep-all;min-width:0;padding-left:4px;padding-right:4px}
+.category-tabs,#variant-controls{overflow-x:auto;scrollbar-width:thin;mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);padding-right:24px!important}
+.category-tabs button{flex-shrink:0}
+.material-list button{font-size:10px}
+@media(max-width:820px){body.builder-mode .tabs{width:210px}body.builder-mode .tabs button{font-size:12px}body.builder-mode .palette.compact .panel-nav{display:none}}
