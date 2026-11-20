@@ -205,7 +205,8 @@ body:not(.builder-mode) footer .credit a{font-size:inherit;margin:0}
 /* The transparent brocade tile lets the ground and the illuminated threads vary independently. */
 .tabs button,.tabs button[data-tab=river]{position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;gap:11px;flex:1;min-width:0;min-height:78px;padding:14px 16px;border:1px solid #d9c17d99;border-radius:14px;overflow:hidden;background:#073f40;color:#f7e6bc;text-align:left;box-shadow:0 5px 18px #002a2c55;white-space:normal;transition:border-color .2s,box-shadow .2s,transform .2s}
 .tabs button:before{content:"";position:absolute;inset:0;z-index:-1;border-radius:inherit;background:url('../assets/patterns/lanna-brocade.svg') repeat;opacity:.25;transition:opacity .2s,filter .2s;pointer-events:none}
-.tabs button[data-tab=river]{flex:1.18;background:#d9b56d;border-color:#f9e5af;color:#143f3d}
+.tabs button{ text-shadow:0 1px 2px rgba(0,0,0,.45) }
+.tabs button[data-tab=river]{flex:1.18;background:#d9b56d;border-color:#f9e5af;color:#143f3d;text-shadow:0 1px 2px rgba(255,248,220,.55)}
 .tabs button[data-tab=river]:before{opacity:.4}
 .tabs button:hover{border-color:#ffe4a1;transform:translateY(-2px)}
 .tabs button:hover:before{opacity:.38}
@@ -215,6 +216,7 @@ body:not(.builder-mode) footer .credit a{font-size:inherit;margin:0}
 .tabs button.active:not([data-tab=river]) .tab-title{text-decoration:none}
 .tabs button[data-tab=river].active,.tabs button[data-tab=river]:active{box-shadow:0 5px 18px #002a2c55,inset 0 0 20px #fff0aeaa}
 .tabs button[data-tab=river].active:before,.tabs button[data-tab=river]:active:before{opacity:.85;filter:drop-shadow(0 0 3px #fff0b5)}
+.tabs button.active:before,.tabs button:active:before{-webkit-mask-image:radial-gradient(ellipse at center,rgba(0,0,0,.25) 0 45%,#000 80%);mask-image:radial-gradient(ellipse at center,rgba(0,0,0,.25) 0 45%,#000 80%);-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
 .tabs svg{width:30px;height:30px;flex:none;color:#e8c77a}
 .tabs button[data-tab=river] svg{color:#73531d}
 .tab-copy{background:#073f40ed;border-radius:4px;box-shadow:0 0 8px 4px #073f40ed;display:flex;flex-direction:column;gap:3px;min-width:0}
