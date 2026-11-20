@@ -195,9 +195,21 @@ function trim(im){let long=Math.max(im.naturalWidth,im.naturalHeight),s=Math.min
  try{let d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,l=W,r=-1,tp=H,b=-1;for(let y=0;y<H;y+=2)for(let i=0;i<W;i+=2){if(d[(y*W+i)*4+3]>16){if(i<l)l=i;if(i>r)r=i;if(y<tp)tp=y;if(y>b)b=y}}
   if(r<0)return c;l=Math.max(0,l-2);tp=Math.max(0,tp-2);r=Math.min(W,r+3);b=Math.min(H,b+3);let o=document.createElement('canvas');o.width=r-l;o.height=b-tp;o.getContext('2d').drawImage(c,l,tp,r-l,b-tp,0,0,r-l,b-tp);return o}catch(e){return c}}
 /* v14.1: square photo with a strictly circular feather and masked tint. */
-function photoCard(im){let S=320,c=document.createElement('canvas');c.width=c.height=S;let x=c.getContext('2d'),s=Math.max(S/im.naturalWidth,S/im.naturalHeight);x.drawImage(im,(S-im.naturalWidth*s)/2,(S-im.naturalHeight*s)/2,im.naturalWidth*s,im.naturalHeight*s);x.globalCompositeOperation='multiply';x.fillStyle='rgba(15,59,64,.2)';x.fillRect(0,0,S,S);x.globalCompositeOperation='destination-in';let g=x.createRadialGradient(S/2,S/2,S*.45,S/2,S/2,S*.5);g.addColorStop(0,'#000');g.addColorStop(1,'transparent');x.fillStyle=g;x.fillRect(0,0,S,S);return c}
-/* v14.1: estimate the subject width against the outer ring. */
-function photoSubject(c){let S=c.width,d=c.getContext('2d').getImageData(0,0,S,S).data,R=S/2,sum=[0,0,0],n=0,xs=[];for(let y=0;y<S;y++)for(let x=0;x<S;x++){let r=Math.hypot(x+.5-R,y+.5-R)/R,i=(y*S+x)*4;if(r>=.8&&r<=.9){for(let k=0;k<3;k++)sum[k]+=d[i+k];n++}}let mean=sum.map(v=>v/n);for(let y=0;y<S;y++)for(let x=0;x<S;x++){let i=(y*S+x)*4;if(Math.hypot(x+.5-R,y+.5-R)<.88*R&&Math.hypot(d[i]-mean[0],d[i+1]-mean[1],d[i+2]-mean[2])>45)xs.push(x)}if(!xs.length)return 1;xs.sort((a,b)=>a-b);return Math.max(.45,Math.min(1,(xs[Math.floor(xs.length*.95)]-xs[Math.floor(xs.length*.05)]+1)/S))}
+function photoCard(im){
+ let S=320,R=S/2,c=document.createElement('canvas');c.width=c.height=S;let x=c.getContext('2d'),scale=Math.max(S/im.naturalWidth,S/im.naturalHeight);
+ x.drawImage(im,(S-im.naturalWidth*scale)/2,(S-im.naturalHeight*scale)/2,im.naturalWidth*scale,im.naturalHeight*scale);
+ let image=x.getImageData(0,0,S,S),d=image.data,samples=[[],[],[]];
+ for(let y=0;y<S;y++)for(let px=0;px<S;px++){let r=Math.hypot(px+.5-R,y+.5-R)/R;if(r>=.35&&r<=.45){let i=(y*S+px)*4;for(let k=0;k<3;k++)samples[k].push(d[i+k])}}
+ let bg=samples.map(v=>{v.sort((a,b)=>a-b);return v[Math.floor(v.length/2)]}),xs=[];
+ for(let y=0;y<S;y++)for(let px=0;px<S;px++){let i=(y*S+px)*4,r=Math.hypot(px+.5-R,y+.5-R)/R,dist=Math.hypot(d[i]-bg[0],d[i+1]-bg[1],d[i+2]-bg[2]);
+  if(r<.48&&d[i+3]>128&&dist>45)xs.push(px);
+  let t=.35*Math.max(0,1-dist/85);for(let k=0;k<3;k++)d[i+k]=Math.round(d[i+k]*(1-t)+[15,59,64][k]*t);
+ }
+ xs.sort((a,b)=>a-b);c.subject=xs.length>=40?Math.max(.1,(xs[Math.floor(xs.length*.95)]-xs[Math.floor(xs.length*.05)]+1)/S):.55;
+ x.putImageData(image,0,0);x.globalCompositeOperation='destination-in';let g=x.createRadialGradient(R,R,R*.30,R,R,R*.48);g.addColorStop(0,'#000');g.addColorStop(1,'transparent');x.fillStyle=g;x.fillRect(0,0,S,S);
+ x.globalCompositeOperation='source-over';x.beginPath();x.arc(R,R,R*.41,0,Math.PI*2);x.strokeStyle='rgba(227,176,75,.8)';x.lineWidth=1.4;x.shadowColor='rgba(227,176,75,.55)';x.shadowBlur=7;x.stroke();return c
+}
+function photoSubject(c){return c.subject||.55}
 function reflect(art){let w=art.width,h=Math.max(2,Math.round(art.height*.35)),c=document.createElement('canvas');c.width=w;c.height=h;let x=c.getContext('2d'),blur=Math.max(2,w/75);
  const flip=(ctx,cw,ch)=>{ctx.save();ctx.translate(0,ch);ctx.scale(1,-ch/art.height);ctx.drawImage(art,0,0,cw,art.height);ctx.restore()};
  if(canFilter){x.filter=`blur(${blur}px)`;flip(x,w,h);x.filter='none'}else{let sm=document.createElement('canvas');sm.width=Math.max(1,Math.round(w/4));sm.height=Math.max(1,Math.round(h/4));let sx=sm.getContext('2d');flip(sx,sm.width,sm.height);x.imageSmoothingQuality='high';x.drawImage(sm,0,0,w,h)}

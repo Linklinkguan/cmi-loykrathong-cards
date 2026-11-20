@@ -104,7 +104,7 @@ function route(){let tab=['cards','builder','culture','river','upload'].includes
 window.builderLanguage=()=>lang;window.builderStrings=()=>strings[lang];window.builderMuted=()=>sfxOff;window.builderPing=addNote;window.builderDownload=download;window.builderWithQr=withQr;
 function renderParts(){if(window.builderRefresh)window.builderRefresh()}
 let builderLoading;
-function ensureBuilder(){if(builderLoading)return builderLoading;const script=src=>new Promise((resolve,reject)=>{let el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=reject;document.head.append(el)});builderLoading=script('vendor/konva-10.10.0.min.js').then(()=>/* v14.1: load inspiration before the builder. */script('js/inspire.js?v=144')).then(()=>script('js/builder.js?v=1430')).catch(e=>{builderLoading=null;$('#builder-workspace').textContent='Unable to load builder';console.error(e)});return builderLoading}
+function ensureBuilder(){if(builderLoading)return builderLoading;const script=src=>new Promise((resolve,reject)=>{let el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=reject;document.head.append(el)});builderLoading=script('vendor/konva-10.10.0.min.js').then(()=>/* v14.1: load inspiration before the builder. */script('js/inspire.js?v=144')).then(()=>script('js/builder.js?v=143')).catch(e=>{builderLoading=null;$('#builder-workspace').textContent='Unable to load builder';console.error(e)});return builderLoading}
 translate();route();
 
 if(new URLSearchParams(location.search).has('selftest')){

@@ -98,17 +98,18 @@ if(typeof document!=='undefined')
    const short=Array.from(value.trim()).length<=8;
    let width=(162-38-2*.10*164)*unit, result=layoutWishLines(value,width,min,19,measure);
    if(short){
-    const imageHeight=Math.max(180,result.lines.length*result.size*1.2/(.5*.84));
+    const imageHeight=Math.max(180,result.lines.length*result.size*1.35/(.5*.84));
     img.setAttrs({image:img.getAttr('scrollSource'),x:-90,y:-imageHeight/2,width:180,height:imageHeight});
-    text.setAttrs({x:-width/2,width,y:0,fontSize:result.size,lineHeight:1.2,wrap:'none',text:result.lines.join('\n'),height:'auto'});text.y(-text.height()/2);
+    text.setAttrs({x:-width/2,width,y:0,fontSize:result.size,lineHeight:1.35,wrap:'none',text:result.lines.join('\n'),height:'auto'});text.y(-text.height()/2);
    }else{
     const base=layer.getChildren().find(n=>n!==node&&itemById(n.getAttr('data').id)?.snap==='base');
     const baseWidth=base?base.getClientRect({relativeTo:layer,skipShadow:true}).width:230;
     const maxVisible=Math.max(164*unit,baseWidth*.9/localScale), maxExtra=maxVisible-164*unit;
-    let extra=0;
-    if(result.lines.length>4){let lo=0,hi=maxExtra;for(let i=0;i<20;i++){let mid=(lo+hi)/2;if(layoutWishLines(value,width+mid*.8,min,19,measure).lines.length<=4)hi=mid;else lo=mid}extra=hi;result=layoutWishLines(value,width+extra*.8,min,19,measure)}
+    let extra=Array.from(value.trim()).length>40?Math.max(0,Math.min(maxExtra,baseWidth*.75/localScale-180)):0;
+    if(extra)result=layoutWishLines(value,width+extra*.8,min,19,measure);
+    if(result.lines.length>4){let lo=extra,hi=maxExtra;for(let i=0;i<20;i++){let mid=(lo+hi)/2;if(layoutWishLines(value,width+mid*.8,min,19,measure).lines.length<=4)hi=mid;else lo=mid}extra=hi;result=layoutWishLines(value,width+extra*.8,min,19,measure)}
     width+=extra*.8;
-    const paperHeight=result.lines.length*result.size*1.2/.84, source=img.getAttr('scrollSource');
+    const paperHeight=result.lines.length*result.size*1.35/.84, source=img.getAttr('scrollSource');
     // Preserve the end caps and bow; stretch only paper and undecorated roller rows.
     const scale=2, canvas=document.createElement('canvas'), ctx=canvas.getContext('2d');
     const W=180+extra,H=paperHeight+100*unit;canvas.width=Math.ceil(W*scale);canvas.height=Math.ceil(H*scale);ctx.scale(scale,scale);
@@ -125,7 +126,7 @@ if(typeof document!=='undefined')
     draw(19,60,18,20,19*p,top,18*p,paperHeight);
     draw(19,90,18,20,19*p,top+paperHeight/2-10*p,18*p,20*p);
     img.setAttrs({image:canvas,x:-W/2,y:-H/2,width:W,height:H});
-    text.setAttrs({x:-width/2,width,y:-paperHeight/2+paperHeight*.08,fontSize:result.size,lineHeight:1.2,wrap:'none',text:result.lines.join('\n'),height:'auto'});
+    text.setAttrs({x:-width/2,width,y:-paperHeight/2+paperHeight*.08,fontSize:result.size,lineHeight:1.35,wrap:'none',text:result.lines.join('\n'),height:'auto'});
    }
    const {lines}=result;
    if(window.__lkDevChecks&&text.textArr.length!==lines.length)throw new Error('Scroll wish line layout mismatch');
