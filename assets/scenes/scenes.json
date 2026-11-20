@@ -1,0 +1,1690 @@
+{
+ "version": "2.1",
+ "plate": [
+  2560,
+  1440
+ ],
+ "aspect": "16:9",
+ "coordinateNote": "All layer x/y/w/h are pixels in a 2560x1440 plate; scale by viewport per viewportModes.",
+ "upscaler": "Real-ESRGAN x4plus (PyTorch CPU) 1280x720 -> 5120x2880 -> area-downsample to plate",
+ "rotation": [
+  "s01",
+  "s03",
+  "s02",
+  "s05",
+  "s08",
+  "s06",
+  "s10",
+  "s09",
+  "s04",
+  "s07"
+ ],
+ "rotationNote": "s03 and s10 separated by 3 scenes in both directions; warm dusk s05/s09 not adjacent.",
+ "viewportModes": {
+  "landscape": {
+   "scaleBy": "width",
+   "alignHorizon": "plate position"
+  },
+  "ultrawide": {
+   "scaleBy": "width",
+   "verticalAnchor": "horizon",
+   "note": "Above 21:9 follow top-level \"ultrawide\" rule (near_c not tiled; near_l/near_r 120px inner feather). Between 16:9 and 21:9 near_c may still tile-mirror."
+  },
+  "portrait": {
+   "scaleBy": "height-of-sky+water",
+   "focusX": "portraitFocusX",
+   "horizonAtViewportY": 0.5,
+   "note": "crop horizontally around focus; sky above horizon extends up, water below extends down, near_l/near_r pinned bottom at viewport edges (scale near by 0.6-0.8 to keep corners small)"
+  }
+ },
+ "shared": {
+  "shimmer": "_shared/shimmer.webp"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "title": {
+    "zh": "满月河岸",
+    "en": "Full Moon Sandy Shore",
+    "th": "ดวงจันทร์เต็มดวงริมหาดทราย"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s01/sky.webp",
+     "size": [
+      2560,
+      935
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#0a1c24"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s01/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 677
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s01/water.webp",
+     "size": [
+      2560,
+      547
+     ],
+     "plate": {
+      "x": 0,
+      "y": 893
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#091b22"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s01/near_l.webp",
+     "size": [
+      1024,
+      311
+     ],
+     "plate": {
+      "x": 0,
+      "y": 1129
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s01/near_c.webp",
+     "size": [
+      512,
+      281
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1159
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s01/near_r.webp",
+     "size": [
+      1024,
+      307
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 1133
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.63,
+   "waterRect": {
+    "x": 0,
+    "y": 0.63,
+    "w": 1,
+    "h": 0.37
+   },
+   "calmBand": {
+    "x": 0.15,
+    "y": 0.645,
+    "w": 0.7,
+    "h": 0.14
+   },
+   "stars": {
+    "style": "sparse",
+    "count": 90,
+    "color": "warm-gold",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.61
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.5,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.5,
+   "enabled": true
+  },
+  {
+   "id": "s02",
+   "title": {
+    "zh": "兰纳凉亭竹影",
+    "en": "Lanna Pavilion & Bamboo",
+    "th": "ศาลาล้านนาริมน้ำและกอไผ่"
+   },
+   "status": "v2 (AD passed; re-rendered 2560 layers)",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s02/sky.webp",
+     "size": [
+      2560,
+      978
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#082328"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s02/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 720
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s02/water.webp",
+     "size": [
+      2560,
+      504
+     ],
+     "plate": {
+      "x": 0,
+      "y": 936
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#031d22"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s02/near_l.webp",
+     "size": [
+      1024,
+      1440
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s02/near_c.webp",
+     "size": [
+      512,
+      95
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1345
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s02/near_r.webp",
+     "size": [
+      1024,
+      1440
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 0
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.66,
+   "waterRect": {
+    "x": 0,
+    "y": 0.66,
+    "w": 1,
+    "h": 0.34
+   },
+   "calmBand": {
+    "x": 0.22,
+    "y": 0.67,
+    "w": 0.63,
+    "h": 0.15
+   },
+   "stars": {
+    "style": "sparse+fireflies",
+    "count": 40,
+    "color": "warm-gold",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.64
+    },
+    "shooting": false,
+    "fireflies": true
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.35,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.28,
+   "enabled": true
+  },
+  {
+   "id": "s03",
+   "title": {
+    "zh": "月牙湾银河",
+    "en": "Crescent Bay Milky Way",
+    "th": "อ่าวเสี้ยวใต้ทางช้างเผือก"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s03/sky.webp",
+     "size": [
+      2560,
+      978
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#0c1c23"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s03/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 720
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s03/water.webp",
+     "size": [
+      2560,
+      504
+     ],
+     "plate": {
+      "x": 0,
+      "y": 936
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#1e2d28"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s03/near_l.webp",
+     "size": [
+      1024,
+      182
+     ],
+     "plate": {
+      "x": 0,
+      "y": 1258
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s03/near_c.webp",
+     "size": [
+      512,
+      267
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1173
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s03/near_r.webp",
+     "size": [
+      1024,
+      906
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 534
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.66,
+   "waterRect": {
+    "x": 0,
+    "y": 0.66,
+    "w": 1,
+    "h": 0.34
+   },
+   "calmBand": {
+    "x": 0.05,
+    "y": 0.7,
+    "w": 0.62,
+    "h": 0.1
+   },
+   "stars": {
+    "style": "dense",
+    "count": 260,
+    "color": "gold-white",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.64
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.6,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.7,
+   "enabled": true
+  },
+  {
+   "id": "s04",
+   "title": {
+    "zh": "远岛星空",
+    "en": "Distant Island Starfield",
+    "th": "เกาะไกลใต้ดาวเต็มฟ้า"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s04/sky.webp",
+     "size": [
+      2560,
+      1021
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#0c1e28"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s04/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 763
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s04/water.webp",
+     "size": [
+      2560,
+      461
+     ],
+     "plate": {
+      "x": 0,
+      "y": 979
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#071d26"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s04/near_l.webp",
+     "size": [
+      543,
+      469
+     ],
+     "plate": {
+      "x": 0,
+      "y": 960
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s04/near_r.webp",
+     "size": [
+      570,
+      468
+     ],
+     "plate": {
+      "x": 1990,
+      "y": 961
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.69,
+   "waterRect": {
+    "x": 0,
+    "y": 0.69,
+    "w": 1,
+    "h": 0.31
+   },
+   "calmBand": {
+    "x": 0.22,
+    "y": 0.73,
+    "w": 0.56,
+    "h": 0.19
+   },
+   "stars": {
+    "style": "dense+distant-lanterns",
+    "count": 240,
+    "color": "gold-white",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.74
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.35,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.68,
+   "enabled": true
+  },
+  {
+   "id": "s05",
+   "title": {
+    "zh": "素贴山雾黄昏",
+    "en": "Doi Suthep Misty Dusk",
+    "th": "ดอยสุเทพยามเย็นหมอกจาง"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s05/sky.webp",
+     "size": [
+      2560,
+      1021
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#0d313b"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s05/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 763
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s05/water.webp",
+     "size": [
+      2560,
+      461
+     ],
+     "plate": {
+      "x": 0,
+      "y": 979
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#02232d"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s05/near_l.webp",
+     "size": [
+      1024,
+      797
+     ],
+     "plate": {
+      "x": 0,
+      "y": 643
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s05/near_c.webp",
+     "size": [
+      512,
+      230
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1210
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s05/near_r.webp",
+     "size": [
+      1024,
+      791
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 649
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.69,
+   "waterRect": {
+    "x": 0,
+    "y": 0.69,
+    "w": 1,
+    "h": 0.31
+   },
+   "calmBand": {
+    "x": 0.22,
+    "y": 0.72,
+    "w": 0.56,
+    "h": 0.14
+   },
+   "stars": {
+    "style": "very-sparse",
+    "count": 35,
+    "color": "amber",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.6699999999999999
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.3,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.62,
+   "enabled": true
+  },
+  {
+   "id": "s06",
+   "title": {
+    "zh": "荷塘萤火",
+    "en": "Lotus Pond Fireflies",
+    "th": "สระบัวและหิ่งห้อย"
+   },
+   "status": "v2.1 (AD fix: foreground -25% brightness, extra -15% sat, white lotus -20%, fireflies above band -50%)",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s06/sky.webp",
+     "size": [
+      2560,
+      978
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#041c24"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s06/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 720
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s06/water.webp",
+     "size": [
+      2560,
+      504
+     ],
+     "plate": {
+      "x": 0,
+      "y": 936
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#03141b"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s06/near_l.webp",
+     "size": [
+      1024,
+      1012
+     ],
+     "plate": {
+      "x": 0,
+      "y": 393
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s06/near_c.webp",
+     "size": [
+      512,
+      163
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1241
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s06/near_r.webp",
+     "size": [
+      1024,
+      797
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 608
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.66,
+   "waterRect": {
+    "x": 0,
+    "y": 0.66,
+    "w": 1,
+    "h": 0.34
+   },
+   "calmBand": {
+    "x": 0.3,
+    "y": 0.7,
+    "w": 0.42,
+    "h": 0.1
+   },
+   "stars": {
+    "style": "medium+fireflies",
+    "count": 120,
+    "color": "warm-gold",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.64
+    },
+    "shooting": false,
+    "fireflies": true
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.4,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.5,
+   "enabled": true,
+   "maxLanternsFactor": 0.6
+  },
+  {
+   "id": "s07",
+   "title": {
+    "zh": "孔明灯与寺影",
+    "en": "Sky Lanterns & Temple",
+    "th": "โคมลอยกับเงาวัด"
+   },
+   "status": "v2 (AD passed; re-rendered 2560 layers)",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s07/sky.webp",
+     "size": [
+      2560,
+      1007
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#081f26"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s07/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 749
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s07/water.webp",
+     "size": [
+      2560,
+      475
+     ],
+     "plate": {
+      "x": 0,
+      "y": 965
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#031b23"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s07/near_l.webp",
+     "size": [
+      257,
+      490
+     ],
+     "plate": {
+      "x": 0,
+      "y": 935
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s07/near_r.webp",
+     "size": [
+      892,
+      1414
+     ],
+     "plate": {
+      "x": 1668,
+      "y": 0
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.68,
+   "waterRect": {
+    "x": 0,
+    "y": 0.68,
+    "w": 1,
+    "h": 0.32
+   },
+   "calmBand": {
+    "x": 0.15,
+    "y": 0.72,
+    "w": 0.7,
+    "h": 0.18
+   },
+   "stars": {
+    "style": "dense-small",
+    "count": 150,
+    "color": "warm-gold",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.66
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.4,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.62,
+   "enabled": true
+  },
+  {
+   "id": "s08",
+   "title": {
+    "zh": "流星夜",
+    "en": "Shooting Stars Night",
+    "th": "คืนดาวตก"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s08/sky.webp",
+     "size": [
+      2560,
+      1007
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#04151d"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s08/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 749
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s08/water.webp",
+     "size": [
+      2560,
+      475
+     ],
+     "plate": {
+      "x": 0,
+      "y": 965
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#03171d"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s08/near_l.webp",
+     "size": [
+      1024,
+      1089
+     ],
+     "plate": {
+      "x": 0,
+      "y": 319
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s08/near_c.webp",
+     "size": [
+      512,
+      155
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1250
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s08/near_r.webp",
+     "size": [
+      1024,
+      1020
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 394
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.68,
+   "waterRect": {
+    "x": 0,
+    "y": 0.68,
+    "w": 1,
+    "h": 0.32
+   },
+   "calmBand": {
+    "x": 0.15,
+    "y": 0.72,
+    "w": 0.6,
+    "h": 0.1
+   },
+   "stars": {
+    "style": "medium+shooting",
+    "count": 140,
+    "color": "gold-white",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.66
+    },
+    "shooting": true,
+    "fireflies": false,
+    "shootingIntervalSec": [
+     8,
+     15
+    ]
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.5,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.5,
+   "enabled": true
+  },
+  {
+   "id": "s09",
+   "title": {
+    "zh": "金塔暮光",
+    "en": "Golden Chedi Twilight",
+    "th": "เจดีย์ทองยามพลบค่ำ"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s09/sky.webp",
+     "size": [
+      2560,
+      906
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#0c2129"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s09/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 648
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s09/water.webp",
+     "size": [
+      2560,
+      576
+     ],
+     "plate": {
+      "x": 0,
+      "y": 864
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#02161e"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s09/near_l.webp",
+     "size": [
+      1024,
+      1440
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s09/near_c.webp",
+     "size": [
+      512,
+      361
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1079
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    }
+   ],
+   "horizonY": 0.61,
+   "waterRect": {
+    "x": 0,
+    "y": 0.61,
+    "w": 1,
+    "h": 0.39
+   },
+   "calmBand": {
+    "x": 0.32,
+    "y": 0.68,
+    "w": 0.58,
+    "h": 0.16
+   },
+   "stars": {
+    "style": "sparse-top",
+    "count": 70,
+    "color": "amber",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.59
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.45,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.75,
+   "enabled": true
+  },
+  {
+   "id": "s10",
+   "title": {
+    "zh": "银河小岛",
+    "en": "Milky Way Palm Islet",
+    "th": "เกาะปาล์มใต้ทางช้างเผือก"
+   },
+   "status": "v2",
+   "layers": [
+    {
+     "name": "sky",
+     "file": "s10/sky.webp",
+     "size": [
+      2560,
+      1007
+     ],
+     "plate": {
+      "x": 0,
+      "y": 0
+     },
+     "z": 0,
+     "parallax": 0.02,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendUp": {
+      "mode": "solid+gradient",
+      "color": "#071425"
+     },
+     "tileX": false,
+     "note": "no water; includes far silhouettes underneath the far layer so layers can move independently"
+    },
+    {
+     "name": "far",
+     "file": "s10/far.webp",
+     "size": [
+      2560,
+      273
+     ],
+     "plate": {
+      "x": 0,
+      "y": 749
+     },
+     "z": 1,
+     "parallax": 0.05,
+     "anchor": "bottom-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "cropX": "portraitFocusX",
+     "alpha": "soft top/bottom fade"
+    },
+    {
+     "name": "water",
+     "file": "s10/water.webp",
+     "size": [
+      2560,
+      475
+     ],
+     "plate": {
+      "x": 0,
+      "y": 965
+     },
+     "z": 2,
+     "parallax": 0.08,
+     "anchor": "top-center",
+     "anchorLine": "horizon",
+     "fit": "cover-x",
+     "extendDown": {
+      "mode": "stretch-last-rows",
+      "color": "#021724"
+     },
+     "alpha": "soft top fade",
+     "note": "calm band + reflections; L>110 compressed inside calmBand"
+    },
+    {
+     "name": "near_l",
+     "file": "s10/near_l.webp",
+     "size": [
+      1024,
+      649
+     ],
+     "plate": {
+      "x": 0,
+      "y": 791
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-left",
+     "fit": "pin-left",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    },
+    {
+     "name": "near_c",
+     "file": "s10/near_c.webp",
+     "size": [
+      512,
+      152
+     ],
+     "plate": {
+      "x": 1024,
+      "y": 1288
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-center",
+     "fit": "tile-x-mirror",
+     "group": "near",
+     "ultrawide": "hide (no tile) above 21:9"
+    },
+    {
+     "name": "near_r",
+     "file": "s10/near_r.webp",
+     "size": [
+      1024,
+      151
+     ],
+     "plate": {
+      "x": 1536,
+      "y": 1289
+     },
+     "z": 3,
+     "parallax": 0.12,
+     "anchor": "bottom-right",
+     "fit": "pin-right",
+     "group": "near",
+     "ultrawide": "120px inner-edge feather above 21:9"
+    }
+   ],
+   "horizonY": 0.68,
+   "waterRect": {
+    "x": 0,
+    "y": 0.68,
+    "w": 1,
+    "h": 0.32
+   },
+   "calmBand": {
+    "x": 0.15,
+    "y": 0.72,
+    "w": 0.7,
+    "h": 0.14
+   },
+   "stars": {
+    "style": "dense",
+    "count": 280,
+    "color": "cool-white",
+    "twinkleMs": [
+     1800,
+     4200
+    ],
+    "maxSize": 2.2,
+    "skyRegion": {
+     "y0": 0,
+     "y1": 0.66
+    },
+    "shooting": false,
+    "fireflies": false
+   },
+   "shimmer": {
+    "file": "_shared/shimmer.webp",
+    "opacity": 0.5,
+    "speedPxPerSec": 8,
+    "blend": "screen",
+    "region": "water, fade out over centre band"
+   },
+   "portraitFocusX": 0.4,
+   "enabled": true
+  }
+ ],
+ "ultrawide": {
+  "threshold": "aspect > 21:9 (2.333)",
+  "nearCenter": "do not tile near_c; hide it and show the water layer bottom_color / extension underneath",
+  "nearInnerFeatherPx": 120,
+  "nearInnerFeatherApplies": [
+   "near_l",
+   "near_r"
+  ],
+  "featherSide": "inner edge (the edge facing screen centre)",
+  "featherPxUnit": "plate px at 2560 wide (scale with layer scale)",
+  "status": "metadata only; site implements"
+ },
+ "maxLanternsFactorNote": "multiplier on the site's normal concurrent-lantern cap; default 1 when absent",
+ "enabledNote": "enabled:false scenes are skipped and must not be in rotation; all enabled now"
+}
