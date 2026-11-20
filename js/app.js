@@ -86,11 +86,11 @@ async function withQr(source,logoCorner){
 }
 async function download(source,logoCorner){const canvas=await withQr(source,logoCorner);canvas.toBlob(blob=>{let url=URL.createObjectURL(blob);if(/iPad|iPhone|iPod/.test(navigator.userAgent)){$('#saveImage').src=url;$('#saveOverlay').hidden=false}else{let a=document.createElement('a');a.href=url;a.download='cmi-lantern-card-'+Date.now()+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000)}},'image/png')}
 $('#save').onclick=saveCards;
-function route(){let tab=['cards','builder','culture'].includes(location.hash.slice(1))?location.hash.slice(1):'cards';['cards','builder','culture'].forEach(id=>$('#'+id).hidden=id!==tab);document.body.classList.toggle('builder-mode',tab==='builder');$$('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='builder')ensureBuilder()}$$('[data-tab]').forEach(b=>b.onclick=()=>location.hash=b.dataset.tab);window.addEventListener('hashchange',route);
+function route(){let tab=['cards','builder','culture','river'].includes(location.hash.slice(1))?location.hash.slice(1):'cards';['cards','builder','culture'].forEach(id=>$('#'+id).hidden=id!==tab);document.body.classList.toggle('builder-mode',tab==='builder');$$('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='builder')ensureBuilder()}$$('[data-tab]').forEach(b=>b.onclick=()=>location.hash=b.dataset.tab);window.addEventListener('hashchange',route);
 window.builderLanguage=()=>lang;window.builderStrings=()=>strings[lang];window.builderMuted=()=>muted;window.builderPing=addNote;window.builderDownload=download;window.builderWithQr=withQr;
 function renderParts(){if(window.builderRefresh)window.builderRefresh()}
 let builderLoading;
-function ensureBuilder(){if(builderLoading)return builderLoading;const script=src=>new Promise((resolve,reject)=>{let el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=reject;document.head.append(el)});builderLoading=script('vendor/konva-10.10.0.min.js').then(()=>script('js/builder.js?v=12')).catch(e=>{builderLoading=null;$('#builder-workspace').textContent='Unable to load builder';console.error(e)});return builderLoading}
+function ensureBuilder(){if(builderLoading)return builderLoading;const script=src=>new Promise((resolve,reject)=>{let el=document.createElement('script');el.src=src;el.onload=resolve;el.onerror=reject;document.head.append(el)});builderLoading=script('vendor/konva-10.10.0.min.js').then(()=>script('js/builder.js?v=13')).catch(e=>{builderLoading=null;$('#builder-workspace').textContent='Unable to load builder';console.error(e)});return builderLoading}
 translate();route();
 
 if(new URLSearchParams(location.search).has('selftest')){
