@@ -190,3 +190,6 @@ body.builder-mode main{padding-top:0}
 .rf-row input[type=range]{width:100%;accent-color:#e3be6a;touch-action:pan-x;margin:2px 0}
 .rf-row input[type=range]:focus-visible{outline:2px solid #e3be6a;outline-offset:2px}
 @media(max-width:600px){.river-float-ui .rf-scene span{display:none}.river-float-ui .rf-scene i{margin:0}.river-float-ui .rf-scene{width:40px;padding:0;justify-content:center}}
+
+/* v14.1: align the selected name with the toolbar and lower it slightly. */
+body.builder-mode #builder-toolbar{justify-content:flex-start}body.builder-mode #variant-controls{padding-left:3px}#variant-controls>span:first-child{transform:translateY(4px)}

@@ -228,11 +228,9 @@
     "th": "สายรุ้ง CMI"
    },
    "logo": {
-    "file": "assets/bg/cmi-logo-800.svg",
-    "cx": 0.5,
-    "cy": 0.26785714285714285,
-    "w": 0.16163793103448276,
-    "ar": 1
+    "file": "assets/bg/cmi-logo-full.webp",
+    "fallback": "assets/bg/cmi-logo-full.png",
+    "w": 0.24
    },
    "thumb": "thumbs/bg-B1.webp"
   },
