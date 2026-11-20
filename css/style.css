@@ -89,3 +89,9 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
 
 /* v10 ring-fill pill */
 .context-toolbar .ring-button{width:auto;padding:0 12px;font-size:13px;white-space:nowrap;border-radius:99px;background:#e8c77a;color:#033d3f;font-weight:600}
+
+/* v11 */
+.category-tabs,#variant-controls{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent)}
+body.builder-mode #variant-controls{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 44px),transparent)}
+.category-tabs.at-end,#variant-controls.at-end,body.builder-mode #variant-controls.at-end{-webkit-mask-image:none;mask-image:none}
+#variant-controls .tint-locked{font-size:12px;opacity:.8;color:#e8c77a;white-space:nowrap}
