@@ -48,14 +48,16 @@
  function fitWish(node){
   const text=node.findOne('Text');if(!text)return;
   const value=(node.getAttr('data').wish||'').trim().replace(/\s+/g,' '), width=text.width(),height=text.height(),lang=getLang();
-  const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter(lang,{granularity:lang==='zh'?'grapheme':'word'}):null;
-  let tokens=segmenter?Array.from(segmenter.segment(value),x=>x.segment):lang==='en'?value.split(/(\s+)/):Array.from(value);
-  if(lang==='zh'&&tokens.length>8)tokens=tokens.slice(0,8).concat('…');
   const fits=(lines,size)=>lines.length<=2&&lines.length*size*1.2<=height&&lines.every(line=>{text.fontSize(size);return text.measureSize(line).width<=width});
-  let candidate=tokens.join(''),size=18,lines;
-  for(;size>10;size-=.5){lines=wrapWish(candidate,width,size);if(fits(lines,size))break}
-  lines=wrapWish(candidate,width,size);
-  if(!fits(lines,size)){tokens=tokens.filter((_,i)=>!(i===tokens.length-1&&tokens[i]==='…'));while(tokens.length){tokens.pop();candidate=tokens.join('').trimEnd()+'…';lines=wrapWish(candidate,width,size);if(fits(lines,size))break}if(!fits(lines,size)){candidate='✦';lines=[candidate]}}
+  const fitCandidate=candidate=>{for(let size=19;size>=10;size-=.5){let lines=wrapWish(candidate,width,size);if(fits(lines,size))return {size,lines}}return null};
+  let result=fitCandidate(value);
+  if(!result){
+   // A complete clause is more useful than an arbitrary fragment of a wish.
+   const clause=value.split(/[，。,.、；;！!？?：:\n]/u)[0].trim();
+   result=clause&&clause!==value?fitCandidate(clause):null;
+  }
+  if(!result)result=fitCandidate('…')||{size:10,lines:['…']};
+  const {size,lines}=result;
   text.fontSize(size);text.lineHeight(1.2);text.wrap('none');text.text(lines.join('\n'));text.height(height);
  }
  function showWish(node,item){let box=host.querySelector('#wish-editor');if(!node||item?.category!=='wish'){box.innerHTML='';return}let l=wishLabels[getLang()],data=node.getAttr('data');box.innerHTML=`<div class="wish-panel"><h3>${l.heading} ✧</h3><label>${l.for}<input id="wish-recipient" maxlength="80"></label><label>${l.heading}<textarea id="wish-text" maxlength="350" rows="4" placeholder="${l.placeholder}"></textarea></label><p>${l.privacy}</p><div class="builder-controls"><button class="primary" id="wish-card">${l.make}</button><button id="wish-friend">${l.friend}</button></div></div>`;let field=box.querySelector('#wish-text'),recipient=box.querySelector('#wish-recipient');field.value=data.wish||'';recipient.value=data.recipient||'';field.onfocus=recipient.onfocus=checkpoint;field.oninput=()=>{data.wish=field.value;fitWish(node);persist();layer.batchDraw()};recipient.oninput=()=>{data.recipient=recipient.value;persist()};box.querySelector('#wish-card').onclick=()=>makeWish(false);box.querySelector('#wish-friend').onclick=()=>makeWish(true)}

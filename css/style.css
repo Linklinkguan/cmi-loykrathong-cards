@@ -79,3 +79,10 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
  body.builder-mode .material-list,body.builder-mode .palette.drawer-open .material-list{align-content:start;grid-auto-rows:min-content;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
  body.builder-mode #wish-editor,body.builder-mode #gallery-sheet{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y}
 }
+
+/* Keep the scroll hint visible in WebKit and deck tags on one line. */
+.category-tabs,#variant-controls{-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 24px),transparent);min-width:0}
+.deck small{font-size:10px;white-space:nowrap;word-break:keep-all;letter-spacing:0}
+
+/* v8: deck tag labels single-line on narrow phones */
+@media(max-width:420px){#decks .deck strong{font-size:14.5px;white-space:nowrap;letter-spacing:0}}

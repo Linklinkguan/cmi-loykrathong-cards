@@ -44,6 +44,376 @@
   ],
   "items": [
     {
+      "id": "wish-star",
+      "category": "wish",
+      "name": {
+        "zh": "星星",
+        "en": "Star",
+        "th": "ดาว"
+      },
+      "keywords": {
+        "zh": "星星",
+        "en": "Star",
+        "th": "ดาว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-star.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.18,
+        -0.1,
+        0.36,
+        0.23
+      ]
+    },
+    {
+      "id": "wish-crescent",
+      "category": "wish",
+      "name": {
+        "zh": "月牙",
+        "en": "Crescent",
+        "th": "จันทร์เสี้ยว"
+      },
+      "keywords": {
+        "zh": "月牙",
+        "en": "Crescent",
+        "th": "จันทร์เสี้ยว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-crescent.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.32,
+        -0.12,
+        0.25,
+        0.24
+      ]
+    },
+    {
+      "id": "wish-heart",
+      "category": "wish",
+      "name": {
+        "zh": "爱心",
+        "en": "Heart",
+        "th": "หัวใจ"
+      },
+      "keywords": {
+        "zh": "爱心",
+        "en": "Heart",
+        "th": "หัวใจ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-heart.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.25,
+        -0.1,
+        0.5,
+        0.25
+      ]
+    },
+    {
+      "id": "wish-fish",
+      "category": "wish",
+      "name": {
+        "zh": "鱼",
+        "en": "Fish",
+        "th": "ปลา"
+      },
+      "keywords": {
+        "zh": "鱼",
+        "en": "Fish",
+        "th": "ปลา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-fish.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.24,
+        -0.1,
+        0.43,
+        0.2
+      ]
+    },
+    {
+      "id": "wish-leaf",
+      "category": "wish",
+      "name": {
+        "zh": "叶子",
+        "en": "Leaf",
+        "th": "ใบไม้"
+      },
+      "keywords": {
+        "zh": "叶子",
+        "en": "Leaf",
+        "th": "ใบไม้"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-leaf.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.2,
+        -0.08,
+        0.4,
+        0.2
+      ]
+    },
+    {
+      "id": "wish-petal",
+      "category": "wish",
+      "name": {
+        "zh": "花瓣",
+        "en": "Petal",
+        "th": "กลีบดอก"
+      },
+      "keywords": {
+        "zh": "花瓣",
+        "en": "Petal",
+        "th": "กลีบดอก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-petal.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.2,
+        -0.1,
+        0.4,
+        0.23
+      ]
+    },
+    {
+      "id": "wish-lantern",
+      "category": "wish",
+      "name": {
+        "zh": "灯笼",
+        "en": "Lantern",
+        "th": "โคม"
+      },
+      "keywords": {
+        "zh": "灯笼",
+        "en": "Lantern",
+        "th": "โคม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-lantern.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.22,
+        -0.12,
+        0.44,
+        0.26
+      ]
+    },
+    {
+      "id": "wish-sky-lantern",
+      "category": "wish",
+      "name": {
+        "zh": "天灯",
+        "en": "Sky lantern",
+        "th": "โคมลอย"
+      },
+      "keywords": {
+        "zh": "天灯",
+        "en": "Sky lantern",
+        "th": "โคมลอย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-sky-lantern.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.22,
+        -0.12,
+        0.44,
+        0.26
+      ]
+    },
+    {
+      "id": "wish-shell",
+      "category": "wish",
+      "name": {
+        "zh": "贝壳",
+        "en": "Shell",
+        "th": "เปลือกหอย"
+      },
+      "keywords": {
+        "zh": "贝壳",
+        "en": "Shell",
+        "th": "เปลือกหอย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-shell.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.23,
+        -0.08,
+        0.46,
+        0.23
+      ]
+    },
+    {
+      "id": "wish-tung-flag",
+      "category": "wish",
+      "name": {
+        "zh": "兰纳纸幡",
+        "en": "Tung flag",
+        "th": "ตุง"
+      },
+      "keywords": {
+        "zh": "兰纳纸幡",
+        "en": "Tung flag",
+        "th": "ตุง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "wish/shape-tung-flag.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200,
+      "textArea": [
+        -0.23,
+        -0.15,
+        0.46,
+        0.28
+      ]
+    },
+    {
       "id": "note",
       "category": "wish",
       "name": {
