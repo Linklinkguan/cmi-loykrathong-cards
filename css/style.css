@@ -86,3 +86,6 @@ html:lang(th) .greet-content h1{font-size:clamp(25px,6.2vw,45px);letter-spacing:
 
 /* v8: deck tag labels single-line on narrow phones */
 @media(max-width:420px){#decks .deck strong{font-size:14.5px;white-space:nowrap;letter-spacing:0}}
+
+/* v10 ring-fill pill */
+.context-toolbar .ring-button{width:auto;padding:0 12px;font-size:13px;white-space:nowrap;border-radius:99px;background:#e8c77a;color:#033d3f;font-weight:600}

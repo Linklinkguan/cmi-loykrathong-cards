@@ -22,6 +22,16 @@
       "order": 1
     },
     {
+      "id": "fold",
+      "name": {
+        "zh": "边缘折叶",
+        "en": "Edge folds",
+        "th": "กลีบพับขอบ"
+      },
+      "icon": "❦",
+      "order": 2
+    },
+    {
       "id": "craft",
       "name": {
         "zh": "固定小物",
@@ -29,7 +39,7 @@
         "th": "อุปกรณ์ติด"
       },
       "icon": "⌁",
-      "order": 2
+      "order": 3
     },
     {
       "id": "creative",
@@ -39,7 +49,7 @@
         "th": "คลังไอเดีย"
       },
       "icon": "✦",
-      "order": 3
+      "order": 4
     }
   ],
   "items": [
@@ -429,38 +439,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/note-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/note-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/note-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/note-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/note-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/note-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/note-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -485,38 +471,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/scroll-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/scroll-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/scroll-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/scroll-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/scroll-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/scroll-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/scroll-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -541,38 +503,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/flag-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/flag-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/flag-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/flag-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/flag-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/flag-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/flag-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -597,38 +535,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/heart-tag-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/heart-tag-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/heart-tag-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/heart-tag-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/heart-tag-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/heart-tag-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/heart-tag-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -653,38 +567,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/tung-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/tung-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/tung-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/tung-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/tung-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/tung-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/tung-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -709,38 +599,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "wish/envelope-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "wish/envelope-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
-          "id": "2",
-          "file": "wish/envelope-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "wish/envelope-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
-          "id": "4",
-          "file": "wish/envelope-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "wish/envelope-5.svg",
-          "colour": "#d8786c"
+          "file": "wish/envelope-v10.svg",
+          "colour": "#f6ebcb"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -765,23 +631,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/base-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/base-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/base-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/base-v10.svg",
+          "colour": "#86b257"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 0,
+      "fold": false,
       "snap": "base",
       "anchor": {
         "x": 0.5,
@@ -806,23 +663,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/wrap-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/wrap-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/wrap-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/wrap-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 10,
+      "fold": false,
       "snap": "wrap",
       "anchor": {
         "x": 0.5,
@@ -847,23 +695,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/petals-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/petals-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/petals-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/petals-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 20,
+      "fold": false,
       "snap": "rim",
       "anchor": {
         "x": 0.5,
@@ -888,26 +727,15 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/candle-0.svg",
-          "colour": "#f7ebc7",
-          "unlitFile": "traditional/candle-0-unlit.svg"
-        },
-        {
-          "id": "2",
-          "file": "traditional/candle-2.svg",
-          "colour": "#e4bc64",
-          "unlitFile": "traditional/candle-2-unlit.svg"
-        },
-        {
-          "id": "4",
-          "file": "traditional/candle-4.svg",
-          "colour": "#8fb26b",
-          "unlitFile": "traditional/candle-4-unlit.svg"
+          "file": "traditional/candle-v10.svg",
+          "colour": "#f3e3b6",
+          "unlitFile": "traditional/candle-v10-unlit.svg"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -932,23 +760,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/incense-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/incense-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/incense-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/incense-v10.svg",
+          "colour": "#b5362c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -973,23 +792,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/buddha-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/buddha-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/buddha-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/buddha-v10.svg",
+          "colour": "#e2b54a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1014,23 +824,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/marigold-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/marigold-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/marigold-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/marigold-v10.svg",
+          "colour": "#ec8a16"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1055,23 +856,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/orchid-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/orchid-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/orchid-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/orchid-v10.svg",
+          "colour": "#b14a9a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1096,23 +888,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/jasmine-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/jasmine-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/jasmine-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/jasmine-v10.svg",
+          "colour": "#fdfbf2"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1137,23 +920,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/lotus-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/lotus-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/lotus-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/lotus-v10.svg",
+          "colour": "#ec8fac"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1178,23 +952,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/amaranth-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/amaranth-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/amaranth-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/amaranth-v10.svg",
+          "colour": "#b8326f"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1219,23 +984,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/rose-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/rose-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/rose-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/rose-v10.svg",
+          "colour": "#c8344a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1260,23 +1016,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/star-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/star-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/star-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/star-v10.svg",
+          "colour": "#e9c04a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1301,23 +1048,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "craft/pin-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "craft/pin-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "craft/pin-4.svg",
-          "colour": "#8fb26b"
+          "file": "craft/pin-v10.svg",
+          "colour": "#c0392b"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 90,
+      "fold": false,
       "snap": "pin",
       "anchor": {
         "x": 0.5,
@@ -1342,23 +1080,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "craft/staple-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "craft/staple-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "craft/staple-4.svg",
-          "colour": "#8fb26b"
+          "file": "craft/staple-v10.svg",
+          "colour": "#b9c3c5"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 90,
+      "fold": false,
       "snap": "pin",
       "anchor": {
         "x": 0.5,
@@ -1383,23 +1112,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "craft/thread-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "craft/thread-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "craft/thread-4.svg",
-          "colour": "#8fb26b"
+          "file": "craft/thread-v10.svg",
+          "colour": "#c8463c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 90,
+      "fold": false,
       "snap": "pin",
       "anchor": {
         "x": 0.5,
@@ -1424,23 +1144,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "craft/skewer-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "craft/skewer-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "craft/skewer-4.svg",
-          "colour": "#8fb26b"
+          "file": "craft/skewer-v10.svg",
+          "colour": "#d9b77a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 90,
+      "fold": false,
       "snap": "pin",
       "anchor": {
         "x": 0.5,
@@ -1465,23 +1176,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "craft/toothpick-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "craft/toothpick-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "craft/toothpick-4.svg",
-          "colour": "#8fb26b"
+          "file": "craft/toothpick-v10.svg",
+          "colour": "#e2c48c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 90,
+      "fold": false,
       "snap": "pin",
       "anchor": {
         "x": 0.5,
@@ -1506,23 +1208,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/heart-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "creative/heart-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "creative/heart-4.svg",
-          "colour": "#8fb26b"
+          "file": "creative/heart-v10.svg",
+          "colour": "#e5576e"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1547,23 +1240,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/moon-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "creative/moon-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "creative/moon-4.svg",
-          "colour": "#8fb26b"
+          "file": "creative/moon-v10.svg",
+          "colour": "#f3d77a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1588,23 +1272,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/sparkle-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "creative/sparkle-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "creative/sparkle-4.svg",
-          "colour": "#8fb26b"
+          "file": "creative/sparkle-v10.svg",
+          "colour": "#f6d26a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1629,23 +1304,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/base-thin-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/base-thin-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/base-thin-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/base-thin-v10.svg",
+          "colour": "#86b257"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 0,
+      "fold": false,
       "snap": "base",
       "anchor": {
         "x": 0.5,
@@ -1670,23 +1336,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/base-double-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/base-double-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/base-double-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/base-double-v10.svg",
+          "colour": "#86b257"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 0,
+      "fold": false,
       "snap": "base",
       "anchor": {
         "x": 0.5,
@@ -1711,23 +1368,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/wrap-scallop-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/wrap-scallop-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/wrap-scallop-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/wrap-scallop-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 10,
+      "fold": false,
       "snap": "wrap",
       "anchor": {
         "x": 0.5,
@@ -1752,23 +1400,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/wrap-zigzag-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/wrap-zigzag-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/wrap-zigzag-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/wrap-zigzag-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 10,
+      "fold": false,
       "snap": "wrap",
       "anchor": {
         "x": 0.5,
@@ -1793,23 +1432,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/wrap-woven-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/wrap-woven-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/wrap-woven-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/wrap-woven-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 10,
+      "fold": false,
       "snap": "wrap",
       "anchor": {
         "x": 0.5,
@@ -1834,23 +1464,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/petals-pouch-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/petals-pouch-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/petals-pouch-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/petals-pouch-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 20,
+      "fold": false,
       "snap": "rim",
       "anchor": {
         "x": 0.5,
@@ -1875,23 +1496,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/petals-rose-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/petals-rose-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/petals-rose-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/petals-rose-v10.svg",
+          "colour": "#5f9a3c"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 20,
+      "fold": false,
       "snap": "rim",
       "anchor": {
         "x": 0.5,
@@ -1916,23 +1528,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "traditional/buddha-lotus-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "2",
-          "file": "traditional/buddha-lotus-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "4",
-          "file": "traditional/buddha-lotus-4.svg",
-          "colour": "#8fb26b"
+          "file": "traditional/buddha-lotus-v10.svg",
+          "colour": "#e2b54a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1957,13 +1560,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/cat-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/cat-v10.svg",
+          "colour": "#e0a35c"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -1988,13 +1592,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/sleeping-cat-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/sleeping-cat-v10.svg",
+          "colour": "#9c9aa6"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2019,13 +1624,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/cat-face-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/cat-face-v10.svg",
+          "colour": "#f0c07a"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2050,13 +1656,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/dog-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/dog-v10.svg",
+          "colour": "#c98b54"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2081,13 +1688,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/rabbit-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/rabbit-v10.svg",
+          "colour": "#f3efe6"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2112,13 +1720,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/bear-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/bear-v10.svg",
+          "colour": "#9a6a42"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2143,13 +1752,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/fish-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/fish-v10.svg",
+          "colour": "#f08a3c"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2174,13 +1784,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/turtle-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/turtle-v10.svg",
+          "colour": "#6e9f52"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2205,13 +1816,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/bird-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/bird-v10.svg",
+          "colour": "#5b9bd0"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2236,13 +1848,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/duck-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/duck-v10.svg",
+          "colour": "#f4cf47"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2267,13 +1880,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/elephant-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/elephant-v10.svg",
+          "colour": "#9aa3ad"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2298,13 +1912,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/baby-elephant-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/baby-elephant-v10.svg",
+          "colour": "#b9c0c8"
         }
       ],
       "group": "animals",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2329,13 +1944,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/flower-elephant-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/flower-elephant-v10.svg",
+          "colour": "#a7aeb8"
         }
       ],
       "group": "transport",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2360,13 +1976,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/tuktuk-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/tuktuk-v10.svg",
+          "colour": "#2f8f8a"
         }
       ],
       "group": "transport",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2391,13 +2008,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/truck-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/truck-v10.svg",
+          "colour": "#c8382f"
         }
       ],
       "group": "transport",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2422,13 +2040,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/scooter-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/scooter-v10.svg",
+          "colour": "#e07a5f"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2453,13 +2072,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/mango-rice-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/mango-rice-v10.svg",
+          "colour": "#f2c14e"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2484,13 +2104,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/boba-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/boba-v10.svg",
+          "colour": "#d8b38a"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2515,13 +2136,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/mango-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/mango-v10.svg",
+          "colour": "#f6b134"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2546,13 +2168,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/coconut-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/coconut-v10.svg",
+          "colour": "#8a5a36"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2577,13 +2200,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/noodles-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/noodles-v10.svg",
+          "colour": "#e8d3a8"
         }
       ],
       "group": "food",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2608,13 +2232,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/icecream-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/icecream-v10.svg",
+          "colour": "#f2a5c0"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2639,13 +2264,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/donut-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/donut-v10.svg",
+          "colour": "#e98bb0"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2670,13 +2296,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/smile-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/smile-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2701,13 +2328,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/wink-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/wink-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2732,13 +2360,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/love-face-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/love-face-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2763,13 +2392,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/laugh-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/laugh-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2794,13 +2424,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/cool-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/cool-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2825,13 +2456,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/surprised-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/surprised-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "faces",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2856,13 +2488,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/sleepy-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/sleepy-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2887,13 +2520,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/star-eyes-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/star-eyes-v10.svg",
+          "colour": "#f6cf47"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2918,13 +2552,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/full-moon-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/full-moon-v10.svg",
+          "colour": "#f3e3a8"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2949,13 +2584,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/cloud-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/cloud-v10.svg",
+          "colour": "#eef3f7"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -2980,13 +2616,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/rainbow-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/rainbow-v10.svg",
+          "colour": "#e8604c"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3011,13 +2648,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/sun-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/sun-v10.svg",
+          "colour": "#f6b52e"
         }
       ],
       "group": "sky",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3042,13 +2680,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/burst-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/burst-v10.svg",
+          "colour": "#f6c94a"
         }
       ],
       "group": "love",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3073,13 +2712,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/double-heart-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/double-heart-v10.svg",
+          "colour": "#e5576e"
         }
       ],
       "group": "love",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3104,13 +2744,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/wing-heart-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/wing-heart-v10.svg",
+          "colour": "#e5576e"
         }
       ],
       "group": "lanna",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3135,13 +2776,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/lantern-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/lantern-v10.svg",
+          "colour": "#d2453a"
         }
       ],
       "group": "lanna",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3166,13 +2808,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/umbrella-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/umbrella-v10.svg",
+          "colour": "#c9a227"
         }
       ],
       "group": "lanna",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3197,13 +2840,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/sky-lantern-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/sky-lantern-v10.svg",
+          "colour": "#f2c879"
         }
       ],
       "group": "lanna",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3228,13 +2872,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/lotus-flower-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/lotus-flower-v10.svg",
+          "colour": "#ec8fac"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3259,13 +2904,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/leaf-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/leaf-v10.svg",
+          "colour": "#6aa645"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3290,13 +2936,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/robot-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/robot-v10.svg",
+          "colour": "#8fa7b8"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3321,13 +2968,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/robot-round-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/robot-round-v10.svg",
+          "colour": "#7fb4c8"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3352,13 +3000,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/rocket-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/rocket-v10.svg",
+          "colour": "#e9ecef"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3383,13 +3032,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/planet-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/planet-v10.svg",
+          "colour": "#8b78c9"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3414,13 +3064,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/laptop-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/laptop-v10.svg",
+          "colour": "#9aa6ae"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3445,13 +3096,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/coffee-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/coffee-v10.svg",
+          "colour": "#e9dcc6"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3476,13 +3128,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/palm-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/palm-v10.svg",
+          "colour": "#5e9a3e"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3507,13 +3160,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/mountain-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/mountain-v10.svg",
+          "colour": "#6f8b6a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3538,13 +3192,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/temple-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/temple-v10.svg",
+          "colour": "#c9a227"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3569,13 +3224,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/boat-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/boat-v10.svg",
+          "colour": "#f3e6c8"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3600,13 +3256,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/music-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/music-v10.svg",
+          "colour": "#4e6fb0"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3631,13 +3288,14 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/camera-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/camera-v10.svg",
+          "colour": "#5a6470"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
       "anchor": {
         "x": 0.5,
@@ -3662,14 +3320,527 @@
       "variants": [
         {
           "id": "0",
-          "file": "creative/pin-map-0.svg",
-          "colour": "#f7ebc7"
+          "file": "creative/pin-map-v10.svg",
+          "colour": "#d2453a"
         }
       ],
       "group": "other",
       "defaultScale": 1,
       "zHint": 50,
+      "fold": false,
       "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-point",
+      "category": "fold",
+      "name": {
+        "zh": "尖角折",
+        "en": "Pointed fold",
+        "th": "กลีบแหลม"
+      },
+      "keywords": {
+        "zh": "尖角折",
+        "en": "pointed fold",
+        "th": "กลีบแหลม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-point-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-arrow",
+      "category": "fold",
+      "name": {
+        "zh": "箭头折",
+        "en": "Arrow fold",
+        "th": "กลีบลูกศร"
+      },
+      "keywords": {
+        "zh": "箭头折",
+        "en": "arrow fold",
+        "th": "กลีบลูกศร"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-arrow-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-scale",
+      "category": "fold",
+      "name": {
+        "zh": "鳞片折",
+        "en": "Scale fold",
+        "th": "กลีบเกล็ด"
+      },
+      "keywords": {
+        "zh": "鳞片折",
+        "en": "scale fold",
+        "th": "กลีบเกล็ด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-scale-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-rib",
+      "category": "fold",
+      "name": {
+        "zh": "筋折",
+        "en": "Ribbed fold",
+        "th": "กลีบจีบ"
+      },
+      "keywords": {
+        "zh": "筋折",
+        "en": "ribbed fold",
+        "th": "กลีบจีบ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-rib-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-double",
+      "category": "fold",
+      "name": {
+        "zh": "双层尖折",
+        "en": "Double point fold",
+        "th": "กลีบแหลมสองชั้น"
+      },
+      "keywords": {
+        "zh": "双层尖折",
+        "en": "double point fold",
+        "th": "กลีบแหลมสองชั้น"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-double-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-lotus",
+      "category": "fold",
+      "name": {
+        "zh": "莲瓣折",
+        "en": "Lotus-petal fold",
+        "th": "กลีบบัว"
+      },
+      "keywords": {
+        "zh": "莲瓣折",
+        "en": "lotus-petal fold",
+        "th": "กลีบบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-lotus-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-pouch",
+      "category": "fold",
+      "name": {
+        "zh": "圆袋折",
+        "en": "Round pouch fold",
+        "th": "กลีบกระเปาะ"
+      },
+      "keywords": {
+        "zh": "圆袋折",
+        "en": "round pouch fold",
+        "th": "กลีบกระเปาะ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-pouch-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-curl",
+      "category": "fold",
+      "name": {
+        "zh": "羊角卷",
+        "en": "Ram's horn curl",
+        "th": "กลีบเขาแกะ"
+      },
+      "keywords": {
+        "zh": "羊角卷",
+        "en": "ram's horn curl",
+        "th": "กลีบเขาแกะ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-curl-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fold-tier",
+      "category": "fold",
+      "name": {
+        "zh": "三角叠片",
+        "en": "Tiered triangles",
+        "th": "กลีบซ้อน"
+      },
+      "keywords": {
+        "zh": "三角叠片",
+        "en": "tiered triangles",
+        "th": "กลีบซ้อน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/fold-tier-v10.svg",
+          "colour": "#5f9a3c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-crane",
+      "category": "fold",
+      "name": {
+        "zh": "纸鹤",
+        "en": "Paper crane",
+        "th": "นกกระเรียนกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸鹤",
+        "en": "paper crane",
+        "th": "นกกระเรียนกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-crane-v10.svg",
+          "colour": "#e9645a"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-lotus",
+      "category": "fold",
+      "name": {
+        "zh": "纸莲花瓣",
+        "en": "Paper lotus petal",
+        "th": "กลีบบัวกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸莲花瓣",
+        "en": "paper lotus petal",
+        "th": "กลีบบัวกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-lotus-v10.svg",
+          "colour": "#e7a1b0"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-fan",
+      "category": "fold",
+      "name": {
+        "zh": "纸扇形",
+        "en": "Paper fan",
+        "th": "พัดกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸扇形",
+        "en": "paper fan",
+        "th": "พัดกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-fan-v10.svg",
+          "colour": "#c9a227"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-star",
+      "category": "fold",
+      "name": {
+        "zh": "纸星",
+        "en": "Origami star",
+        "th": "ดาวกระดาษพับ"
+      },
+      "keywords": {
+        "zh": "纸星",
+        "en": "origami star",
+        "th": "ดาวกระดาษพับ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-star-v10.svg",
+          "colour": "#4e7fb8"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-point",
+      "category": "fold",
+      "name": {
+        "zh": "纸尖角",
+        "en": "Paper point",
+        "th": "มุมกระดาษพับ"
+      },
+      "keywords": {
+        "zh": "纸尖角",
+        "en": "paper point",
+        "th": "มุมกระดาษพับ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-point-v10.svg",
+          "colour": "#b0302a"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-butterfly",
+      "category": "fold",
+      "name": {
+        "zh": "纸蝴蝶",
+        "en": "Paper butterfly",
+        "th": "ผีเสื้อกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸蝴蝶",
+        "en": "paper butterfly",
+        "th": "ผีเสื้อกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-butterfly-v10.svg",
+          "colour": "#e39b2d"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "ori-boat",
+      "category": "fold",
+      "name": {
+        "zh": "纸船",
+        "en": "Paper boat",
+        "th": "เรือกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸船",
+        "en": "paper boat",
+        "th": "เรือกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "fold/ori-boat-v10.svg",
+          "colour": "#f3e6c8"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "fold": true,
+      "snap": "rim",
       "anchor": {
         "x": 0.5,
         "y": 0.8
