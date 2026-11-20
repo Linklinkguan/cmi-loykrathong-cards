@@ -55,24 +55,24 @@ async function paintCard(ctx,c,x,y,w){
  ctx.fillStyle='#b8782a';ctx.font=`bold ${w*.035}px sans-serif`;ctx.fillText(d.label,w*.5,h*.745,w*.8);
  ctx.fillStyle='#6f5c4c';ctx.font=`${w*.035}px sans-serif`;wrapCanvas(ctx,d.line,w*.5,h*.78,w*.8,w*.048,3);
  ctx.textAlign='left';ctx.fillStyle='#595959';ctx.font=`${w*.024}px sans-serif`;ctx.fillText(d.foot,w*.10,h*.92,w*.65);
- let logo=await loadImage('img/logo.svg');ctx.drawImage(logo,w*.78,h*.865,w*.13,w*.13);ctx.restore();
+ let logo=await loadImage('img/logo.svg');ctx.drawImage(logo,w*.765,h*.845,w*.17,w*.17);ctx.restore();
 }
 async function saveCards(){
  let canvas=document.createElement('canvas'),ctx=canvas.getContext('2d'),combo=current.length>1;
  canvas.width=combo?1440:720;canvas.height=combo?1020:Math.round(720*84/52);
  ctx.fillStyle=combo?'#065e60':'#fff9ec';ctx.fillRect(0,0,canvas.width,canvas.height);
- if(combo){ctx.fillStyle='#fff9ec';ctx.textAlign='center';ctx.font='32px sans-serif';ctx.fillText(strings[lang].title,720,75,1300);ctx.font='19px sans-serif';ctx.fillText(strings[lang].footer,720,975,1300);let logo=await loadImage('img/logo-white.webp');ctx.drawImage(logo,675,88,90,64)}
+ if(combo){ctx.fillStyle='#fff9ec';ctx.textAlign='center';ctx.font='32px sans-serif';ctx.fillText(strings[lang].title,720,75,1300);ctx.font='19px sans-serif';ctx.fillText(strings[lang].footer,720,975,1300);}
  for(let i=0;i<current.length;i++)await paintCard(ctx,current[i],combo?110+i*420:0,combo?175:0,combo?380:720);
- download(canvas);
+ download(canvas,combo);
 }
-async function withQr(source){
+async function withQr(source,logoCorner){
  const width=Math.max(1080,source.width),factor=width/source.width,strip=200,canvas=document.createElement('canvas');canvas.width=width;canvas.height=Math.round(source.height*factor)+strip;
  const ctx=canvas.getContext('2d');ctx.fillStyle='#065e60';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(source,0,0,width,source.height*factor);
  const y=canvas.height-strip,qr=await loadImage('img/site-qr.svg');ctx.fillStyle='#fff9ec';ctx.beginPath();ctx.roundRect(38,y+22,156,156,12);ctx.fill();ctx.drawImage(qr,45,y+29,142,142);
  ctx.fillStyle='#fff9ec';ctx.textAlign='left';ctx.font='bold 25px sans-serif';ctx.fillText(({zh:'CMI 水灯灵感卡',en:'CMI Krathong Inspiration Cards',th:'การ์ดไอเดียกระทง CMI'})[lang],220,y+84,width-250);
- ctx.font='17px sans-serif';ctx.fillStyle='#e8c77a';ctx.fillText('linklinkguan.github.io/cmi-loykrathong-cards',220,y+120,width-250);return canvas;
+ ctx.font='17px sans-serif';ctx.fillStyle='#e8c77a';ctx.fillText('linklinkguan.github.io/cmi-loykrathong-cards',220,y+120,width-250);if(logoCorner){const lg=await loadImage('img/logo-white.webp'),lh=170,lw=lh*(lg.naturalWidth/lg.naturalHeight||1);ctx.drawImage(lg,width-lw-40,y+15,lw,lh)}return canvas;
 }
-async function download(source){const canvas=await withQr(source);canvas.toBlob(blob=>{let url=URL.createObjectURL(blob);if(/iPad|iPhone|iPod/.test(navigator.userAgent)){$('#saveImage').src=url;$('#saveOverlay').hidden=false}else{let a=document.createElement('a');a.href=url;a.download='cmi-lantern-card-'+Date.now()+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000)}},'image/png')}
+async function download(source,logoCorner){const canvas=await withQr(source,logoCorner);canvas.toBlob(blob=>{let url=URL.createObjectURL(blob);if(/iPad|iPhone|iPod/.test(navigator.userAgent)){$('#saveImage').src=url;$('#saveOverlay').hidden=false}else{let a=document.createElement('a');a.href=url;a.download='cmi-lantern-card-'+Date.now()+'.png';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000)}},'image/png')}
 $('#save').onclick=saveCards;
 function route(){let tab=['cards','builder','culture'].includes(location.hash.slice(1))?location.hash.slice(1):'cards';['cards','builder','culture'].forEach(id=>$('#'+id).hidden=id!==tab);document.body.classList.toggle('builder-mode',tab==='builder');$$('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));if(tab==='builder')ensureBuilder()}$$('[data-tab]').forEach(b=>b.onclick=()=>location.hash=b.dataset.tab);window.addEventListener('hashchange',route);
 window.builderLanguage=()=>lang;window.builderStrings=()=>strings[lang];window.builderMuted=()=>muted;window.builderPing=ping;window.builderDownload=download;window.builderWithQr=withQr;
