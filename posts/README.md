@@ -1,0 +1,1 @@
+Replace `zh/index.html` and `en/index.html` with the supplied Chinese and English article HTML files. Place any images each article references beside it, for example in `zh/img/` or `en/img/`. Keep links relative so the pages work under the GitHub Pages project path.
