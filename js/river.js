@@ -89,7 +89,7 @@ window.riverOpenUpload=openForm;window.riverToast=toast;
 let cursor=null,loading=false,done=false,filter='all',highlight=null,total=0,observer=null;
 function section(){return $('#river')}
 function renderShell(){let s=section();if(!s)return;s.textContent='';
- let intro=el('div','section-intro');intro.append(el('span','','✧'),el('h2','',t('home')),el('p','',t('homeSub')));
+ let intro=el('div','section-intro');intro.append(el('p','',t('homeSub')));
  let tools=el('div','river-entries');
  const entry=(id,icon,title,desc,act)=>{let b=el('button','river-entry');b.type='button';b.dataset.entry=id;let ic=el('span','river-entry-icon');ic.insertAdjacentHTML('afterbegin',ICON[icon]);let tx=el('span','river-entry-text');tx.append(el('strong','',title),el('small','',desc));b.append(ic,tx);b.onclick=act;return b};
  tools.append(entry('float','lotus',t('float'),t('floatD'),enterRiver));
@@ -120,11 +120,12 @@ const FS={zh:{settings:'设置',scene:'换背景',presets:'预设',repeat:'同�
  en:{settings:'Settings',scene:'Scene',presets:'Presets',repeat:'Same krathong returns after',rate:'New krathong every',speed:'Drift speed',spread:'Spread (width)',vdist:'Vertical spread',max:'Max on screen',size:'Krathong size',reset:'Reset',live:'Live',sec:'s',every:'{s} s',n:'{n}',fresh:'New',p:{calm:'Calm',lively:'Lively',galaxy:'Galaxy',def:'Default'}},
  th:{settings:'ตั้งค่า',scene:'เปลี่ยนฉาก',presets:'ค่าสำเร็จรูป',repeat:'กระทงเดิมกลับมาอีกหลัง',rate:'กระทงใหม่ทุก',speed:'ความเร็วลอย',spread:'ความกว้างการกระจาย',vdist:'การกระจายแนวตั้ง',max:'มากสุดบนจอ',size:'ขนาดกระทง',reset:'ค่าเริ่มต้น',live:'สด',sec:'วิ',every:'ทุก {s} วิ',n:'{n} ใบ',fresh:'ใหม่',p:{calm:'สงบ',lively:'คึกคัก',galaxy:'ทางช้างเผือก',def:'ค่าเริ่มต้น'}}};
 const ft=k=>(FS[lang()]||FS.en)[k];
-const FDEF={repeat:20,rate:2.4,speed:1,spread:.84,vdist:.15,max:10,size:1,scene:'s01',showPhoto:false,showComposed:true,photoSize:'fixed',composedSize:'original'};
+const FLOAT_SIZE={photoSize:'fixed',composedSize:'fixed',originalMode:'original',originalMin:0.6,originalMax:1.3};
+const FDEF={repeat:20,rate:2.4,speed:1,spread:.84,vdist:.15,max:10,size:1,scene:'s01',showPhoto:false,showComposed:true,photoSize:FLOAT_SIZE.photoSize,composedSize:FLOAT_SIZE.composedSize};
 const FPRE={calm:{repeat:60,rate:4.5,speed:.7,spread:.7,vdist:.1,max:5,size:1.15},lively:{repeat:8,rate:1,speed:1.35,spread:1,vdist:.55,max:18,size:.85},galaxy:{repeat:15,rate:1.5,speed:.55,spread:1,vdist:1,max:20,size:.7},def:{repeat:20,rate:2.4,speed:1,spread:.84,vdist:.15,max:10,size:1}};
 const FRNG={repeat:[0,180,5],rate:[.5,8,.1],speed:[.3,2.5,.05],spread:[.3,1,.02],vdist:[0,1,.05],max:[1,24,1],size:[.5,1.8,.05]};
-let FSET=(()=>{try{let settings={...FDEF,...JSON.parse(localStorage.cmiLkFloat||'{}')};if(!/^s\d\d$/.test(settings.scene))settings.scene='s01';return settings}catch(e){return {...FDEF}}})();
-const saveFset=()=>{try{localStorage.cmiLkFloat=JSON.stringify(FSET)}catch(e){}};
+let FSET=(()=>{try{let stored=localStorage.cmiLkFloat2;let settings={...FDEF,...JSON.parse(stored||'{}')};if(!/^s\d\d$/.test(settings.scene))settings.scene='s01';if(!stored)localStorage.cmiLkFloat2=JSON.stringify(settings);return settings}catch(e){return {...FDEF}}})();
+const saveFset=()=>{try{localStorage.cmiLkFloat2=JSON.stringify(FSET)}catch(e){}};
 /* Scene registry. A scene is {id,name:{zh,en,th},hz:0..1 horizon,draw(ctx,F,now)} or a layered spec
    {id,name,hz,layers:[{src,depth,y,h,blend,alpha}],stars:n,shimmer:true} — layered scenes (sky/far/near-shore) get subtle parallax.
    Drop-in later: put files + assets/scenes/manifest.json {"scenes":[layered specs]} and they register on open. */
@@ -230,15 +231,22 @@ function reflect(art){let w=art.width,h=Math.max(2,Math.round(art.height*.35)),c
 function prep(it){if(F.imgs.has(it.id))return;let rec={ready:false};F.imgs.set(it.id,rec);let im=new Image();im.crossOrigin='anonymous';im.decoding='async';
  im.onload=()=>{try{rec.art=it.kind==='photo'?photoCard(im):trim(im);rec.contentWidth=im.naturalWidth/3/400;/* v14.1: retain subject fraction for sizing. */rec.subj=it.kind==='photo'?photoSubject(rec.art):1;let reflectionArt=rec.art;if(it.kind==='photo'){let side=rec.art.width*PHOTO_DISC_RATIO, crop=document.createElement('canvas');crop.width=crop.height=Math.round(side);crop.getContext('2d').drawImage(rec.art,(rec.art.width-side)/2,(rec.art.height-side)/2,side,side,0,0,crop.width,crop.height);reflectionArt=crop}rec.refl=reflect(reflectionArt);rec.ar=rec.art.width/rec.art.height;rec.ready=true}catch(e){}};im.src=it.image_url||it.thumb_url}
 function fitText(ctx,s,max){if(ctx.measureText(s).width<=max)return s;let a=[...s];while(a.length>1&&ctx.measureText(a.join('')+'…').width>max)a.pop();return a.join('')+'…'}
-function geom(l,y){let {base,hz,fs}=F,sc=(.6+.4*Math.max(0,Math.min(1,(y-hz)/Math.max(1,l.y0-hz))))*(l.row==='back'?.85:1),subject=base*sc*.65,visW=subject,visH=subject;
- if(l.it.kind!=='photo'){let ratio=FSET.composedSize==='original'?Math.max(.6,Math.min(2,(l.r.contentWidth||.5)*2)):1;visW=subject*ratio;visH=visW/(l.r.ar||1)}else if(FSET.photoSize==='original'){visW=subject*Math.max(.6,Math.min(2,(l.r.contentWidth||.5)*2));visH=visW}
+function geom(l,y){let {base,hz,fs}=F,sc=(.6+.4*Math.max(0,Math.min(1,(y-hz)/Math.max(1,l.y0-hz))))*(l.row==='back'?.85:1)*(l.fitScale||1),subject=base*sc*.65,visW=subject,visH=subject;
+ if(l.it.kind!=='photo'){let ratio=FSET.composedSize===FLOAT_SIZE.originalMode?Math.max(FLOAT_SIZE.originalMin,Math.min(FLOAT_SIZE.originalMax,(l.r.contentWidth||.5)*2)):1;visW=subject*ratio;visH=visW/(l.r.ar||1)}else if(FSET.photoSize===FLOAT_SIZE.originalMode){visW=subject*Math.max(FLOAT_SIZE.originalMin,Math.min(FLOAT_SIZE.originalMax,(l.r.contentWidth||.5)*2));visH=visW}
  let photo=l.it.kind==='photo',w=photo?visW/PHOTO_DISC_RATIO:visW,h=photo?w:visH,rh=visH*.35,f=Math.max(fs,Math.round(15*sc+1)),capW=Math.max(1,Math.min(260,visW*1.8)),capH=f*1.3+(l.it.wish?f*1.25:0),bw=Math.max(visW,Math.min(capW,l.capW*f/l.f0)),x=l.x,discBottom=y+(photo?.12*visH:0),bottom=Math.max(discBottom,y+rh),labelY=bottom+9,top=photo?discBottom-visH:y-visH;
  return {sc,w,h,visW,visH,rh,f,capW,capH,x,y,discBottom,labelY,bodyBox:[x-visW/2,top,x+visW/2,Math.max(discBottom,y+rh)],box:[x-bw/2-6,top-4,x+bw/2+6,labelY+capH+4],labelBox:[x-bw/2,labelY,x+bw/2,labelY+capH]}}
 const hit=(a,b)=>a[0]<b[2]&&b[0]<a[2]&&a[1]<b[3]&&b[1]<a[3];
-function packLantern(l,live,progress=null){let band=sceneBand(),mid=band.y+band.h/2;
- for(let row of ['front','back']){let lo=row==='front'?mid:band.y,hi=(row==='front'?band.y+band.h:mid)-(l.it.kind==='photo'?F.base*.65*.12:0);
+function lanternOffset(id){let hash=2166136261;for(let c of String(id)){hash^=c.codePointAt(0);hash=Math.imul(hash,16777619)}return ((hash>>>0)/4294967295*2-1)*.06}
+function packLantern(l,live,progress=null){for(let fit of [1,.85,.72,.6]){l.fitScale=fit;let pos=packLanternAt(l,live,progress);if(pos){if(fit===1)delete l.fitScale;return pos}}delete l.fitScale;return null}
+function packLanternAt(l,live,progress=null){let band=sceneBand(),mid=band.y+band.h/2;
+ // Prefer the near (front) half, then the far (back) half, then a single full-band front row
+ // when label reservation leaves no room in either half (short calm bands on desktop).
+ let attempts=[['front',mid,band.y+band.h],['back',band.y,mid],['front',band.y,band.y+band.h]];
+ for(let [row,lo,hi0] of attempts){let hi=hi0-(l.it.kind==='photo'?F.base*.65*.12*(l.fitScale||1):0);
   if(row==='back'&&F.calmBandPx){let frontHi=band.y+band.h,frontProbe={...l,row:'front',y0:frontHi,yEnd:mid,y:frontHi},typical=geom(frontProbe,frontHi).visH;if(band.h<1.3*typical){let frontTop=mid-geom(frontProbe,mid).visH;for(let other of live.filter(o=>o.row==='front')){let g=geom(other,other.yEnd);frontTop=Math.min(frontTop,g.bodyBox[1])}hi=Math.min(hi,frontTop-8);let backProbe={...l,row,y0:hi,yEnd:lo,y:hi},backH=geom(backProbe,hi).visH;if(hi-backH<band.y-.1*backH)continue}}
-  let p=progress===null?.05+Math.random()*.4:progress,y=hi-(hi-lo)*p,probe={...l,row,y0:hi,yEnd:lo,y},g=geom(probe,y),left=band.x+g.visW/2,right=band.x+band.w-g.visW/2;if(right<left||hi<=lo)continue;
+  // Reserve the reflection and caption above the shore, including at spawn.
+  for(let i=0;i<3;i++){let edge=geom({...l,row,y0:hi,yEnd:lo,y:hi},hi);hi-=Math.max(0,edge.labelY+edge.capH-(band.y+band.h))}
+  let p=progress===null?.05+Math.random()*.4:progress,y=Math.max(lo,Math.min(hi,hi-(hi-lo)*p+lanternOffset(l.it.id)*band.h)),probe={...l,row,y0:hi,yEnd:lo,y},g=geom(probe,y),left=band.x+g.visW/2,right=band.x+band.w-g.visW/2;if(right<left||hi<=lo)continue;
   let rowLive=live.filter(other=>other.row===row),candidates=[left,right,(left+right)/2];for(let other of rowLive){let distance=1.1*Math.max(g.visW,geom(other,other.y).visW);candidates.push(other.x-distance,other.x+distance)}shuffle(candidates);
   for(let x of candidates)if(x>=left&&x<=right&&!rowLive.some(other=>Math.abs(x-other.x)+1e-7<1.1*Math.max(g.visW,geom(other,other.y).visW)))return {row,x,y,y0:hi,yEnd:lo};
  }return null}

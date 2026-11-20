@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Repeating warp and weft with diamond, zigzag and stepped jok hooks. -->
+  <g fill="none" stroke="#ffe0a0" stroke-linecap="square">
+    <path d="M0 8h64M0 24h64M0 40h64M0 56h64M8 0v64M24 0v64M40 0v64M56 0v64" opacity=".18" stroke-width=".6"/>
+    <path d="M0 16 16 0 32 16 16 32zM32 48 48 32 64 48 48 64zM-16 48 0 32 16 48 0 64zM32 -16 48 0 64 -16" stroke-width="1.4"/>
+    <path d="M0 16h4v-4h4V8h4V4h4m0 28v-4h4v-4h4v-4h4v-4h4M32 48h4v-4h4v-4h4v-4h4m0 28v-4h4v-4h4v-4h4v-4h4M-16 48h4v-4h4v-4h4v-4h4m0 28v-4h4v-4h4v-4h4v-4h4" stroke-width="1"/>
+    <path d="M0 32l8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8M0 0l8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8M0 64l8-8 8 8 8-8 8 8 8-8 8 8 8-8 8 8" stroke-width="1.2"/>
+    <path d="M16 10l6 6-6 6-6-6zM48 42l6 6-6 6-6-6zM-2 48h4M48-2v4" stroke-width="1"/>
+  </g>
+</svg>
