@@ -3847,6 +3847,266 @@
       },
       "w": 200,
       "h": 200
+    },
+    {
+      "id": "candle-lotus",
+      "category": "traditional",
+      "name": {
+        "zh": "莲花杯蜡烛",
+        "en": "Lotus-cup candle",
+        "th": "เทียนในกลีบบัว"
+      },
+      "keywords": {
+        "zh": "莲花杯蜡烛",
+        "en": "Lotus-cup candle",
+        "th": "เทียนในกลีบบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/candle-lotus-v15.svg",
+          "colour": "#f3e3b6",
+          "unlitFile": "traditional/candle-lotus-v15-unlit.svg"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "candle-taper",
+      "category": "traditional",
+      "name": {
+        "zh": "长蜡烛",
+        "en": "Tall taper candle",
+        "th": "เทียนเรียวยาว"
+      },
+      "keywords": {
+        "zh": "长蜡烛",
+        "en": "Tall taper candle",
+        "th": "เทียนเรียวยาว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/candle-taper-v15.svg",
+          "colour": "#f3e3b6",
+          "unlitFile": "traditional/candle-taper-v15-unlit.svg"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "candle-trio",
+      "category": "traditional",
+      "name": {
+        "zh": "三连茶蜡",
+        "en": "Tea-light trio",
+        "th": "เทียนทีไลท์สามดวง"
+      },
+      "keywords": {
+        "zh": "三连茶蜡",
+        "en": "Tea-light trio",
+        "th": "เทียนทีไลท์สามดวง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/candle-trio-v15.svg",
+          "colour": "#f3e3b6",
+          "unlitFile": "traditional/candle-trio-v15-unlit.svg"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "candle-marigold",
+      "category": "traditional",
+      "name": {
+        "zh": "万寿菊蜡烛",
+        "en": "Marigold candle",
+        "th": "เทียนพวงดาวเรือง"
+      },
+      "keywords": {
+        "zh": "万寿菊蜡烛",
+        "en": "Marigold candle",
+        "th": "เทียนพวงดาวเรือง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/candle-marigold-v15.svg",
+          "colour": "#f3e3b6",
+          "unlitFile": "traditional/candle-marigold-v15-unlit.svg"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "incense-single",
+      "category": "traditional",
+      "name": {
+        "zh": "单支线香",
+        "en": "Single incense stick",
+        "th": "ธูปหนึ่งดอก"
+      },
+      "keywords": {
+        "zh": "单支线香",
+        "en": "Single incense stick",
+        "th": "ธูปหนึ่งดอก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/incense-single-v15.svg",
+          "colour": "#b5362c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "incense-bundle",
+      "category": "traditional",
+      "name": {
+        "zh": "三支线香",
+        "en": "Incense bundle",
+        "th": "ธูปสามดอก"
+      },
+      "keywords": {
+        "zh": "三支线香",
+        "en": "Incense bundle",
+        "th": "ธูปสามดอก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/incense-bundle-v15.svg",
+          "colour": "#b5362c"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "incense-cone",
+      "category": "traditional",
+      "name": {
+        "zh": "塔香",
+        "en": "Incense cone",
+        "th": "ธูปกรวย"
+      },
+      "keywords": {
+        "zh": "塔香",
+        "en": "Incense cone",
+        "th": "ธูปกรวย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/incense-cone-v15.svg",
+          "colour": "#8a5a3a"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "incense-lotus",
+      "category": "traditional",
+      "name": {
+        "zh": "莲花香座线香",
+        "en": "Incense in lotus holder",
+        "th": "ธูปในกลีบบัว"
+      },
+      "keywords": {
+        "zh": "莲花香座线香",
+        "en": "Incense in lotus holder",
+        "th": "ธูปในกลีบบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/incense-lotus-v15.svg",
+          "colour": "#e48fb2"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
     }
   ]
 }

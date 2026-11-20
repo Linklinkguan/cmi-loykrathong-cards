@@ -5,9 +5,19 @@ const $=s=>document.querySelector(s);
 const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e};
 const lang=()=>{try{return localStorage.cmiLkLang||'zh'}catch(e){return 'zh'}};
 const S={
-zh:{upload:'上传我的水灯',list:'水灯列表',float:'放水灯',closed:'上传已截止',title:'水灯河',sub:'现场实拍和网站合成的水灯，都漂在这里。',all:'全部',photo:'实拍',composed:'合成',empty:'还没有水灯，来做第一盏吧！',more:'加载中…',end:'已经到底啦',formTitle:'上传我的水灯',formTitleC:'把这盏水灯提交到水灯河',take:'📷 拍一张水灯',pick:'从相册选择',retake:'重新选择',name:'名字',namePh:'只写昵称就好',intro:'介绍',introPh:'介绍一下你的水灯（可选）',wish:'祝福',wishPh:'写一句祝福（可选）',notice:'提交后会公开展示；为防滥用，提交时会记录设备和网络信息，仅管理员可见。请不要填写电话、微信等联系方式。',submit:'提交到水灯河',sending:'提交中…',cancel:'取消',needImg:'请先拍一张或选一张水灯照片',needName:'请填写名字（昵称即可）',tooLong:'字数超过了',done:'提交成功，你的水灯已经漂进水灯河！',pending:'提交成功，审核后会出现在水灯河。',badImg:'这张图片读不出来，请换一张（JPG/PNG）',e413:'图片太大了，请换一张或重新拍',e415:'只支持 JPG、PNG、WebP 图片',e429:'提交太频繁了，请 {s} 秒后再试',e403:'上传已截止，谢谢你的参与',enet:'网络不太稳，正在重试…',efail:'提交失败，请检查网络后再试',close:'关闭',by:'',introL:'介绍',wishL:'祝福',floatEmpty:'水面还很安静，等第一盏水灯漂过来…',exit:'退出',mine:'我的',count:'共 {n} 盏',submitBuilder:'提交到水灯河',emptyBuilder:'先在画布上做一盏水灯，再提交吧'},
-en:{upload:'Upload my krathong',list:'Krathong river',float:'Float them all',closed:'Uploads closed',title:'Krathong river',sub:'Photos from the day and krathongs made on this site, all floating together.',all:'All',photo:'Photos',composed:'Made here',empty:'No krathongs yet. Be the first!',more:'Loading…',end:'That’s all for now',formTitle:'Upload my krathong',formTitleC:'Send this krathong to the river',take:'📷 Take a photo',pick:'Choose from album',retake:'Choose again',name:'Name',namePh:'A nickname is enough',intro:'About it',introPh:'Tell us about your krathong (optional)',wish:'Wish',wishPh:'A wish or blessing (optional)',notice:'Your krathong will be shown publicly. To prevent abuse, device and network information is recorded with each submission and is visible only to the organisers. Please don’t include phone numbers or messaging IDs.',submit:'Send to the river',sending:'Sending…',cancel:'Cancel',needImg:'Please take or choose a photo first',needName:'Please enter a name (a nickname is fine)',tooLong:'Too long',done:'Done! Your krathong is floating on the river.',pending:'Sent! It will appear after review.',badImg:'This image can’t be read. Please try another (JPG/PNG).',e413:'The image is too large. Please try another.',e415:'Only JPG, PNG or WebP images are supported',e429:'Too many submissions. Please try again in {s} s.',e403:'Uploads are closed. Thank you for joining!',enet:'Weak connection, retrying…',efail:'Could not send. Please check your connection and try again.',close:'Close',introL:'About',wishL:'Wish',floatEmpty:'The water is still quiet. Waiting for the first krathong…',exit:'Exit',mine:'Mine',count:'{n} krathongs',submitBuilder:'Send to the river',emptyBuilder:'Make a krathong on the canvas first'},
-th:{upload:'อัปโหลดกระทงของฉัน',list:'สายน้ำกระทง',float:'ลอยกระทง',closed:'ปิดรับอัปโหลดแล้ว',title:'สายน้ำกระทง',sub:'กระทงจากรูปถ่ายในงานและกระทงที่ทำบนเว็บไซต์ ลอยอยู่ด้วยกันที่นี่',all:'ทั้งหมด',photo:'รูปถ่าย',composed:'ทำบนเว็บ',empty:'ยังไม่มีกระทง มาเป็นคนแรกกันเถอะ!',more:'กำลังโหลด…',end:'หมดแล้ว',formTitle:'อัปโหลดกระทงของฉัน',formTitleC:'ส่งกระทงนี้ลงสายน้ำ',take:'📷 ถ่ายรูปกระทง',pick:'เลือกจากอัลบั้ม',retake:'เลือกใหม่',name:'ชื่อ',namePh:'ใช้ชื่อเล่นก็พอ',intro:'แนะนำ',introPh:'เล่าเรื่องกระทงของคุณ (ไม่บังคับ)',wish:'คำอธิษฐาน',wishPh:'คำอวยพร (ไม่บังคับ)',notice:'กระทงของคุณจะแสดงต่อสาธารณะ เพื่อป้องกันการใช้งานในทางที่ผิด ระบบจะบันทึกข้อมูลอุปกรณ์และเครือข่าย ซึ่งผู้ดูแลเท่านั้นที่เห็น กรุณาอย่าใส่เบอร์โทรหรือไอดีแชท',submit:'ส่งลงสายน้ำ',sending:'กำลังส่ง…',cancel:'ยกเลิก',needImg:'กรุณาถ่ายหรือเลือกรูปก่อน',needName:'กรุณาใส่ชื่อ (ชื่อเล่นก็ได้)',tooLong:'ยาวเกินไป',done:'สำเร็จ! กระทงของคุณลอยอยู่ในสายน้ำแล้ว',pending:'ส่งแล้ว จะแสดงหลังตรวจสอบ',badImg:'อ่านรูปนี้ไม่ได้ ลองรูปอื่น (JPG/PNG)',e413:'รูปใหญ่เกินไป ลองรูปอื่น',e415:'รองรับเฉพาะ JPG, PNG, WebP',e429:'ส่งถี่เกินไป ลองใหม่ใน {s} วินาที',e403:'ปิดรับอัปโหลดแล้ว ขอบคุณที่ร่วมงาน',enet:'สัญญาณไม่ดี กำลังลองใหม่…',efail:'ส่งไม่สำเร็จ กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองใหม่',close:'ปิด',introL:'แนะนำ',wishL:'คำอธิษฐาน',floatEmpty:'สายน้ำยังเงียบอยู่ รอกระทงใบแรก…',exit:'ออก',mine:'ของฉัน',count:'{n} กระทง',submitBuilder:'ส่งลงสายน้ำ',emptyBuilder:'ทำกระทงบนผืนผ้าใบก่อน'}};
+zh:{home:'水灯',homeSub:'放一盏水灯，许一个心愿。现场实拍的、在线创作的，都会漂进这条河。',floatD:'全屏观看大家的水灯缓缓漂远',uploadD:'拍下你在现场做的水灯',make:'在线制作水灯',makeD:'用兰纳材料做一盏，再送进水灯河',everyone:'大家的水灯',back:'水灯',upload:'上传水灯',list:'水灯列表',float:'放水灯',closed:'上传已截止',title:'水灯河',sub:'现场实拍和在线创作的水灯，都漂在这里。',all:'全部',photo:'实拍',composed:'在线创作',empty:'还没有水灯，来做第一盏吧！',more:'加载中…',end:'已经到底啦',formTitle:'上传我的水灯',formTitleC:'把这盏水灯提交到水灯河',take:'拍照',pick:'从相册选择',retake:'重新选择',name:'名字',namePh:'只写昵称就好',intro:'介绍',introPh:'介绍一下你的水灯（可选）',wish:'祝福',wishPh:'写一句祝福（可选）',notice:'提交后会公开展示；为防滥用，提交时会记录设备和网络信息，仅管理员可见。请不要填写电话、微信等联系方式。',submit:'提交到水灯河',sending:'提交中…',cancel:'取消',needImg:'请先拍一张或选一张水灯照片',needName:'请填写名字（昵称即可）',tooLong:'字数超过了',done:'提交成功，你的水灯已经漂进水灯河！',pending:'提交成功，审核后会出现在水灯河。',badImg:'这张图片读不出来，请换一张（JPG/PNG）',e413:'图片太大了，请换一张或重新拍',e415:'只支持 JPG、PNG、WebP 图片',e429:'提交太频繁了，请 {s} 秒后再试',e403:'上传已截止，谢谢你的参与',enet:'网络不太稳，正在重试…',efail:'提交失败，请检查网络后再试',close:'关闭',by:'',introL:'介绍',wishL:'祝福',floatEmpty:'水面还很安静，等第一盏水灯漂过来…',exit:'退出',mine:'我的',count:'共 {n} 盏',submitBuilder:'提交到水灯河',emptyBuilder:'先在画布上做一盏水灯，再提交吧'},
+en:{home:'Krathong',homeSub:'Float a krathong, make a wish. Photos from the day and krathongs made online all drift down this river.',floatD:'Watch everyone’s krathongs drift away, full screen',uploadD:'Share a photo of the krathong you made',make:'Make one online',makeD:'Build one from Lanna materials, then send it to the river',everyone:'Everyone’s krathongs',back:'Krathong',upload:'Upload a krathong',list:'Krathong river',float:'Float them all',closed:'Uploads closed',title:'Krathong river',sub:'Photos from the day and krathongs made on this site, all floating together.',all:'All',photo:'Photos',composed:'Made online',empty:'No krathongs yet. Be the first!',more:'Loading…',end:'That’s all for now',formTitle:'Upload my krathong',formTitleC:'Send this krathong to the river',take:'Take a photo',pick:'Choose from album',retake:'Choose again',name:'Name',namePh:'A nickname is enough',intro:'About it',introPh:'Tell us about your krathong (optional)',wish:'Wish',wishPh:'A wish or blessing (optional)',notice:'Your krathong will be shown publicly. To prevent abuse, device and network information is recorded with each submission and is visible only to the organisers. Please don’t include phone numbers or messaging IDs.',submit:'Send to the river',sending:'Sending…',cancel:'Cancel',needImg:'Please take or choose a photo first',needName:'Please enter a name (a nickname is fine)',tooLong:'Too long',done:'Done! Your krathong is floating on the river.',pending:'Sent! It will appear after review.',badImg:'This image can’t be read. Please try another (JPG/PNG).',e413:'The image is too large. Please try another.',e415:'Only JPG, PNG or WebP images are supported',e429:'Too many submissions. Please try again in {s} s.',e403:'Uploads are closed. Thank you for joining!',enet:'Weak connection, retrying…',efail:'Could not send. Please check your connection and try again.',close:'Close',introL:'About',wishL:'Wish',floatEmpty:'The water is still quiet. Waiting for the first krathong…',exit:'Exit',mine:'Mine',count:'{n} krathongs',submitBuilder:'Send to the river',emptyBuilder:'Make a krathong on the canvas first'},
+th:{home:'กระทง',homeSub:'ลอยกระทง อธิษฐานขอพร กระทงจากรูปถ่ายในงานและที่สร้างออนไลน์ ลอยไปด้วยกันในสายน้ำนี้',floatD:'ชมกระทงของทุกคนลอยไปแบบเต็มจอ',uploadD:'แชร์รูปกระทงที่คุณทำในงาน',make:'ทำกระทงออนไลน์',makeD:'ประกอบจากวัสดุล้านนา แล้วส่งลงสายน้ำ',everyone:'กระทงของทุกคน',back:'กระทง',upload:'อัปโหลดกระทง',list:'สายน้ำกระทง',float:'ลอยกระทง',closed:'ปิดรับอัปโหลดแล้ว',title:'สายน้ำกระทง',sub:'กระทงจากรูปถ่ายในงานและกระทงที่สร้างออนไลน์ ลอยอยู่ด้วยกันที่นี่',all:'ทั้งหมด',photo:'รูปถ่าย',composed:'สร้างออนไลน์',empty:'ยังไม่มีกระทง มาเป็นคนแรกกันเถอะ!',more:'กำลังโหลด…',end:'หมดแล้ว',formTitle:'อัปโหลดกระทงของฉัน',formTitleC:'ส่งกระทงนี้ลงสายน้ำ',take:'ถ่ายรูป',pick:'เลือกจากอัลบั้ม',retake:'เลือกใหม่',name:'ชื่อ',namePh:'ใช้ชื่อเล่นก็พอ',intro:'แนะนำ',introPh:'เล่าเรื่องกระทงของคุณ (ไม่บังคับ)',wish:'คำอธิษฐาน',wishPh:'คำอวยพร (ไม่บังคับ)',notice:'กระทงของคุณจะแสดงต่อสาธารณะ เพื่อป้องกันการใช้งานในทางที่ผิด ระบบจะบันทึกข้อมูลอุปกรณ์และเครือข่าย ซึ่งผู้ดูแลเท่านั้นที่เห็น กรุณาอย่าใส่เบอร์โทรหรือไอดีแชท',submit:'ส่งลงสายน้ำ',sending:'กำลังส่ง…',cancel:'ยกเลิก',needImg:'กรุณาถ่ายหรือเลือกรูปก่อน',needName:'กรุณาใส่ชื่อ (ชื่อเล่นก็ได้)',tooLong:'ยาวเกินไป',done:'สำเร็จ! กระทงของคุณลอยอยู่ในสายน้ำแล้ว',pending:'ส่งแล้ว จะแสดงหลังตรวจสอบ',badImg:'อ่านรูปนี้ไม่ได้ ลองรูปอื่น (JPG/PNG)',e413:'รูปใหญ่เกินไป ลองรูปอื่น',e415:'รองรับเฉพาะ JPG, PNG, WebP',e429:'ส่งถี่เกินไป ลองใหม่ใน {s} วินาที',e403:'ปิดรับอัปโหลดแล้ว ขอบคุณที่ร่วมงาน',enet:'สัญญาณไม่ดี กำลังลองใหม่…',efail:'ส่งไม่สำเร็จ กรุณาตรวจสอบอินเทอร์เน็ตแล้วลองใหม่',close:'ปิด',introL:'แนะนำ',wishL:'คำอธิษฐาน',floatEmpty:'สายน้ำยังเงียบอยู่ รอกระทงใบแรก…',exit:'ออก',mine:'ของฉัน',count:'{n} กระทง',submitBuilder:'ส่งลงสายน้ำ',emptyBuilder:'ทำกระทงบนผืนผ้าใบก่อน'}};
+const SV='<svg class="ri" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">';
+const ICON={upload:SV+'<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>',
+ list:SV+'<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/></svg>',
+ lotus:SV+'<path d="M12 5c-2 2.2-2.8 4.6-2.8 7S10 16.4 12 18c2-1.6 2.8-3.6 2.8-6S14 7.2 12 5z"/><path d="M9.3 9.2C7.4 8.4 5.4 8.3 3.6 8.8c.2 3.8 2.8 7.6 8.4 9.2"/><path d="M14.7 9.2c1.9-.8 3.9-.9 5.7-.4-.2 3.8-2.8 7.6-8.4 9.2"/><path d="M3 20.5c3 0 3-1.5 6-1.5s3 1.5 6 1.5 3-1.5 6-1.5"/></svg>',
+ camera:SV+'<path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3.5"/></svg>',
+ image:SV+'<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.1-3.1a2 2 0 0 0-2.8 0L6 21"/></svg>',
+ make:SV+'<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>',
+ redo:SV+'<path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M3 21v-5h5"/></svg>'};
+const ib=(tag,cls,icon,label)=>{let e=el(tag,cls);e.insertAdjacentHTML('afterbegin',ICON[icon]);e.append(el('span','',label));return e};
+window.riverIcon=k=>ICON[k];
 const t=k=>(S[lang()]||S.en)[k]??S.en[k];
 let config={open:true,limits:{name:20,intro:80,wish:60,image_bytes:2097152,thumb_bytes:307200}};
 const cp=s=>[...(s||'')].length;
@@ -17,11 +27,8 @@ const bkk=iso=>{try{return new Intl.DateTimeFormat(lang()==='zh'?'zh-CN':lang(),
 const mine=()=>{try{return JSON.parse(localStorage.cmiLkMine||'[]')}catch(e){return[]}};
 
 /* ---------- entry pills ---------- */
-function renderPills(){let box=$('.event-links');if(!box)return;box.querySelectorAll('.river-pill').forEach(n=>n.remove());
- const mk=(id,label,act)=>{let b=el('button','event-link river-pill'+(id==='up'?' river-pill-main':''),label);b.type='button';b.dataset.river=id;b.onclick=act;return b};
- if(config.open)box.append(mk('up','⇪ '+t('upload'),()=>openForm({kind:'photo'})));else box.append(mk('closed','⇪ '+t('closed'),()=>{location.hash='river'}));
- box.append(mk('list','☷ '+t('list'),()=>{location.hash='river'}),mk('float','🪷 '+t('float'),()=>openFloat()))}
-
+function renderPills(){document.querySelectorAll('.river-pill').forEach(n=>n.remove())}
+function markPills(){}
 /* ---------- image processing ---------- */
 async function decode(file){try{return await createImageBitmap(file,{imageOrientation:'from-image'})}catch(e){}
  return await new Promise((res,rej)=>{let u=URL.createObjectURL(file),im=new Image();im.onload=()=>res(im);im.onerror=rej;im.src=u})}
@@ -33,26 +40,30 @@ window.riverAlphaBlobs=alphaBlobs;
 
 /* ---------- upload form ---------- */
 let formState=null;
-function openForm(opts){if(!config.open){toast(t('e403'));return}closeForm();formState={kind:opts.kind,blobs:opts.blobs||null};
- let ov=el('div','river-modal');ov.setAttribute('role','dialog');ov.setAttribute('aria-modal','true');let card=el('form','river-form');card.noValidate=true;ov.append(card);
+let pendingUpload=null;
+function openForm(opts){if(!config.open){toast(t('e403'));return}pendingUpload=opts||{kind:'photo'};if(location.hash!=='#upload')location.hash='upload';else renderUpload()}
+function renderUpload(){let opts=pendingUpload&&(pendingUpload.kind==='photo'||pendingUpload.blobs)?pendingUpload:{kind:'photo'};let sec=$('#upload');if(!sec)return;sec.textContent='';formState={kind:opts.kind,blobs:opts.blobs||null};
+ if(!config.open){sec.append(el('p','river-closed',t('e403')));return}
+ let ov=el('div','upload-wrap');let card=el('form','river-form');card.noValidate=true;ov.append(card);
  card.append(el('h2','',opts.kind==='composed'?t('formTitleC'):t('formTitle')));
  let pv=el('div','river-preview');let img=el('img');img.alt='';pv.append(img);
  let pick=el('div','river-pick');
- if(opts.kind==='photo'){let cam=el('label','river-btn river-btn-gold');let ci=el('input');ci.type='file';ci.accept='image/*';ci.setAttribute('capture','environment');cam.append(el('span','',t('take')),ci);
-  let alb=el('label','river-btn');let ai=el('input');ai.type='file';ai.accept='image/*';alb.append(el('span','',t('pick')),ai);pick.append(cam,alb);
-  const onfile=async e=>{let f=e.target.files&&e.target.files[0];if(!f)return;msg('');pv.classList.add('busy');try{formState.blobs=await photoBlobs(f);img.src=formState.blobs.preview;pv.classList.add('has');cam.firstChild.textContent=t('retake')}catch(err){msg(t('badImg'),true)}pv.classList.remove('busy');e.target.value=''};
+ if(opts.kind==='photo'){let cam=ib('label','river-btn river-btn-gold','camera',t('take'));let ci=el('input');ci.type='file';ci.accept='image/*';ci.setAttribute('capture','environment');cam.append(ci);
+  let alb=ib('label','river-btn','image',t('pick'));let ai=el('input');ai.type='file';ai.accept='image/*';alb.append(ai);
+  let again=ib('button','river-btn river-again','redo',t('retake'));again.type='button';again.hidden=true;again.onclick=()=>{again.hidden=true;cam.hidden=alb.hidden=false};pick.append(cam,alb,again);
+  const onfile=async e=>{let f=e.target.files&&e.target.files[0];if(!f)return;msg('');pv.classList.add('busy');try{formState.blobs=await photoBlobs(f);img.src=formState.blobs.preview;pv.classList.add('has');cam.hidden=alb.hidden=true;again.hidden=false}catch(err){msg(t('badImg'),true)}pv.classList.remove('busy');e.target.value=''};
   ci.onchange=onfile;ai.onchange=onfile}
  else{img.src=opts.blobs.preview;pv.classList.add('has','alpha')}
  card.append(pv,pick);
  const field=(key,max,multi)=>{let wrap=el('label','river-field');let head=el('span','river-label');head.append(el('span','',t(key)+(key==='name'?' *':'')));let cnt=el('span','river-count','0/'+max);head.append(cnt);let inp=el(multi?'textarea':'input');if(!multi)inp.type='text';inp.name=key;inp.placeholder=t(key+'Ph');if(multi)inp.rows=2;inp.autocomplete='off';
   inp.oninput=()=>{let n=cp(inp.value);cnt.textContent=n+'/'+max;cnt.classList.toggle('over',n>max)};wrap.append(head,inp);card.append(wrap);return inp};
  let L=config.limits,fn=field('name',L.name),fi=field('intro',L.intro,true),fw=field('wish',L.wish,true);
- try{let last=localStorage.cmiLkNick;if(last){fn.value=last;fn.oninput()}}catch(e){}
+ try{let last=localStorage.cmiLkNick;if(last){fn.value=last;fn.oninput()}}catch(e){}if(opts.info){[[fn,'name'],[fi,'intro'],[fw,'wish']].forEach(([inp,k])=>{if(opts.info[k]){inp.value=opts.info[k];inp.oninput()}})}
  card.append(el('p','river-notice',t('notice')));
  let bar=el('div','river-progress');let fill=el('i');bar.append(fill);bar.hidden=true;card.append(bar);
  let m=el('p','river-msg');m.setAttribute('aria-live','polite');card.append(m);
  function msg(s,bad){m.textContent=s;m.classList.toggle('bad',!!bad)}
- let acts=el('div','river-actions');let cancel=el('button','river-btn',t('cancel'));cancel.type='button';cancel.onclick=closeForm;let send=el('button','river-btn river-btn-gold',t('submit'));send.type='submit';acts.append(cancel,send);card.append(acts);
+ let acts=el('div','river-actions');let cancel=el('button','river-btn',t('cancel'));cancel.type='button';cancel.onclick=goBack;let send=el('button','river-btn river-btn-gold',t('submit'));send.type='submit';acts.append(cancel,send);card.append(acts);
  card.onsubmit=async e=>{e.preventDefault();if(send.disabled)return;
   if(!formState.blobs)return msg(t('needImg'),true);let name=fn.value.trim(),intro=fi.value.trim(),wish=fw.value.trim();
   if(!name)return msg(t('needName'),true);if(cp(name)>L.name||cp(intro)>L.intro||cp(wish)>L.wish)return msg(t('tooLong'),true);
@@ -61,12 +72,12 @@ function openForm(opts){if(!config.open){toast(t('e403'));return}closeForm();for
   let ext=formState.kind==='photo'?'jpg':(formState.blobs.type==='image/webp'?'webp':'png');fd.append('image',formState.blobs.main,'lantern.'+ext);if(formState.blobs.thumb&&formState.blobs.thumb.size<=L.thumb_bytes)fd.append('thumb',formState.blobs.thumb,'thumb.'+ext);
   try{let res=await upload(fd,p=>fill.style.width=Math.max(3,p*100)+'%',()=>msg(t('enet')));
    if(res.ok){try{localStorage.cmiLkNick=name;let ids=mine();ids.unshift(res.id);localStorage.cmiLkMine=JSON.stringify(ids.slice(0,30))}catch(e){}
-    fill.style.width='100%';closeForm();toast(res.pending?t('pending'):t('done'));highlight=res.id;if(location.hash==='#river')loadList(true);else location.hash='river'}
+    fill.style.width='100%';pendingUpload=null;toast(res.pending?t('pending'):t('done'));highlight=res.id;goHome()}
    else{msg(errText(res),true)}}
   catch(err){msg(t('efail'),true)}
   send.disabled=false;send.textContent=t('submit')};
- ov.addEventListener('click',e=>{if(e.target===ov)closeForm()});document.body.append(ov);document.body.classList.add('river-lock');setTimeout(()=>fn.focus({preventScroll:true}),50)}
-function closeForm(){let o=$('.river-modal');if(o)o.remove();document.body.classList.remove('river-lock')}
+ sec.append(ov);scrollTo(0,0)}
+function closeForm(){}
 function errText(res){let st=res._status;if(res.messages&&res.messages[lang()])return res.messages[lang()];if(st===413)return t('e413');if(st===415)return t('e415');if(st===429)return t('e429').replace('{s}',res._retry||60);if(st===403)return t('e403');return res.message||t('efail')}
 function upload(fd,onp,onretry){return new Promise((resolve,reject)=>{let tries=0;const go=()=>{let x=new XMLHttpRequest();x.open('POST',API+'/api/lanterns');x.timeout=60000;x.upload.onprogress=e=>{if(e.lengthComputable)onp(e.loaded/e.total*.95)};
   x.onload=()=>{let j={};try{j=JSON.parse(x.responseText)}catch(e){}j._status=x.status;j._retry=x.getResponseHeader('Retry-After');if(x.status>=500&&tries<2){tries++;onretry();setTimeout(go,1500*tries);return}if(!('ok' in j))j.ok=x.status<300;resolve(j)};
@@ -78,13 +89,16 @@ window.riverOpenUpload=openForm;window.riverToast=toast;
 let cursor=null,loading=false,done=false,filter='all',highlight=null,total=0,observer=null;
 function section(){return $('#river')}
 function renderShell(){let s=section();if(!s)return;s.textContent='';
- let intro=el('div','section-intro');intro.append(el('span','','✧'),el('h2','',t('title')),el('p','',t('sub')));
- let tools=el('div','river-tools');
- if(config.open){let up=el('button','river-btn river-btn-gold','⇪ '+t('upload'));up.type='button';up.onclick=()=>openForm({kind:'photo'});tools.append(up)}
- let fl=el('button','river-btn','🪷 '+t('float'));fl.type='button';fl.onclick=openFloat;tools.append(fl);
+ let intro=el('div','section-intro');intro.append(el('span','','✧'),el('h2','',t('home')),el('p','',t('homeSub')));
+ let tools=el('div','river-entries');
+ const entry=(id,icon,title,desc,act)=>{let b=el('button','river-entry');b.type='button';b.dataset.entry=id;let ic=el('span','river-entry-icon');ic.insertAdjacentHTML('afterbegin',ICON[icon]);let tx=el('span','river-entry-text');tx.append(el('strong','',title),el('small','',desc));b.append(ic,tx);b.onclick=act;return b};
+ tools.append(entry('float','lotus',t('float'),t('floatD'),openFloat));
+ tools.append(config.open?entry('upload','upload',t('upload'),t('uploadD'),()=>openForm({kind:'photo'})):entry('upload','upload',t('closed'),t('e403'),()=>toast(t('e403'))));
+ tools.append(entry('make','make',t('make'),t('makeD'),()=>{location.hash='builder'}));
+ let lh=el('h3','river-list-title',t('everyone'));
  let chips=el('div','river-chips');['all','photo','composed'].forEach(k=>{let c=el('button','river-chip'+(k===filter?' on':''),t(k));c.type='button';c.onclick=()=>{filter=k;chips.querySelectorAll('.river-chip').forEach(x=>x.classList.toggle('on',x===c));applyFilter()};chips.append(c)});
  let cnt=el('p','river-total');let grid=el('div','river-grid');let foot=el('p','river-foot',t('more'));
- s.append(intro,tools,chips,cnt,grid,foot);
+ s.append(intro,tools,lh,chips,cnt,grid,foot);
  if(observer)observer.disconnect();observer=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting))loadMore()},{rootMargin:'600px'});observer.observe(foot)}
 function applyFilter(){section().querySelectorAll('.river-card').forEach(c=>c.hidden=filter!=='all'&&c.dataset.kind!==filter);updateFoot()}
 function updateFoot(){let s=section(),foot=s&&s.querySelector('.river-foot');if(!foot)return;let vis=[...s.querySelectorAll('.river-card')].filter(c=>!c.hidden).length;foot.textContent=loading?t('more'):done?(vis?t('end'):t('empty')):t('more');let tot=s.querySelector('.river-total');if(tot)tot.textContent=total?t('count').replace('{n}',total):''}
@@ -100,59 +114,131 @@ function openDetail(it){let ov=el('div','river-modal river-detail');let box=el('
  let meta=el('div','river-meta');meta.append(el('span','river-kind',t(it.kind)),el('h3','',it.name));if(it.intro){meta.append(el('h4','',t('introL')),el('p','',it.intro))}if(it.wish){meta.append(el('h4','',t('wishL')),el('p','river-wish-big',it.wish))}meta.append(el('small','',bkk(it.created_at)));
  let x=el('button','river-x','×');x.type='button';x.setAttribute('aria-label',t('close'));x.onclick=()=>ov.remove();box.append(x,fig,meta);ov.append(box);ov.onclick=e=>{if(e.target===ov)ov.remove()};document.body.append(ov)}
 
-/* ---------- full-screen float ---------- */
+/* ---------- full-screen float (v14: uniform size, collision boxes, reflection under the lantern) ---------- */
+/* v14: float settings (persisted), presets, live polling, scene registry */
+const FS={zh:{settings:'设置',scene:'换背景',presets:'预设',repeat:'同一盏再出现间隔',rate:'新水灯出现频率',speed:'漂流速度',spread:'左右散开宽度',vdist:'上下分布',max:'同屏最多',size:'水灯大小',reset:'恢复默认',live:'实时',sec:'秒',every:'每 {s} 秒',n:'{n} 盏',fresh:'新',p:{calm:'静谧',lively:'热闹',galaxy:'星河',def:'默认'}},
+ en:{settings:'Settings',scene:'Scene',presets:'Presets',repeat:'Same krathong returns after',rate:'New krathong every',speed:'Drift speed',spread:'Spread (width)',vdist:'Vertical spread',max:'Max on screen',size:'Krathong size',reset:'Reset',live:'Live',sec:'s',every:'{s} s',n:'{n}',fresh:'New',p:{calm:'Calm',lively:'Lively',galaxy:'Galaxy',def:'Default'}},
+ th:{settings:'ตั้งค่า',scene:'เปลี่ยนฉาก',presets:'ค่าสำเร็จรูป',repeat:'กระทงเดิมกลับมาอีกหลัง',rate:'กระทงใหม่ทุก',speed:'ความเร็วลอย',spread:'ความกว้างการกระจาย',vdist:'การกระจายแนวตั้ง',max:'มากสุดบนจอ',size:'ขนาดกระทง',reset:'ค่าเริ่มต้น',live:'สด',sec:'วิ',every:'ทุก {s} วิ',n:'{n} ใบ',fresh:'ใหม่',p:{calm:'สงบ',lively:'คึกคัก',galaxy:'ทางช้างเผือก',def:'ค่าเริ่มต้น'}}};
+const ft=k=>(FS[lang()]||FS.en)[k];
+const FDEF={repeat:20,rate:2.4,speed:1,spread:.84,vdist:.15,max:10,size:1,scene:'river'};
+const FPRE={calm:{repeat:60,rate:4.5,speed:.7,spread:.7,vdist:.1,max:5,size:1.15,scene:'river'},lively:{repeat:8,rate:1,speed:1.35,spread:1,vdist:.55,max:18,size:.85,scene:'river'},galaxy:{repeat:15,rate:1.5,speed:.55,spread:1,vdist:1,max:20,size:.7,scene:'galaxy'},def:FDEF};
+const FRNG={repeat:[0,180,5],rate:[.5,8,.1],speed:[.3,2.5,.05],spread:[.3,1,.02],vdist:[0,1,.05],max:[1,24,1],size:[.5,1.8,.05]};
+let FSET=(()=>{try{return {...FDEF,...JSON.parse(localStorage.cmiLkFloat||'{}')}}catch(e){return {...FDEF}}})();
+const saveFset=()=>{try{localStorage.cmiLkFloat=JSON.stringify(FSET)}catch(e){}};
+/* Scene registry. A scene is {id,name:{zh,en,th},hz:0..1 horizon,draw(ctx,F,now)} or a layered spec
+   {id,name,hz,layers:[{src,depth,y,h,blend,alpha}],stars:n,shimmer:true} — layered scenes (sky/far/near-shore) get subtle parallax.
+   Drop-in later: put files + assets/scenes/manifest.json {"scenes":[layered specs]} and they register on open. */
+const SCENES=[];const sceneById=id=>SCENES.find(s=>s.id===id)||SCENES[0];
+function registerScene(s){let i=SCENES.findIndex(x=>x.id===s.id);if(i>=0)SCENES[i]=s;else SCENES.push(s)}
+window.riverRegisterScene=registerScene;window.riverScenes=SCENES;
+function skyStars(ctx,F,now,list,top){for(let s of list){let a=s[4]*(.55+.45*Math.sin(now/(700+s[3]*90)+s[3]));ctx.fillStyle=`rgba(255,244,214,${a})`;let x=s[0]*F.W+(F.px||0)*s[2]*2,y=s[1]*top;ctx.fillRect(x,y,s[2],s[2])}}
+function moon(ctx,F,mx,my,mr){let mg=ctx.createRadialGradient(mx,my,mr*.2,mx,my,mr*4);mg.addColorStop(0,'rgba(255,236,180,.35)');mg.addColorStop(1,'rgba(255,236,180,0)');ctx.fillStyle=mg;ctx.fillRect(mx-mr*4,my-mr*4,mr*8,mr*8);ctx.fillStyle='#f6e7bd';ctx.beginPath();ctx.arc(mx,my,mr,0,7);ctx.fill()}
+function water(ctx,F,now,c0,c1,mx){let {W,H,hz}=F;let wg=ctx.createLinearGradient(0,hz,0,H);wg.addColorStop(0,c0);wg.addColorStop(1,c1);ctx.fillStyle=wg;ctx.fillRect(0,hz,W,H-hz);
+ ctx.fillStyle='rgba(246,231,189,.08)';for(let i=0;i<14;i++){let y=hz+(H-hz)*Math.pow(i/14,1.6)+6,w=W*(.06+.02*i);ctx.fillRect(mx-w/2+Math.sin(now/1300+i)*8,y,w,1.5)}
+ ctx.strokeStyle='rgba(232,199,122,.10)';ctx.lineWidth=1;for(let i=1;i<9;i++){let y=hz+(H-hz)*Math.pow(i/9,1.8);ctx.beginPath();for(let x=0;x<=W;x+=24)ctx.lineTo(x,y+Math.sin(x/70+now/1600+i)*2*(i/9));ctx.stroke()}}
+const mkStars=(n,maxY)=>Array.from({length:n},()=>[Math.random(),Math.random()*maxY,Math.random()*1.4+.3,Math.random()*6,.5+Math.random()*.5]);
+const ST1=mkStars(70,1),ST2=mkStars(260,1),ST3=mkStars(140,1);
+registerScene({id:'river',name:{zh:'水灯夜河',en:'Lantern river',th:'สายน้ำยามค่ำ'},hz:.38,draw(ctx,F,now){let {W,H,hz}=F;let g=ctx.createLinearGradient(0,0,0,hz);g.addColorStop(0,'#04122a');g.addColorStop(1,'#123a4e');ctx.fillStyle=g;ctx.fillRect(0,0,W,hz);skyStars(ctx,F,now,ST1,hz*.95);let mx=W*.78;moon(ctx,F,mx,hz*.42,Math.min(W,H)*.05);water(ctx,F,now,'#0e3a48','#021c22',mx)}});
+registerScene({id:'galaxy',name:{zh:'星河',en:'Milky Way',th:'ทางช้างเผือก'},hz:.46,draw(ctx,F,now){let {W,H,hz}=F;let g=ctx.createLinearGradient(0,0,0,hz);g.addColorStop(0,'#020617');g.addColorStop(.7,'#0b1840');g.addColorStop(1,'#1b2f5c');ctx.fillStyle=g;ctx.fillRect(0,0,W,hz);
+ ctx.save();ctx.translate(W*.5,hz*.5);ctx.rotate(-.42);let band=ctx.createLinearGradient(0,-hz*.22,0,hz*.22);band.addColorStop(0,'rgba(150,170,255,0)');band.addColorStop(.5,'rgba(205,190,255,.20)');band.addColorStop(1,'rgba(150,170,255,0)');ctx.fillStyle=band;ctx.fillRect(-W,-hz*.22,W*2,hz*.44);ctx.restore();
+ skyStars(ctx,F,now,ST2,hz);let wg=ctx.createLinearGradient(0,hz,0,H);wg.addColorStop(0,'#16285a');wg.addColorStop(1,'#030a1c');ctx.fillStyle=wg;ctx.fillRect(0,hz,W,H-hz);
+ for(let s of ST3){let a=s[4]*.35*(.5+.5*Math.sin(now/600+s[3]));ctx.fillStyle=`rgba(220,215,255,${a})`;ctx.fillRect(s[0]*W+Math.sin(now/1400+s[3])*3,hz+(H-hz)*Math.pow(s[1],1.4),s[2]*1.6,1)}}});
+registerScene({id:'dusk',name:{zh:'古城黄昏',en:'Old-city dusk',th:'เมืองเก่ายามสนธยา'},hz:.4,draw(ctx,F,now){let {W,H,hz}=F;let g=ctx.createLinearGradient(0,0,0,hz);g.addColorStop(0,'#1a1035');g.addColorStop(.55,'#5b2a52');g.addColorStop(1,'#c46a4a');ctx.fillStyle=g;ctx.fillRect(0,0,W,hz);skyStars(ctx,F,now,ST1.slice(0,40),hz*.45);
+ ctx.fillStyle='#120b22';let px=(F.px||0)*4;ctx.beginPath();ctx.moveTo(0,hz);for(let x=0;x<=W+40;x+=40){let k=Math.sin(x*.013)+Math.sin(x*.031);ctx.lineTo(x+px,hz-14-k*8)}ctx.lineTo(W,hz);ctx.fill();
+ let cx=W*.3+px*1.5,cy=hz;ctx.beginPath();ctx.moveTo(cx-26,cy-10);ctx.lineTo(cx,cy-hz*.32);ctx.lineTo(cx+26,cy-10);ctx.fill();water(ctx,F,now,'#3a2448','#0a0716',W*.5)}});
+const sceneImgs=new Map();const loadSceneImg=src=>{if(!sceneImgs.has(src)){let im=new Image();im.decoding='async';im.src=src;sceneImgs.set(src,im)}return sceneImgs.get(src)};
+function drawLayered(s,ctx,F,now){let {W,H}=F;(s.layers||[]).forEach(L=>{let im=loadSceneImg(L.src);if(!im.complete||!im.naturalWidth)return;let y=(L.y||0)*H,h=(L.h||1)*H,iw=im.naturalWidth,ih=im.naturalHeight,k=Math.max((W*1.06)/iw,h/ih),dw=iw*k,dh=ih*k,dx=(W-dw)/2+(F.px||0)*(L.depth||0)*14+Math.sin(now/9000)*(L.depth||0)*6;
+  ctx.save();if(L.blend)ctx.globalCompositeOperation=L.blend;ctx.globalAlpha=L.alpha??1;ctx.drawImage(im,dx,y+(h-dh)/2,dw,dh);ctx.restore()});
+ if(s.stars)skyStars(ctx,F,now,ST2.slice(0,s.stars),F.hz);if(s.shimmer){ctx.fillStyle='rgba(246,231,189,.07)';for(let i=0;i<12;i++){let y=F.hz+(H-F.hz)*Math.pow(i/12,1.6)+6,w=W*(.05+.02*i);ctx.fillRect(W*(s.shimmerX??.5)-w/2+Math.sin(now/1300+i)*8,y,w,1.5)}}}
+let sceneManifestTried=false;async function loadSceneManifest(){if(sceneManifestTried)return;sceneManifestTried=true;try{let r=await fetch('assets/scenes/manifest.json?v=14',{cache:'no-cache'});if(!r.ok)return;let m=await r.json();(m.scenes||[]).forEach(s=>{if(s&&s.id&&s.layers){s.layers.forEach(L=>{if(!/^(https?:|assets\/)/.test(L.src))L.src='assets/scenes/'+L.src});registerScene({...s,draw(ctx,F,now){drawLayered(s,ctx,F,now)}})}})}catch(e){}}
+function applyFset(){if(!F)return;let sc=sceneById(FSET.scene);F.scene=sc;F.hz=F.H*(sc.hz??.38);F.base=F.base0*FSET.size;F.speed=(F.H-F.hz)*.62/30*FSET.speed}
 let F=null;
-function openFloat(){if(F)return;let ov=el('div','river-float');let cv=el('canvas');let ui=el('div','river-float-ui');let x=el('button','river-btn',t('exit'));x.type='button';x.onclick=closeFloat;ui.append(x);let note=el('p','river-float-note','');ov.append(cv,note,ui);document.body.append(ov);document.body.classList.add('river-lock');
- F={ov,cv,ctx:cv.getContext('2d'),note,items:[],queue:[],live:[],imgs:new Map(),last:0,spawnAt:0,fetchedAt:0,stars:[],raf:0};
+function openFloat(){if(F)return;let ov=el('div','river-float');let cv=el('canvas');let ui=el('div','river-float-ui');let mt=el('button','river-btn music-toggle');mt.type='button';mt.append(el('i','','▶'),el('span','',''));let x=el('button','river-btn',t('exit'));x.type='button';x.onclick=closeFloat;let sb=el('button','river-btn rf-scene');sb.type='button';sb.append(el('i','','◐'),el('span','',''));sb.onclick=cycleScene;let gb=el('button','river-btn rf-gear');gb.type='button';gb.setAttribute('aria-expanded','false');gb.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>';gb.setAttribute('aria-label',ft('settings'));gb.title=ft('settings');let panel=el('div','rf-panel');panel.hidden=true;gb.onclick=()=>{panel.hidden=!panel.hidden;gb.setAttribute('aria-expanded',String(!panel.hidden));if(!panel.hidden)renderPanel()};let live=el('span','rf-live','');ui.append(live,sb,gb,mt,x);let note=el('p','river-float-note','');ov.append(cv,note,ui,panel);document.body.append(ov);document.body.classList.add('river-lock');
+ F={ov,cv,ctx:cv.getContext('2d'),note,panel,sb,liveEl:live,items:[],queue:[],fresh:[],seen:new Set(),shown:new Map(),live:[],imgs:new Map(),spawnAt:0,fetchedAt:0,polledAt:0,stars:[],raf:0,zone:0,lastT:0,px:0};ov.addEventListener('pointermove',e=>{if(F)F.pxT=(e.clientX/(F.W||1)-.5)*2});
  let rq=ov.requestFullscreen||ov.webkitRequestFullscreen;if(rq){try{let p=rq.call(ov);if(p&&p.catch)p.catch(()=>ov.classList.add('pseudo'))}catch(e){ov.classList.add('pseudo')}}else ov.classList.add('pseudo');
  document.addEventListener('fullscreenchange',fsChange);document.addEventListener('webkitfullscreenchange',fsChange);document.addEventListener('keydown',escKey);
  resize();addEventListener('resize',resize);for(let i=0;i<70;i++)F.stars.push([Math.random(),Math.random()*.36,Math.random()*1.4+.3,Math.random()*6]);
- let music=$('#music');if(music&&!(window.builderMuted&&window.builderMuted())){try{music.volume=.5;music.play().catch(()=>{})}catch(e){}}
- refresh();F.raf=requestAnimationFrame(tick)}
+ if(window.cmiAudio&&localStorage.cmiLkMute!=='true')window.cmiAudio.setMusic(true);
+ applyFset();paintScene();refresh();loadSceneManifest();document.addEventListener('visibilitychange',visPoll);if(window.cmiAudio)window.cmiAudio.paint();F.raf=requestAnimationFrame(tick)}
+function visPoll(){if(F&&!document.hidden)poll()}
+function paintScene(){if(!F)return;let s=sceneById(FSET.scene);F.sb.querySelector('span').textContent=s.name[lang()]||s.name.en;F.sb.title=ft('scene');F.liveEl.textContent='● '+ft('live')}
+function cycleScene(){let i=SCENES.indexOf(sceneById(FSET.scene));FSET.scene=SCENES[(i+1)%SCENES.length].id;saveFset();applyFset();paintScene();if(F&&!F.panel.hidden)renderPanel()}
+function renderPanel(){if(!F)return;let P=F.panel;P.textContent='';let h=el('div','rf-head');h.append(el('b','',ft('settings')));let rs=el('button','rf-reset',ft('reset'));rs.type='button';rs.onclick=()=>{FSET={...FDEF,scene:FSET.scene};saveFset();applyFset();renderPanel()};h.append(rs);P.append(h);
+ let pr=el('div','rf-presets');Object.keys(FPRE).forEach(k=>{let b=el('button','rf-preset',ft('p')[k]);b.type='button';let v=FPRE[k],on=Object.keys(FRNG).every(q=>Math.abs(FSET[q]-v[q])<1e-6);b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on));b.onclick=()=>{FSET={...FSET,...v};saveFset();applyFset();paintScene();renderPanel()};pr.append(b)});P.append(pr);
+ const fmt=(k,v)=>k==='repeat'?(v?v+' '+ft('sec'):'0'):k==='rate'?ft('every').replace('{s}',v.toFixed(1)):k==='max'?ft('n').replace('{n}',v):k==='speed'||k==='size'?v.toFixed(2)+'×':Math.round(v*100)+'%';
+ Object.keys(FRNG).forEach(k=>{let [mn,mxv,st]=FRNG[k],row=el('label','rf-row'),top=el('span','rf-l'),val=el('em','',fmt(k,FSET[k]));top.append(el('span','',ft(k)),val);let r=el('input');r.type='range';r.min=mn;r.max=mxv;r.step=st;r.value=FSET[k];r.oninput=()=>{FSET[k]=+r.value;val.textContent=fmt(k,FSET[k]);applyFset();saveFset();pr.querySelectorAll('.rf-preset').forEach((b,i)=>{let v=FPRE[Object.keys(FPRE)[i]];b.classList.toggle('active',Object.keys(FRNG).every(q=>Math.abs(FSET[q]-v[q])<1e-6))})};row.append(top,r);P.append(row)})}
+async function poll(){if(!F||document.hidden)return;F.polledAt=performance.now();try{let j=await getJSON('/api/lanterns?limit=20',1);if(!F||!j.ok)return;let add=j.items.filter(it=>!F.seen.has(it.id));if(!add.length)return;add.forEach(it=>{F.seen.add(it.id);F.items.unshift(it);prep(it);F.fresh.push(it)});F.spawnAt=0;F.note.textContent=''}catch(e){}}
+
 function fsChange(){if(F&&!(document.fullscreenElement||document.webkitFullscreenElement)&&!F.ov.classList.contains('pseudo'))closeFloat()}
 function escKey(e){if(e.key==='Escape')closeFloat()}
-function closeFloat(){if(!F)return;cancelAnimationFrame(F.raf);removeEventListener('resize',resize);document.removeEventListener('fullscreenchange',fsChange);document.removeEventListener('webkitfullscreenchange',fsChange);document.removeEventListener('keydown',escKey);
+function closeFloat(){if(!F)return;cancelAnimationFrame(F.raf);removeEventListener('resize',resize);document.removeEventListener('fullscreenchange',fsChange);document.removeEventListener('webkitfullscreenchange',fsChange);document.removeEventListener('keydown',escKey);document.removeEventListener('visibilitychange',visPoll);
  let ov=F.ov;F=null;if(document.fullscreenElement||document.webkitFullscreenElement){(document.exitFullscreen||document.webkitExitFullscreen).call(document)}ov.remove();document.body.classList.remove('river-lock')}
-function resize(){if(!F)return;let d=Math.min(devicePixelRatio||1,2),w=F.ov.clientWidth||innerWidth,h=F.ov.clientHeight||innerHeight;F.cv.width=w*d;F.cv.height=h*d;F.cv.style.width=w+'px';F.cv.style.height=h+'px';F.ctx.setTransform(d,0,0,d,0,0);F.W=w;F.H=h}
-async function refresh(){if(!F)return;F.fetchedAt=performance.now();try{let j=await getJSON('/api/lanterns?random=1&limit=100');if(F&&j.ok){F.items=j.items;F.queue=shuffle(j.items.slice());j.items.forEach(prep)}}catch(e){}if(F)F.note.textContent=F.items.length?'':t('floatEmpty')}
+function resize(){if(!F)return;let d=Math.min(devicePixelRatio||1,2),w=F.ov.clientWidth||innerWidth,h=F.ov.clientHeight||innerHeight;F.cv.width=w*d;F.cv.height=h*d;F.cv.style.width=w+'px';F.cv.style.height=h+'px';F.ctx.setTransform(d,0,0,d,0,0);F.W=w;F.H=h;F.mobile=w<600;
+ F.base0=F.mobile?Math.min(w*.34,160):Math.min(h*.2,w*.14,210);F.fs=F.mobile?13:12;applyFset()}
+async function refresh(){if(!F)return;F.fetchedAt=performance.now();try{let j=await getJSON('/api/lanterns?random=1&limit=100');if(F&&j.ok){let fr=new Set(F.fresh.map(x=>x.id));F.items=j.items.concat(F.items.filter(x=>fr.has(x.id)&&!j.items.some(y=>y.id===x.id)));F.items.forEach(it=>F.seen.add(it.id));F.queue=shuffle(F.items.slice());F.items.forEach(prep)}}catch(e){}if(F)F.note.textContent=F.items.length?'':t('floatEmpty')}
 const shuffle=a=>{for(let i=a.length-1;i>0;i--){let j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
-function prep(it){if(F.imgs.has(it.id))return;let rec={ready:false,art:null};F.imgs.set(it.id,rec);let im=new Image();im.crossOrigin='anonymous';im.decoding='async';
- im.onload=()=>{rec.art=it.kind==='photo'?photoCard(im):im;rec.ar=(rec.art.width||1)/(rec.art.height||1);rec.ready=true};im.src=(F.W>900?it.image_url:(it.thumb_url||it.image_url))}
-function photoCard(im){let S=320,c=document.createElement('canvas');c.width=S;c.height=Math.round(S*.82);let x=c.getContext('2d'),w=c.width,h=c.height,s=Math.max(w/im.width,h/im.height);x.drawImage(im,(w-im.width*s)/2,(h-im.height*s)/2,im.width*s,im.height*s);
- x.globalCompositeOperation='destination-in';x.save();x.translate(w/2,h/2);x.scale(w/2,h/2);let g=x.createRadialGradient(0,0,0,0,0,1);g.addColorStop(0,'#000');g.addColorStop(.72,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(-1,-1,2,2);x.restore();return c}
-function spawn(now){if(!F.queue.length){if(!F.items.length)return;F.queue=shuffle(F.items.slice())}
- for(let k=0;k<F.queue.length;k++){let it=F.queue[k],r=F.imgs.get(it.id);if(r&&r.ready){F.queue.splice(k,1);let lanes=F.live.map(l=>l.x0);let x0;for(let a=0;a<8;a++){x0=.12+Math.random()*.76;if(lanes.every(v=>Math.abs(v-x0)>.12))break}
-   F.live.push({it,r,x0,t0:now,dur:26000+Math.random()*10000,ph:Math.random()*6,drift:(Math.random()-.5)*.16});return}}}
-function tick(now){if(!F)return;F.raf=requestAnimationFrame(tick);let {ctx,W,H}=F,hz=H*.38;
- if(now-F.fetchedAt>120000)refresh();
- let maxLive=W<600?8:12;if(now>F.spawnAt&&F.live.length<maxLive){spawn(now);F.spawnAt=now+(W<600?3200:2400)+Math.random()*1200}
- // sky + water
- let g=ctx.createLinearGradient(0,0,0,hz);g.addColorStop(0,'#04122a');g.addColorStop(1,'#123a4e');ctx.fillStyle=g;ctx.fillRect(0,0,W,hz);
- for(let s of F.stars){let a=.35+.35*Math.sin(now/900+s[3]);ctx.fillStyle=`rgba(255,244,214,${a})`;ctx.fillRect(s[0]*W,s[1]*H,s[2],s[2])}
- let mx=W*.78,my=hz*.42,mr=Math.min(W,H)*.05;let mg=ctx.createRadialGradient(mx,my,mr*.2,mx,my,mr*4);mg.addColorStop(0,'rgba(255,236,180,.35)');mg.addColorStop(1,'rgba(255,236,180,0)');ctx.fillStyle=mg;ctx.fillRect(mx-mr*4,my-mr*4,mr*8,mr*8);ctx.fillStyle='#f6e7bd';ctx.beginPath();ctx.arc(mx,my,mr,0,7);ctx.fill();
- let wg=ctx.createLinearGradient(0,hz,0,H);wg.addColorStop(0,'#0e3a48');wg.addColorStop(1,'#021c22');ctx.fillStyle=wg;ctx.fillRect(0,hz,W,H-hz);
- ctx.fillStyle='rgba(246,231,189,.08)';for(let i=0;i<14;i++){let y=hz+(H-hz)*Math.pow(i/14,1.6)+6,w=W*(.06+.02*i);ctx.fillRect(mx-w/2+Math.sin(now/1300+i)*8,y,w,1.5)}
- ctx.strokeStyle='rgba(232,199,122,.10)';ctx.lineWidth=1;for(let i=1;i<9;i++){let y=hz+(H-hz)*Math.pow(i/9,1.8);ctx.beginPath();for(let x=0;x<=W;x+=24)ctx.lineTo(x,y+Math.sin(x/70+now/1600+i)*2*(i/9));ctx.stroke()}
- // lanterns: far ones first
- F.live=F.live.filter(l=>now-l.t0<l.dur);let order=F.live.map(l=>({l,p:(now-l.t0)/l.dur})).sort((a,b)=>b.p-a.p);
- let base=Math.min(W,H)*(W<600?.42:.30);
- for(let {l,p} of order){let e=1-Math.pow(1-p,1.35),y=H+base*.35-(H+base*.35-hz-6)*e,sc=1-.86*e,x=W*(l.x0+l.drift*e)+Math.sin(now/1400+l.ph)*10*sc,w=base*sc,h=w/l.r.ar;if(h>w*1.3){h=w*1.3;w=h*l.r.ar}x=Math.min(W-w*.55,Math.max(w*.55,x));
-  let a=Math.min(1,p*8)*(p>.82?Math.max(0,(1-p)/.18):1),rot=Math.sin(now/1700+l.ph)*.04;
-  // glow
-  let gr=ctx.createRadialGradient(x,y-h*.35,1,x,y-h*.35,w*.9);gr.addColorStop(0,`rgba(255,200,110,${.30*a})`);gr.addColorStop(1,'rgba(255,200,110,0)');ctx.fillStyle=gr;ctx.fillRect(x-w,y-h*1.3,w*2,h*2);
-  // reflection
-  ctx.save();ctx.globalAlpha=a*.22;ctx.translate(x,y+2);ctx.scale(1,-.42);ctx.rotate(-rot);ctx.drawImage(l.r.art,-w/2,-h,w,h);ctx.restore();
+const canFilter=(()=>{try{let x=document.createElement('canvas').getContext('2d');x.filter='blur(2px)';return x.filter==='blur(2px)'}catch(e){return false}})();
+function trim(im){let long=Math.max(im.naturalWidth,im.naturalHeight),s=Math.min(1,900/long),c=document.createElement('canvas');c.width=Math.round(im.naturalWidth*s);c.height=Math.round(im.naturalHeight*s);let x=c.getContext('2d');x.drawImage(im,0,0,c.width,c.height);
+ try{let d=x.getImageData(0,0,c.width,c.height).data,W=c.width,H=c.height,l=W,r=-1,tp=H,b=-1;for(let y=0;y<H;y+=2)for(let i=0;i<W;i+=2){if(d[(y*W+i)*4+3]>16){if(i<l)l=i;if(i>r)r=i;if(y<tp)tp=y;if(y>b)b=y}}
+  if(r<0)return c;l=Math.max(0,l-2);tp=Math.max(0,tp-2);r=Math.min(W,r+3);b=Math.min(H,b+3);let o=document.createElement('canvas');o.width=r-l;o.height=b-tp;o.getContext('2d').drawImage(c,l,tp,r-l,b-tp,0,0,r-l,b-tp);return o}catch(e){return c}}
+function photoCard(im){let S=320,c=document.createElement('canvas');c.width=S;c.height=Math.round(S*.82);let x=c.getContext('2d'),w=c.width,h=c.height,s=Math.max(w/im.naturalWidth,h/im.naturalHeight);x.drawImage(im,(w-im.naturalWidth*s)/2,(h-im.naturalHeight*s)/2,im.naturalWidth*s,im.naturalHeight*s);
+ x.globalCompositeOperation='multiply';x.fillStyle='rgba(15,59,64,.2)';x.fillRect(0,0,w,h);
+ x.globalCompositeOperation='destination-in';x.save();x.translate(w/2,h/2);x.scale(w/2,h/2);let g=x.createRadialGradient(0,0,0,0,0,1);g.addColorStop(0,'#000');g.addColorStop(.55,'#000');g.addColorStop(.8,'rgba(0,0,0,.45)');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(-1,-1,2,2);x.restore();return c}
+function reflect(art){let w=art.width,h=Math.max(2,Math.round(art.height*.35)),c=document.createElement('canvas');c.width=w;c.height=h;let x=c.getContext('2d'),blur=Math.max(2,w/75);
+ const flip=(ctx,cw,ch)=>{ctx.save();ctx.translate(0,ch);ctx.scale(1,-ch/art.height);ctx.drawImage(art,0,0,cw,art.height);ctx.restore()};
+ if(canFilter){x.filter=`blur(${blur}px)`;flip(x,w,h);x.filter='none'}else{let sm=document.createElement('canvas');sm.width=Math.max(1,Math.round(w/4));sm.height=Math.max(1,Math.round(h/4));let sx=sm.getContext('2d');flip(sx,sm.width,sm.height);x.imageSmoothingQuality='high';x.drawImage(sm,0,0,w,h)}
+ x.globalCompositeOperation='destination-out';for(let y=0;y<h;y+=Math.max(3,h/14)){x.fillStyle='rgba(0,0,0,.45)';x.fillRect(0,y,w,Math.max(1,h/40))}
+ x.globalCompositeOperation='destination-in';let g=x.createLinearGradient(0,0,0,h);g.addColorStop(0,'#000');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(0,0,w,h);return c}
+function prep(it){if(F.imgs.has(it.id))return;let rec={ready:false};F.imgs.set(it.id,rec);let im=new Image();im.crossOrigin='anonymous';im.decoding='async';
+ im.onload=()=>{try{rec.art=it.kind==='photo'?photoCard(im):trim(im);rec.refl=reflect(rec.art);rec.ar=rec.art.width/rec.art.height;rec.ready=true}catch(e){}};im.src=(F.W>900?it.image_url:(it.thumb_url||it.image_url))}
+function fitText(ctx,s,max){if(ctx.measureText(s).width<=max)return s;let a=[...s];while(a.length>1&&ctx.measureText(a.join('')+'…').width>max)a.pop();return a.join('')+'…'}
+function geom(l,y){let {W,base,hz,fs}=F,sc=.6+.4*Math.max(0,Math.min(1,(y-hz)/(l.y0-hz))),w=base*sc,h=w/l.r.ar;if(h>w*1.15){h=w*1.15;w=h*l.r.ar}
+ let rh=h*.35,f=Math.max(fs,Math.round(15*sc+1)),capW=Math.max(140,Math.min(260,w*1.8)),capH=f*1.3+(l.it.wish?f*1.25:0),bw=Math.max(w,Math.min(capW,l.capW*f/l.f0)),x=l.x;
+ return {sc,w,h,rh,f,capW,capH,x,y,box:[x-bw/2-6,y-h-4,x+bw/2+6,y+rh+4+capH+4]}}
+const hit=(a,b)=>a[0]<b[2]&&b[0]<a[2]&&a[1]<b[3]&&b[1]<a[3];
+function spawn(now){if(!F.queue.length){if(!F.items.length&&!F.fresh.length)return false;F.queue=shuffle(F.items.slice())}
+ let liveIds=new Set(F.live.map(l=>l.it.id)),ok=it=>{let r=F.imgs.get(it.id);return r&&r.ready&&!liveIds.has(it.id)},fi=F.fresh.findIndex(ok),src=F.queue,k;
+ if(fi>=0){src=F.fresh;k=fi}else{let rep=FSET.repeat*1000;k=F.queue.findIndex(it=>ok(it)&&!(F.shown.has(it.id)&&now-F.shown.get(it.id)<rep));if(k<0)return false}
+ let isFresh=src===F.fresh,it=src[k],r=F.imgs.get(it.id),{W,H,fs,ctx}=F;ctx.font=`600 ${fs+4}px system-ui,-apple-system,"Noto Sans Thai",sans-serif`;let capW0=Math.max(ctx.measureText(it.name).width,it.wish?ctx.measureText(it.wish).width*.9:0);
+ let probe={it,r,x:0,y0:0,f0:fs+4,capW:capW0,fresh:isFresh};let g0=geom({...probe,y0:H},H),yb=H-24-g0.capH-g0.rh-4,y0=yb;probe.y0=yb;
+ let boxes=F.live.map(l=>geom(l,l.y).box),few=F.items.length<6,sp=FSET.spread*.42,L0=.5-sp,L1=.5+sp,zw=(L1-L0)/3,zones=[[L0,L0+zw],[L0+zw,L0+2*zw],[L0+2*zw,L1]];
+ for(let a=0;a<8;a++){let lo=L0,hi=L1;if(few){let z=zones[(F.zone+a)%3];lo=z[0];hi=z[1]}y0=yb-(a<6?Math.random():0)*FSET.vdist*(yb-F.hz)*.55;let half=Math.max(g0.w,Math.min(g0.capW,capW0))/2/W,x=W*Math.min(1-half-.02,Math.max(half+.02,lo+Math.random()*(hi-lo)));
+  probe.x=x;let g=geom({...probe,y0:yb},y0);if(g.box[3]>H-24+1||boxes.some(b=>hit(b,g.box)))continue;
+  src.splice(k,1);if(isFresh){let qi=F.queue.findIndex(q=>q.id===it.id);if(qi>=0)F.queue.splice(qi,1)}F.shown.set(it.id,now);if(few)F.zone=(F.zone+a+1)%3;F.live.push({...probe,y0:yb,y:y0,yEnd:F.hz+(H-F.hz)*.1,t0:now,ph:Math.random()*6});return true}
+ return false}
+function tick(now){if(!F)return;F.raf=requestAnimationFrame(tick);let {ctx,W,H,hz}=F,dt=Math.min(.05,(now-(F.lastT||now))/1000);F.lastT=now;
+ if(now-F.fetchedAt>120000)refresh();if(now-F.polledAt>12000)poll();F.px+=((F.pxT||0)-F.px)*.03;
+ let maxLive=FSET.max+(F.fresh.length?1:0);if(now>F.spawnAt&&F.live.length<maxLive){F.spawnAt=now+(spawn(now)?FSET.rate*1000*(.8+Math.random()*.4):400)}
+ F.scene.draw(ctx,F,now);
+ for(let l of F.live)l.y-=F.speed*dt;F.live=F.live.filter(l=>l.y>l.yEnd);
+ let order=F.live.slice().sort((a,b)=>a.y-b.y);
+ for(let l of order){let G=geom(l,l.y),p=(l.y0-l.y)/(l.y0-l.yEnd),a=Math.min(1,p/.06,(now-l.t0)/900)*(p>.8?Math.max(0,(1-p)/.2):1),sw=Math.sin(now/1500+l.ph)*6*G.sc,x=G.x+sw,y=G.y,{w,h,rh,f}=G,rot=Math.sin(now/1700+l.ph)*.035;
+  ctx.save();ctx.globalCompositeOperation='lighter';let gr=ctx.createRadialGradient(x,y-h*.45,1,x,y-h*.45,w*.85);gr.addColorStop(0,`rgba(255,190,100,${.20*a})`);gr.addColorStop(1,'rgba(255,190,100,0)');ctx.fillStyle=gr;ctx.fillRect(x-w,y-h*1.3,w*2,h*2);
+  let fl=.6+.4*Math.sin(now/130+l.ph*3)*Math.sin(now/370+l.ph);let cg=ctx.createRadialGradient(x,y-h*.6,0,x,y-h*.6,w*.28);cg.addColorStop(0,`rgba(255,190,90,${.2*a*fl})`);cg.addColorStop(1,'rgba(255,190,90,0)');ctx.fillStyle=cg;ctx.fillRect(x-w*.3,y-h*.6-w*.3,w*.6,w*.6);ctx.restore();
+  ctx.save();ctx.globalAlpha=a*.28;ctx.drawImage(l.r.refl,x-w/2+Math.sin(now/700+l.ph)*1.5,y,w,rh);ctx.restore();
   ctx.save();ctx.globalAlpha=a;ctx.translate(x,y);ctx.rotate(rot);ctx.drawImage(l.r.art,-w/2,-h,w,h);ctx.restore();
-  // flicker
-  let fl=.6+.4*Math.sin(now/130+l.ph*3)*Math.sin(now/370+l.ph);ctx.save();ctx.globalCompositeOperation='lighter';let cg=ctx.createRadialGradient(x,y-h*.6,0,x,y-h*.6,w*.28);cg.addColorStop(0,`rgba(255,190,90,${.22*a*fl})`);cg.addColorStop(1,'rgba(255,190,90,0)');ctx.fillStyle=cg;ctx.fillRect(x-w*.3,y-h*.6-w*.3,w*.6,w*.6);ctx.restore();
-  if(sc>.42){let ta=a*Math.min(1,(sc-.42)/.2),fs=Math.max(11,Math.round(15*sc+3));ctx.globalAlpha=ta;ctx.textAlign='center';ctx.font=`600 ${fs}px system-ui,-apple-system,"Noto Sans Thai",sans-serif`;ctx.fillStyle='#ffe9b0';ctx.shadowColor='rgba(0,0,0,.6)';ctx.shadowBlur=4;let ty=y+fs*1.3;ctx.fillText(l.it.name,x,ty,w*1.6);if(l.it.wish){ctx.font=`${fs-2}px system-ui,-apple-system,"Noto Sans Thai",sans-serif`;ctx.fillStyle='#fff9ec';ctx.fillText(l.it.wish.length>26?l.it.wish.slice(0,25)+'…':l.it.wish,x,ty+fs*1.25,Math.max(w*1.9,180))}ctx.shadowBlur=0;ctx.globalAlpha=1}}
+  ctx.save();ctx.globalAlpha=a;ctx.textAlign='center';ctx.textBaseline='top';ctx.shadowColor='rgba(0,0,0,.6)';ctx.shadowOffsetY=1;ctx.shadowBlur=3;let ty=y+rh+4;
+  ctx.font=`600 ${f}px system-ui,-apple-system,"Noto Sans Thai",sans-serif`;ctx.fillStyle='#ffe9b0';let nm=fitText(ctx,l.it.name,G.capW);ctx.fillText(nm,x,ty);if(l.fresh&&now-l.t0<20000){let nw=ctx.measureText(nm).width,bt=ft('fresh');ctx.font=`700 ${Math.max(10,f-3)}px system-ui,sans-serif`;let bw=ctx.measureText(bt).width+10,bx=x+nw/2+5;ctx.shadowColor='transparent';ctx.fillStyle='#e3be6a';ctx.beginPath();ctx.roundRect?ctx.roundRect(bx,ty,bw,f+1,6):ctx.rect(bx,ty,bw,f+1);ctx.fill();ctx.fillStyle='#173f3d';ctx.textAlign='left';ctx.fillText(bt,bx+5,ty+1);ctx.textAlign='center';ctx.shadowColor='rgba(0,0,0,.6)'}
+  if(l.it.wish){ctx.font=`${f}px system-ui,-apple-system,"Noto Sans Thai",sans-serif`;ctx.fillStyle='#fff9ec';ctx.fillText(fitText(ctx,l.it.wish,G.capW),x,ty+f*1.3)}ctx.restore()}
+ if(window.__riverDebug)window.__riverBoxes=order.map(l=>geom(l,l.y).box);if(window.__riverDebug)window.__riverF=()=>F
 }
 
-/* ---------- routing & language ---------- */
-function route(){let on=location.hash==='#river',s=section();if(!s)return;s.hidden=!on;if(on){['cards','builder','culture'].forEach(id=>{let e=$('#'+id);if(e)e.hidden=true});document.querySelectorAll('[data-tab]').forEach(b=>b.classList.remove('active'));loadList(true)}}
+/* ---------- routing (cards | 水灯 home → builder / upload) & language ---------- */
+const navStack=[];let lastHash=null;
+function track(){let h=location.hash.slice(1)||'cards';if(navStack.length>1&&navStack[navStack.length-2]===h)navStack.pop();else if(navStack[navStack.length-1]!==h)navStack.push(h)}
+function goBack(){let prev=navStack[navStack.length-2];if(prev)history.back();else location.replace('#river')}
+function goHome(){if(location.hash==='#river'){loadList(true);return}let prev=navStack[navStack.length-2];if(prev==='river')history.back();else location.replace('#river')}
+window.riverBack=goBack;
+const backBtn=el('button','sub-back');backBtn.type='button';backBtn.onclick=goBack;document.body.append(backBtn);
+function route(){track();let tab=location.hash.slice(1)||'cards';if(!['cards','builder','culture','river','upload'].includes(tab))tab='cards';document.body.dataset.tab=tab;let sub=tab==='builder'||tab==='upload';document.body.classList.toggle('sub-mode',sub);
+ backBtn.textContent='';backBtn.insertAdjacentHTML('afterbegin','<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>');backBtn.append(el('span','',t('back')));backBtn.setAttribute('aria-label',t('back'));
+ let s=section(),u=$('#upload');if(s)s.hidden=tab!=='river';if(u)u.hidden=tab!=='upload';
+ if(tab==='river'){if(F)closeFloat();loadList(true)}if(tab==='upload')renderUpload();if(tab!=='upload'&&u)u.textContent=''}
 addEventListener('hashchange',route);
-document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-lang]'))setTimeout(()=>{renderPills();if(location.hash==='#river')loadList(true)},30)});
+document.addEventListener('click',e=>{if(e.target.closest&&e.target.closest('[data-lang]'))setTimeout(()=>{route()},30)});
 renderPills();route();
-getJSON('/api/config').then(j=>{if(j&&j.ok){config=j;if(!j.limits)config.limits={name:20,intro:80,wish:60,image_bytes:2097152,thumb_bytes:307200};renderPills();if(location.hash==='#river')renderShell(),loadList(true);window.dispatchEvent(new Event('river-config'))}}).catch(()=>{});
+{const vp=document.querySelector('meta[name=viewport]'),base=vp&&vp.content;const sync=()=>{if(vp)vp.content=document.body.classList.contains('builder-mode')?base+',maximum-scale=1':base};new MutationObserver(sync).observe(document.body,{attributes:true,attributeFilter:['class']});sync()}
+const onScroll=()=>document.body.classList.toggle('scrolled',scrollY>80);addEventListener('scroll',onScroll,{passive:true});onScroll();
+getJSON('/api/config').then(j=>{if(j&&j.ok){config=j;if(!j.limits)config.limits={name:20,intro:80,wish:60,image_bytes:2097152,thumb_bytes:307200};if(location.hash==='#river')loadList(true);if(location.hash==='#upload')renderUpload();window.dispatchEvent(new Event('river-config'))}}).catch(()=>{});
 window.riverConfig=()=>config;window.riverText=t;
 })();

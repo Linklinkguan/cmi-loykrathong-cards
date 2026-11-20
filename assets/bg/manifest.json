@@ -1,0 +1,280 @@
+{
+ "version": 1,
+ "note": "patterns: AD-approved final MJ backgrounds (incoming/bg-mj-2026-11-21/final), cover-cropped to the canvas; B1 gets the real CMI logo (img/logo.svg) overlaid at runtime",
+ "colors": [
+  {
+   "id": "river",
+   "name": {
+    "zh": "河水青",
+    "en": "River teal",
+    "th": "เขียวสายน้ำ"
+   },
+   "stops": [
+    [
+     0,
+     "#227875"
+    ],
+    [
+     0.8,
+     "#075552"
+    ],
+    [
+     1,
+     "#034143"
+    ]
+   ]
+  },
+  {
+   "id": "night",
+   "name": {
+    "zh": "水灯夜",
+    "en": "Lantern night",
+    "th": "คืนลอยกระทง"
+   },
+   "stops": [
+    [
+     0,
+     "#0b1d3a"
+    ],
+    [
+     0.6,
+     "#15405a"
+    ],
+    [
+     1,
+     "#0a2c3a"
+    ]
+   ]
+  },
+  {
+   "id": "dusk",
+   "name": {
+    "zh": "古城黄昏",
+    "en": "Old-city dusk",
+    "th": "สนธยาเมืองเก่า"
+   },
+   "stops": [
+    [
+     0,
+     "#3b2a5c"
+    ],
+    [
+     0.55,
+     "#b5653a"
+    ],
+    [
+     1,
+     "#e9a65a"
+    ]
+   ]
+  },
+  {
+   "id": "gold",
+   "name": {
+    "zh": "寺庙金",
+    "en": "Temple gold",
+    "th": "ทองวัด"
+   },
+   "stops": [
+    [
+     0,
+     "#f3d78e"
+    ],
+    [
+     1,
+     "#c9a227"
+    ]
+   ]
+  },
+  {
+   "id": "lotus",
+   "name": {
+    "zh": "莲花粉",
+    "en": "Lotus pink",
+    "th": "ชมพูบัว"
+   },
+   "stops": [
+    [
+     0,
+     "#f6d3d9"
+    ],
+    [
+     1,
+     "#d98a9c"
+    ]
+   ]
+  },
+  {
+   "id": "banana",
+   "name": {
+    "zh": "蕉叶绿",
+    "en": "Banana leaf",
+    "th": "เขียวใบตอง"
+   },
+   "stops": [
+    [
+     0,
+     "#8dbf5a"
+    ],
+    [
+     1,
+     "#3f7a2e"
+    ]
+   ]
+  },
+  {
+   "id": "indigo",
+   "name": {
+    "zh": "兰纳靛蓝",
+    "en": "Lanna indigo",
+    "th": "คราม"
+   },
+   "stops": [
+    [
+     0,
+     "#2e3a6b"
+    ],
+    [
+     1,
+     "#1b2346"
+    ]
+   ]
+  },
+  {
+   "id": "clay",
+   "name": {
+    "zh": "陶土红",
+    "en": "Terracotta",
+    "th": "ดินเผา"
+   },
+   "colour": "#b5653a"
+  },
+  {
+   "id": "paper",
+   "name": {
+    "zh": "桑皮纸",
+    "en": "Saa paper",
+    "th": "กระดาษสา"
+   },
+   "colour": "#f3e6c8"
+  },
+  {
+   "id": "deep",
+   "name": {
+    "zh": "深潭",
+    "en": "Deep pool",
+    "th": "วังน้ำลึก"
+   },
+   "colour": "#033d3f"
+  }
+ ],
+ "patterns": [
+  {
+   "id": "bgA1",
+   "file": "bg-A1.webp",
+   "name": {
+    "zh": "天灯水面",
+    "en": "Lantern Waters",
+    "th": "น้ำโคมลอย"
+   },
+   "thumb": "thumbs/bg-A1.webp"
+  },
+  {
+   "id": "bgA2",
+   "file": "bg-A2.webp",
+   "name": {
+    "zh": "兰纳金框",
+    "en": "Lanna Golden Frame",
+    "th": "กรอบทองล้านนา"
+   },
+   "thumb": "thumbs/bg-A2.webp"
+  },
+  {
+   "id": "bgA3",
+   "file": "bg-A3.webp",
+   "name": {
+    "zh": "烛光河岸",
+    "en": "Candlelit Riverbank",
+    "th": "ริมแม่น้ำยามแสงเทียน"
+   },
+   "thumb": "thumbs/bg-A3.webp"
+  },
+  {
+   "id": "bgA4",
+   "file": "bg-A4.webp",
+   "name": {
+    "zh": "花树晨曦",
+    "en": "Flame Tree Dawn",
+    "th": "อรุณรุ่งใต้ต้นหางนกยูง"
+   },
+   "thumb": "thumbs/bg-A4.webp"
+  },
+  {
+   "id": "bgA5",
+   "file": "bg-A5.webp",
+   "name": {
+    "zh": "佛塔夕照",
+    "en": "Pagoda at Sunset",
+    "th": "เจดีย์ยามอาทิตย์อัสดง"
+   },
+   "thumb": "thumbs/bg-A5.webp"
+  },
+  {
+   "id": "bgB1",
+   "file": "bg-B1.webp",
+   "name": {
+    "zh": "CMI 彩虹",
+    "en": "CMI Rainbow",
+    "th": "สายรุ้ง CMI"
+   },
+   "logo": {
+    "file": "assets/bg/cmi-logo-800.svg",
+    "cx": 0.5,
+    "cy": 0.26785714285714285,
+    "w": 0.16163793103448276,
+    "ar": 1
+   },
+   "thumb": "thumbs/bg-B1.webp"
+  },
+  {
+   "id": "bgB2",
+   "file": "bg-B2.webp",
+   "name": {
+    "zh": "明月照河面",
+    "en": "Moonlit River",
+    "th": "จันทร์ส่องผิวน้ำ"
+   },
+   "thumb": "thumbs/bg-B2.webp"
+  },
+  {
+   "id": "bgB3",
+   "file": "bg-B3.webp",
+   "name": {
+    "zh": "空想食堂",
+    "en": "Imagination Canteen",
+    "th": "โรงอาหารจินตนาการ"
+   },
+   "thumb": "thumbs/bg-B3.webp"
+  },
+  {
+   "id": "bgB4",
+   "file": "bg-B4.webp",
+   "name": {
+    "zh": "CMI Talk",
+    "en": "CMI Talk",
+    "th": "CMI Talk"
+   },
+   "thumb": "thumbs/bg-B4.webp"
+  },
+  {
+   "id": "bgB5",
+   "file": "bg-B5.webp",
+   "name": {
+    "zh": "AI 与 3D 打印工坊",
+    "en": "AI & 3D Printing Workshop",
+    "th": "เวิร์กช็อป AI และการพิมพ์ 3 มิติ"
+   },
+   "thumb": "thumbs/bg-B5.webp"
+  }
+ ]
+}

@@ -1,0 +1,782 @@
+{
+  "version": 1,
+  "category": {
+    "id": "fun-props",
+    "name": {
+      "zh": "趣味道具",
+      "en": "Fun Props",
+      "th": "ของเล่นสนุก"
+    },
+    "icon": "✦"
+  },
+  "items": [
+    {
+      "id": "prop-money",
+      "category": "fun-props",
+      "name": {
+        "zh": "一叠钱",
+        "en": "Stack of cash",
+        "th": "เงินปึกหนึ่ง"
+      },
+      "keywords": {
+        "zh": "一叠钱",
+        "en": "stack of cash",
+        "th": "เงินปึกหนึ่ง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/money-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-coins",
+      "category": "fun-props",
+      "name": {
+        "zh": "金币",
+        "en": "Gold coins",
+        "th": "เหรียญทอง"
+      },
+      "keywords": {
+        "zh": "金币",
+        "en": "gold coins",
+        "th": "เหรียญทอง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/coins.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cmi-sticker",
+      "category": "fun-props",
+      "name": {
+        "zh": "CMI 小标志贴纸",
+        "en": "CMI logo sticker",
+        "th": "สติกเกอร์โลโก้ CMI"
+      },
+      "keywords": {
+        "zh": "CMI 小标志贴纸",
+        "en": "cmi logo sticker",
+        "th": "สติกเกอร์โลโก้ CMI"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cmi-sticker.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.3,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cmi-sticker-gold",
+      "category": "fun-props",
+      "name": {
+        "zh": "CMI 金箔贴纸",
+        "en": "CMI gold-foil sticker",
+        "th": "สติกเกอร์โลโก้ CMI ทองคำเปลว"
+      },
+      "keywords": {
+        "zh": "CMI 金箔贴纸",
+        "en": "cmi gold-foil sticker",
+        "th": "สติกเกอร์โลโก้ CMI ทองคำเปลว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cmi-sticker-gold.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.3,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-dancer-felt",
+      "category": "fun-props",
+      "name": {
+        "zh": "跳舞小人·毛毡",
+        "en": "Dancer (felt)",
+        "th": "นักเต้น (ผ้าสักหลาด)"
+      },
+      "keywords": {
+        "zh": "跳舞小人·毛毡",
+        "en": "dancer (felt)",
+        "th": "นักเต้น (ผ้าสักหลาด)"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/dancer-felt-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-dancer-resin",
+      "category": "fun-props",
+      "name": {
+        "zh": "跳舞小人·滴胶",
+        "en": "Dancer (resin)",
+        "th": "นักเต้น (เรซิน)"
+      },
+      "keywords": {
+        "zh": "跳舞小人·滴胶",
+        "en": "dancer (resin)",
+        "th": "นักเต้น (เรซิน)"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/dancer-resin-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-dancer-yarn",
+      "category": "fun-props",
+      "name": {
+        "zh": "跳舞小人·毛线",
+        "en": "Dancer (yarn)",
+        "th": "นักเต้น (ไหมพรม)"
+      },
+      "keywords": {
+        "zh": "跳舞小人·毛线",
+        "en": "dancer (yarn)",
+        "th": "นักเต้น (ไหมพรม)"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/dancer-yarn-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-astronaut",
+      "category": "fun-props",
+      "name": {
+        "zh": "宇航员",
+        "en": "Astronaut",
+        "th": "นักบินอวกาศ"
+      },
+      "keywords": {
+        "zh": "宇航员",
+        "en": "astronaut",
+        "th": "นักบินอวกาศ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/astronaut.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-sunset-badge",
+      "category": "fun-props",
+      "name": {
+        "zh": "日落徽章",
+        "en": "Sunset badge",
+        "th": "ตราพระอาทิตย์ตก"
+      },
+      "keywords": {
+        "zh": "日落徽章",
+        "en": "sunset badge",
+        "th": "ตราพระอาทิตย์ตก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/sunset-badge-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-rainbow-monster",
+      "category": "fun-props",
+      "name": {
+        "zh": "彩虹小怪兽",
+        "en": "Rainbow blob",
+        "th": "ตัวประหลาดสายรุ้ง"
+      },
+      "keywords": {
+        "zh": "彩虹小怪兽",
+        "en": "rainbow blob",
+        "th": "ตัวประหลาดสายรุ้ง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/rainbow-monster-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-toy-crown",
+      "category": "fun-props",
+      "name": {
+        "zh": "盲盒·莲冠小神",
+        "en": "Blind box: Lotus crown",
+        "th": "บลายด์บ็อกซ์: เทพมงกุฎบัว"
+      },
+      "keywords": {
+        "zh": "盲盒·莲冠小神",
+        "en": "blind box: lotus crown",
+        "th": "บลายด์บ็อกซ์: เทพมงกุฎบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/toy-crown-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-toy-krathong",
+      "category": "fun-props",
+      "name": {
+        "zh": "盲盒·捧灯小人",
+        "en": "Blind box: Krathong keeper",
+        "th": "บลายด์บ็อกซ์: ผู้ถือกระทง"
+      },
+      "keywords": {
+        "zh": "盲盒·捧灯小人",
+        "en": "blind box: krathong keeper",
+        "th": "บลายด์บ็อกซ์: ผู้ถือกระทง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/toy-krathong-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-toy-moon",
+      "category": "fun-props",
+      "name": {
+        "zh": "盲盒·月亮精灵",
+        "en": "Blind box: Moon sprite",
+        "th": "บลายด์บ็อกซ์: วิญญาณจันทร์"
+      },
+      "keywords": {
+        "zh": "盲盒·月亮精灵",
+        "en": "blind box: moon sprite",
+        "th": "บลายด์บ็อกซ์: วิญญาณจันทร์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/toy-moon-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-elephant",
+      "category": "fun-props",
+      "name": {
+        "zh": "盲盒小象",
+        "en": "Blind-box baby elephant",
+        "th": "ช้างน้อยกล่องสุ่ม"
+      },
+      "keywords": {
+        "zh": "盲盒小象",
+        "en": "Blind-box baby elephant",
+        "th": "ช้างน้อยกล่องสุ่ม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/elephant-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xingyao-brave",
+      "category": "fun-props",
+      "name": {
+        "zh": "星耀 · 勇敢",
+        "en": "Xingyao – brave",
+        "th": "ซิงเหยา กล้าหาญ"
+      },
+      "keywords": {
+        "zh": "星耀 · 勇敢",
+        "en": "Xingyao – brave",
+        "th": "ซิงเหยา กล้าหาญ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xingyao-brave-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xingyao-full",
+      "category": "fun-props",
+      "name": {
+        "zh": "星耀 · 吃饱了",
+        "en": "Xingyao – full belly",
+        "th": "ซิงเหยา อิ่มแล้ว"
+      },
+      "keywords": {
+        "zh": "星耀 · 吃饱了",
+        "en": "Xingyao – full belly",
+        "th": "ซิงเหยา อิ่มแล้ว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xingyao-full-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xingyao-shy",
+      "category": "fun-props",
+      "name": {
+        "zh": "星耀 · 有点怕",
+        "en": "Xingyao – nervous",
+        "th": "ซิงเหยา กลัวนิดๆ"
+      },
+      "keywords": {
+        "zh": "星耀 · 有点怕",
+        "en": "Xingyao – nervous",
+        "th": "ซิงเหยา กลัวนิดๆ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xingyao-shy-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xiao-sing",
+      "category": "fun-props",
+      "name": {
+        "zh": "晓 · 唱歌",
+        "en": "Xiao – singing",
+        "th": "เสี่ยว ร้องเพลง"
+      },
+      "keywords": {
+        "zh": "晓 · 唱歌",
+        "en": "Xiao – singing",
+        "th": "เสี่ยว ร้องเพลง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xiao-sing-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xiao-sleepy",
+      "category": "fun-props",
+      "name": {
+        "zh": "晓 · 犯困",
+        "en": "Xiao – sleepy",
+        "th": "เสี่ยว ง่วง"
+      },
+      "keywords": {
+        "zh": "晓 · 犯困",
+        "en": "Xiao – sleepy",
+        "th": "เสี่ยว ง่วง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xiao-sleepy-v14b.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-cat-xiao-wave",
+      "category": "fun-props",
+      "name": {
+        "zh": "晓 · 打招呼",
+        "en": "Xiao – waving",
+        "th": "เสี่ยว โบกมือ"
+      },
+      "keywords": {
+        "zh": "晓 · 打招呼",
+        "en": "Xiao – waving",
+        "th": "เสี่ยว โบกมือ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/cat-xiao-wave-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-balloon-pink",
+      "category": "fun-props",
+      "name": {
+        "zh": "粉色钻面气球",
+        "en": "Pink diamond balloon",
+        "th": "ลูกโป่งเพชรสีชมพู"
+      },
+      "keywords": {
+        "zh": "粉色钻面气球",
+        "en": "Pink diamond balloon",
+        "th": "ลูกโป่งเพชรสีชมพู"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/balloon-pink-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-balloon-blue",
+      "category": "fun-props",
+      "name": {
+        "zh": "蓝色钻面气球",
+        "en": "Blue diamond balloon",
+        "th": "ลูกโป่งเพชรสีฟ้า"
+      },
+      "keywords": {
+        "zh": "蓝色钻面气球",
+        "en": "Blue diamond balloon",
+        "th": "ลูกโป่งเพชรสีฟ้า"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/balloon-blue-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-balloon-gold",
+      "category": "fun-props",
+      "name": {
+        "zh": "金色钻面气球",
+        "en": "Gold diamond balloon",
+        "th": "ลูกโป่งเพชรสีทอง"
+      },
+      "keywords": {
+        "zh": "金色钻面气球",
+        "en": "Gold diamond balloon",
+        "th": "ลูกโป่งเพชรสีทอง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/balloon-gold-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    },
+    {
+      "id": "prop-balloon-purple",
+      "category": "fun-props",
+      "name": {
+        "zh": "紫色钻面气球",
+        "en": "Purple diamond balloon",
+        "th": "ลูกโป่งเพชรสีม่วง"
+      },
+      "keywords": {
+        "zh": "紫色钻面气球",
+        "en": "Purple diamond balloon",
+        "th": "ลูกโป่งเพชรสีม่วง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "props-v14/balloon-purple-v14c.webp"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 0.4,
+      "zHint": 50,
+      "fold": false,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 512,
+      "h": 512,
+      "texture": true
+    }
+  ]
+}
