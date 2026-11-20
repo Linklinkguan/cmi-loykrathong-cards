@@ -5,4 +5,4 @@
 
 ## Third-party audio
 - Background music: "Thai Love Song" by Lopkerjo (John Lopker), CC BY 4.0, https://freemusicarchive.org/music/john-lopker/best-free-background-music-by-lopkerjo-vol-01/thai-love-song/ — trimmed with soft fade in/out; no other changes.
-- Sound effects (CC0, via Wikimedia Commons): gong "240382 the-very-real-horst chinese-gong-finish-session-2014-06-10-29-143.wav" (freesound, the-very-real-horst); "Bęben obręczowy uderzenia pojedyncze.flac" (frame drum); "274316 the-very-real-horst ghanta-leather-mallet-2015-05-16.wav" (bell, freesound, the-very-real-horst). Cut, filtered, reversed (draw swell) and mixed.
+- Sound effects (all CC0): ranat (Thai xylophone) notes from "Ranaat (ระนาด) 2" by SieuAmThanh, Freesound #454675, https://freesound.org/people/SieuAmThanh/sounds/454675/ ; bell accent from "ghanta leather mallet" by the-very-real-horst, Freesound #274316. Cut, filtered, pitch-shifted and mixed (draw, soft reveal, builder-add note, UI tap).
