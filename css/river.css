@@ -215,3 +215,23 @@ body:not(.builder-mode) footer .credit a{font-size:inherit;margin:0}
 .rf-option,.rf-kind{display:flex;align-items:center;justify-content:space-between;gap:8px}.rf-kind{margin:10px 0}.rf-option{font-size:12px}.rf-panel select{max-width:58%;background:#103c40;color:#fff3d7;border:1px solid #d7bc7877;border-radius:6px;padding:7px;font:inherit}.rf-kind .rf-option{justify-content:flex-start}.rf-kind select{max-width:48%}
 #wish-editor .lk-info:not([hidden]){display:block}#wish-editor .lk-info[hidden]{display:none}#wish-editor textarea{width:100%;background:#003839;color:white;border:1px solid #e8c77a66;border-radius:8px;padding:7px;font:inherit;resize:vertical}
 @media(max-width:600px){.river-entries{grid-template-columns:1fr}.river-entry[data-entry=float]{grid-column:auto}.river-list-heading{align-items:flex-start}.river-chips{flex-wrap:wrap}body.builder-mode #wish-editor{display:block;flex:none;max-height:115px;overflow:auto;padding:0 8px}body.builder-mode #wish-editor:has(.lk-info[hidden]){display:none}body.builder-mode #wish-editor .lk-info{padding:2px 0}body.builder-mode #wish-editor h3{margin:2px 0;font-size:12px}body.builder-mode #wish-editor textarea{height:42px;min-height:42px}}
+
+/* Illustrated entries and the river opening */
+.river-entry{min-height:160px;border-radius:24px;background-size:cover;background-position:center;box-shadow:0 8px 24px #001c1c55;text-shadow:0 2px 5px #001b1d;transition:transform .2s,border-color .2s}
+.river-entry:hover{transform:translateY(-3px);background-image:var(--entry-background);background-size:cover;background-position:center}
+.river-entry[data-entry=float]:hover{background-image:var(--river-entry-background)}
+.river-entry[data-entry=float]{min-height:220px;justify-content:flex-start;padding:28px;--river-entry-background:linear-gradient(90deg,#002f36d9,#003b4180 55%,#002d3033),url('../assets/buttons/btn-river-of-krathong.webp')}
+.river-entry[data-entry=upload]{--entry-background:linear-gradient(90deg,#002f36d9,#003b4166),url('../assets/buttons/btn-upload-handmade.webp')}
+.river-entry[data-entry=make]{--entry-background:linear-gradient(90deg,#002f36d9,#003b4166),url('../assets/buttons/btn-make-online.webp')}
+.river-entry-icon{background:#003438aa;box-shadow:0 2px 12px #001c1c66}
+.river-entry-text small{color:#f4ead1}
+body:not(.builder-mode) footer{padding-bottom:120px}
+.panel-nav:has(> button:only-child){display:none!important}
+.river-enter{position:fixed;inset:0;z-index:150;width:100%;height:100%;padding:0;border:0;border-radius:0;overflow:hidden;cursor:pointer;background-color:#002b35;background-image:linear-gradient(rgba(0,43,53,.85),rgba(0,43,53,.65)),url('../assets/buttons/btn-river-of-krathong.webp');background-position:center;background-size:cover;background-repeat:no-repeat;animation:river-enter-in .35s ease both}
+.river-enter-lantern{position:absolute;left:var(--x);bottom:var(--y);width:var(--size);aspect-ratio:1;background:url('../assets/materials/traditional/candle-lotus-v15-unlit.svg') center/contain no-repeat;filter:drop-shadow(0 0 12px #ffcb70);animation:river-enter-drift 1.3s ease-in both}
+.river-enter-lantern:nth-child(1){--x:15%;--y:4%;--size:100px}.river-enter-lantern:nth-child(2){--x:38%;--y:0%;--size:140px}.river-enter-lantern:nth-child(3){--x:68%;--y:8%;--size:110px}.river-enter-lantern:nth-child(4){--x:84%;--y:20%;--size:70px}.river-enter-lantern:nth-child(5){--x:48%;--y:25%;--size:65px}
+@keyframes river-enter-in{from{opacity:0}to{opacity:1}}
+@keyframes river-enter-drift{from{transform:translateY(10vh) scale(1);opacity:.85}to{transform:translateY(-34vh) scale(.3);opacity:.15}}
+.river-float{animation:river-open .7s ease-out both}@keyframes river-open{from{opacity:0}to{opacity:1}}
+@media(max-width:600px){.river-entry{min-height:132px}.river-entry[data-entry=float]{min-height:190px;padding:20px}}
+@media(prefers-reduced-motion:reduce){.river-float{animation:none}}

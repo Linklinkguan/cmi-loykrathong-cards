@@ -5,7 +5,7 @@
 <meta property="og:title" content="活动背景｜About this event · 2026 CMI 水灯庆典"><link rel="icon" href="img/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="css/about.css?v=141"></head>
 <body>
 <header class="ab-top">
-  <a class="ab-back" href="./" data-t="back">← 水灯灵感卡</a>
+  <a class="ab-back" href="./" data-t="back">← 回到庆典首页</a>
   <img class="ab-logo" src="img/logo-white.webp" alt="CMI Community" width="64" height="64">
   <div class="ab-lang" role="group" aria-label="Language"><button data-l="zh">中文</button><button data-l="en">English</button></div>
 </header>
@@ -739,9 +739,9 @@
 <figure class="deco"><img src="about/img/en/24.webp?v=143" width="1080" height="166" loading="lazy" decoding="async" alt="Floating krathong decoration"></figure>
 </article>
 </main>
-<footer class="ab-foot"><a href="./" data-t="back2">回到水灯灵感卡 →</a><p data-t="credit">本网站由 CMI Community 开发，开发于 CMI 2026 水灯节庆典</p></footer>
+<footer class="ab-foot"><a href="./" data-t="back2">回到庆典首页 →</a><p data-t="credit">本网站由 CMI Community 开发，开发于 CMI 2026 水灯节庆典</p></footer>
 <script>
-(()=>{const T={zh:{back:'← 水灯灵感卡',back2:'回到水灯灵感卡 →',credit:'本网站由 CMI Community 开发，开发于 CMI 2026 水灯节庆典',doc:'活动背景｜2026 CMI 水灯庆典'},en:{back:'← Krathong cards',back2:'Back to the krathong cards →',credit:'Website developed by CMI Community for the CMI 2026 Loy Krathong Festival',doc:'About this event · 2026 CMI Loy Krathong'}};
+(()=>{const T={zh:{back:'← 回到庆典首页',back2:'回到庆典首页 →',credit:'本网站由 CMI Community 开发，开发于 CMI 2026 水灯节庆典',doc:'活动背景｜2026 CMI 水灯庆典'},en:{back:'← Back to the festival site',back2:'Back to the festival site →',credit:'Website developed by CMI Community for the CMI 2026 Loy Krathong Festival',doc:'About this event · 2026 CMI Loy Krathong'}};
 let q=new URLSearchParams(location.search).get('lang'),site='zh';try{site=localStorage.cmiLkLang||'zh'}catch(e){}
 let ui=q||site;function show(l){let a=l==='zh'?'zh':'en';document.querySelectorAll('.ab-article').forEach(x=>x.hidden=x.dataset.lang!==a);document.querySelectorAll('[data-l]').forEach(b=>b.classList.toggle('on',b.dataset.l===a));document.documentElement.lang=a==='zh'?'zh-CN':(l==='th'?'th':'en');document.querySelector('.ab-thnote').hidden=l!=='th';document.querySelectorAll('[data-t]').forEach(e=>{let v=T[a][e.dataset.t];if(v)e.textContent=v});document.title=T[a].doc}
 document.querySelectorAll('[data-l]').forEach(b=>b.onclick=()=>{ui=b.dataset.l;show(ui);try{if(localStorage.cmiLkLang!=='th'||ui==='zh')localStorage.cmiLkLang=ui}catch(e){}window.scrollTo({top:0})});show(ui)})();

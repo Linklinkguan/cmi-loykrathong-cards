@@ -92,7 +92,7 @@ function renderShell(){let s=section();if(!s)return;s.textContent='';
  let intro=el('div','section-intro');intro.append(el('span','','✧'),el('h2','',t('home')),el('p','',t('homeSub')));
  let tools=el('div','river-entries');
  const entry=(id,icon,title,desc,act)=>{let b=el('button','river-entry');b.type='button';b.dataset.entry=id;let ic=el('span','river-entry-icon');ic.insertAdjacentHTML('afterbegin',ICON[icon]);let tx=el('span','river-entry-text');tx.append(el('strong','',title),el('small','',desc));b.append(ic,tx);b.onclick=act;return b};
- tools.append(entry('float','lotus',t('float'),t('floatD'),openFloat));
+ tools.append(entry('float','lotus',t('float'),t('floatD'),enterRiver));
  tools.append(config.open?entry('upload','camera',t('upload'),t('uploadD'),()=>openForm({kind:'photo'})):entry('upload','camera',t('closed'),t('e403'),()=>toast(t('e403'))));
  tools.append(entry('make','make',t('make'),t('makeD'),()=>{location.hash='builder'}));
  let lh=el('h3','river-list-title',t('everyone'));
@@ -163,9 +163,23 @@ let manifestPromise;function loadSceneManifest(){if(manifestPromise)return manif
 function applyFset(){if(!F)return;let sc=sceneById(FSET.scene);F.scene=sc;F.sceneId=sc.id;F.calmBandPx=sc.calmBand?bandPx(sc,F):null;F.maxOnScreen=Math.max(1,Math.floor(FSET.max*(sc.maxLanternsFactor??1)));F.hz=sc.calmBand?F.calmBandPx.y:F.H*(sc.hz??.38);F.base=F.base0*FSET.size;F.speed=(sc.calmBand?F.calmBandPx.h:F.H-F.hz)*.62/30*FSET.speed;if(sc.layers)sceneAssets(sc)}
 function sceneBand(){return F.calmBandPx||{x:0,y:F.hz,w:F.W,h:F.H-F.hz}}
 function switchScene(id){if(!F)return;let now=performance.now(),live=F.live.slice().sort((a,b)=>b.t0-a.t0);FSET.scene=id;applyFset();F.live=[];for(let l of live){let progress=Math.max(0,Math.min(1,(l.y0-l.y)/Math.max(1,l.y0-l.yEnd))),position=packLantern(l,F.live,progress);if(position&&F.live.length<F.maxOnScreen){Object.assign(l,position);delete l.remap;F.live.push(l)}}F.fillTarget=Math.ceil(F.maxOnScreen/2);F.fillAt=now;paintScene()}
-window.riverSetScene=async id=>{await loadSceneManifest();let sc=SCENES.find(s=>s.id===id);if(!sc)throw new Error('Unknown scene: '+id);FSET.scene=id;saveFset();if(F)switchScene(id);if(sc.layers)await sceneAssets(sc)};
+window.riverSetScene=async id=>{await loadSceneManifest();let sc=SCENES.find(s=>s.id===id);if(!sc)throw new Error('Unknown scene: '+id);FSET.scene=id;saveFset();if(F){switchScene(id);if(!F.panel.hidden)renderPanel()}if(sc.layers)await sceneAssets(sc)};
 window.__riverF=()=>F;
 let F=null;
+function enterRiver(){
+ if(F||document.querySelector('.river-enter'))return;
+ let overlay=el('div','river-enter');overlay.setAttribute('role','button');overlay.tabIndex=0;
+ overlay.setAttribute('aria-label',({zh:'点击跳过，打开水灯之河',en:'Tap to skip and open the river',th:'แตะเพื่อข้ามและเปิดสายน้ำ'})[lang()]||'Tap to skip');
+ for(let i=0;i<5;i++){let lantern=el('span','river-enter-lantern');lantern.setAttribute('aria-hidden','true');overlay.append(lantern)}
+ document.body.append(overlay);
+ let finished=false,timer;
+ const finish=()=>{if(finished)return;finished=true;clearTimeout(timer);overlay.remove();openFloat()};
+ overlay.onclick=finish;
+ overlay.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();finish()}};
+ timer=setTimeout(finish,1300);
+ if(matchMedia('(prefers-reduced-motion: reduce)').matches)finish();
+ else overlay.focus({preventScroll:true});
+}
 async function openFloat(){if(F)return;await loadSceneManifest();if(F)return;let ov=el('div','river-float');let cv=el('canvas');let ui=el('div','river-float-ui');let mt=el('button','river-btn music-toggle');mt.type='button';mt.append(el('i','','▶'),el('span','',''));let x=el('button','river-btn',t('exit'));x.type='button';x.onclick=closeFloat;let sb=el('button','river-btn rf-scene');sb.type='button';sb.append(el('i','','◐'),el('span','',''));sb.onclick=cycleScene;let gb=el('button','river-btn rf-gear');gb.type='button';gb.setAttribute('aria-expanded','false');gb.innerHTML='<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>';gb.setAttribute('aria-label',ft('settings'));gb.title=ft('settings');let panel=el('div','rf-panel');panel.hidden=true;gb.onclick=()=>{panel.hidden=!panel.hidden;gb.setAttribute('aria-expanded',String(!panel.hidden));if(!panel.hidden)renderPanel()};let live=el('span','rf-live','');ui.append(live,sb,gb,mt,x);let note=el('p','river-float-note','');ov.append(cv,note,ui,panel);document.body.append(ov);document.body.classList.add('river-lock');
  F={ov,cv,ctx:cv.getContext('2d'),note,panel,sb,liveEl:live,items:[],queue:[],fresh:[],seen:new Set(),shown:new Map(),live:[],imgs:new Map(),spawnAt:0,fillTarget:0,fillAt:0,liveCount:0,fetchedAt:0,polledAt:0,stars:[],raf:0,zone:0,lastT:0,px:0};ov.addEventListener('pointermove',e=>{if(F){F.pxT=(e.clientX/(F.W||1)-.5)*2;riverPointer(e,false)}});ov.addEventListener('pointerleave',()=>{if(F)F.hover=null});ov.addEventListener('click',e=>riverPointer(e,true));
  let rq=ov.requestFullscreen||ov.webkitRequestFullscreen;if(rq){try{let p=rq.call(ov);if(p&&p.catch)p.catch(()=>ov.classList.add('pseudo'))}catch(e){ov.classList.add('pseudo')}}else ov.classList.add('pseudo');
