@@ -38,3 +38,5 @@ main{padding:6px 10px 24px}
 .ab-foot{text-align:center;padding:10px 16px 40px;font-size:13px;color:#fff9ecaa}
 .ab-foot a{color:var(--gold);text-decoration:none;font-size:15px}
 @media (min-width:760px){main{padding:18px}.ab-article{padding:36px 48px 44px;font-size:17px}.ab-article h1{font-size:30px}.ab-article figure{margin:20px 0}.ab-top{padding:10px 24px}}
+
+.signup.closed .signup-btn{background:#b9b2a3;box-shadow:none;cursor:default}
