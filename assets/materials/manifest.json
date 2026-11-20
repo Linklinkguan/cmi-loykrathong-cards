@@ -88,6 +88,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -143,6 +144,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -198,6 +200,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -253,6 +256,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -308,6 +312,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -363,6 +368,7 @@
           "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -393,31 +399,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/base-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/base-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/base-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/base-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/base-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 0,
       "snap": "base",
@@ -448,31 +440,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/wrap-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/wrap-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/wrap-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/wrap-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/wrap-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 10,
       "snap": "wrap",
@@ -503,31 +481,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/petals-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/petals-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/petals-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/petals-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/petals-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 20,
       "snap": "rim",
@@ -555,34 +519,23 @@
         {
           "id": "0",
           "file": "traditional/candle-0.svg",
-          "colour": "#f7ebc7"
-        },
-        {
-          "id": "1",
-          "file": "traditional/candle-1.svg",
-          "colour": "#e9a7ac"
+          "colour": "#f7ebc7",
+          "unlitFile": "traditional/candle-0-unlit.svg"
         },
         {
           "id": "2",
           "file": "traditional/candle-2.svg",
-          "colour": "#e4bc64"
-        },
-        {
-          "id": "3",
-          "file": "traditional/candle-3.svg",
-          "colour": "#9ac5d3"
+          "colour": "#e4bc64",
+          "unlitFile": "traditional/candle-2-unlit.svg"
         },
         {
           "id": "4",
           "file": "traditional/candle-4.svg",
-          "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/candle-5.svg",
-          "colour": "#d8786c"
+          "colour": "#8fb26b",
+          "unlitFile": "traditional/candle-4-unlit.svg"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -613,31 +566,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/incense-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/incense-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/incense-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/incense-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/incense-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -668,31 +607,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/buddha-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/buddha-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/buddha-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/buddha-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/buddha-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -723,31 +648,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/marigold-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/marigold-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/marigold-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/marigold-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/marigold-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -778,31 +689,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/orchid-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/orchid-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/orchid-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/orchid-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/orchid-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -833,31 +730,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/jasmine-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/jasmine-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/jasmine-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/jasmine-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/jasmine-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -888,31 +771,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/lotus-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/lotus-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/lotus-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/lotus-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/lotus-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -943,31 +812,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/amaranth-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/amaranth-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/amaranth-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/amaranth-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/amaranth-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -998,31 +853,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/rose-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/rose-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/rose-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/rose-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/rose-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -1053,31 +894,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "traditional/star-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "traditional/star-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "traditional/star-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "traditional/star-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "traditional/star-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -1108,31 +935,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "craft/pin-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "craft/pin-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "craft/pin-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "craft/pin-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "craft/pin-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 90,
       "snap": "pin",
@@ -1163,31 +976,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "craft/staple-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "craft/staple-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "craft/staple-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "craft/staple-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "craft/staple-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 90,
       "snap": "pin",
@@ -1218,31 +1017,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "craft/thread-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "craft/thread-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "craft/thread-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "craft/thread-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "craft/thread-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 90,
       "snap": "pin",
@@ -1273,31 +1058,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "craft/skewer-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "craft/skewer-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "craft/skewer-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "craft/skewer-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "craft/skewer-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 90,
       "snap": "pin",
@@ -1328,31 +1099,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "craft/toothpick-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "craft/toothpick-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "craft/toothpick-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "craft/toothpick-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "craft/toothpick-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 90,
       "snap": "pin",
@@ -1383,31 +1140,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "creative/heart-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "creative/heart-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "creative/heart-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "creative/heart-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "creative/heart-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -1438,31 +1181,17 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "creative/moon-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "creative/moon-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "creative/moon-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "creative/moon-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "creative/moon-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
@@ -1493,31 +1222,2081 @@
           "colour": "#f7ebc7"
         },
         {
-          "id": "1",
-          "file": "creative/sparkle-1.svg",
-          "colour": "#e9a7ac"
-        },
-        {
           "id": "2",
           "file": "creative/sparkle-2.svg",
           "colour": "#e4bc64"
         },
         {
-          "id": "3",
-          "file": "creative/sparkle-3.svg",
-          "colour": "#9ac5d3"
-        },
-        {
           "id": "4",
           "file": "creative/sparkle-4.svg",
           "colour": "#8fb26b"
-        },
-        {
-          "id": "5",
-          "file": "creative/sparkle-5.svg",
-          "colour": "#d8786c"
         }
       ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "base-thin",
+      "category": "traditional",
+      "name": {
+        "zh": "薄蕉杆",
+        "en": "Thin banana trunk",
+        "th": "หยวกกล้วยบาง"
+      },
+      "keywords": {
+        "zh": "薄蕉杆",
+        "en": "thin banana trunk",
+        "th": "หยวกกล้วยบาง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/base-thin-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/base-thin-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/base-thin-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 0,
+      "snap": "base",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "base-double",
+      "category": "traditional",
+      "name": {
+        "zh": "双层蕉杆",
+        "en": "Double banana trunk",
+        "th": "หยวกกล้วยสองชั้น"
+      },
+      "keywords": {
+        "zh": "双层蕉杆",
+        "en": "double banana trunk",
+        "th": "หยวกกล้วยสองชั้น"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/base-double-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/base-double-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/base-double-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 0,
+      "snap": "base",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wrap-scallop",
+      "category": "traditional",
+      "name": {
+        "zh": "扇贝蕉叶围边",
+        "en": "Scalloped leaf wrap",
+        "th": "ใบตองลอน"
+      },
+      "keywords": {
+        "zh": "扇贝蕉叶围边",
+        "en": "scalloped leaf wrap",
+        "th": "ใบตองลอน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/wrap-scallop-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/wrap-scallop-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/wrap-scallop-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 10,
+      "snap": "wrap",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wrap-zigzag",
+      "category": "traditional",
+      "name": {
+        "zh": "锯齿蕉叶围边",
+        "en": "Zigzag leaf wrap",
+        "th": "ใบตองฟันปลา"
+      },
+      "keywords": {
+        "zh": "锯齿蕉叶围边",
+        "en": "zigzag leaf wrap",
+        "th": "ใบตองฟันปลา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/wrap-zigzag-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/wrap-zigzag-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/wrap-zigzag-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 10,
+      "snap": "wrap",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wrap-woven",
+      "category": "traditional",
+      "name": {
+        "zh": "编织蕉叶围边",
+        "en": "Woven leaf wrap",
+        "th": "ใบตองสาน"
+      },
+      "keywords": {
+        "zh": "编织蕉叶围边",
+        "en": "woven leaf wrap",
+        "th": "ใบตองสาน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/wrap-woven-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/wrap-woven-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/wrap-woven-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 10,
+      "snap": "wrap",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "petals-pouch",
+      "category": "traditional",
+      "name": {
+        "zh": "圆袋折瓣",
+        "en": "Pouch petals",
+        "th": "กลีบกระพุ้ง"
+      },
+      "keywords": {
+        "zh": "圆袋折瓣",
+        "en": "pouch petals",
+        "th": "กลีบกระพุ้ง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/petals-pouch-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/petals-pouch-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/petals-pouch-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "petals-rose",
+      "category": "traditional",
+      "name": {
+        "zh": "玫瑰折瓣",
+        "en": "Rose-fold petals",
+        "th": "กลีบกุหลาบ"
+      },
+      "keywords": {
+        "zh": "玫瑰折瓣",
+        "en": "rose-fold petals",
+        "th": "กลีบกุหลาบ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/petals-rose-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/petals-rose-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/petals-rose-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 20,
+      "snap": "rim",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "buddha-lotus",
+      "category": "traditional",
+      "name": {
+        "zh": "莲座佛像",
+        "en": "Buddha on lotus",
+        "th": "พระพุทธรูปบนดอกบัว"
+      },
+      "keywords": {
+        "zh": "莲座佛像",
+        "en": "buddha on lotus",
+        "th": "พระพุทธรูปบนดอกบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "traditional/buddha-lotus-0.svg",
+          "colour": "#f7ebc7"
+        },
+        {
+          "id": "2",
+          "file": "traditional/buddha-lotus-2.svg",
+          "colour": "#e4bc64"
+        },
+        {
+          "id": "4",
+          "file": "traditional/buddha-lotus-4.svg",
+          "colour": "#8fb26b"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "cat",
+      "category": "creative",
+      "name": {
+        "zh": "猫",
+        "en": "Cat",
+        "th": "แมว"
+      },
+      "keywords": {
+        "zh": "猫",
+        "en": "cat",
+        "th": "แมว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/cat-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "sleeping-cat",
+      "category": "creative",
+      "name": {
+        "zh": "睡猫",
+        "en": "Sleeping cat",
+        "th": "แมวนอน"
+      },
+      "keywords": {
+        "zh": "睡猫",
+        "en": "sleeping cat",
+        "th": "แมวนอน"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/sleeping-cat-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "cat-face",
+      "category": "creative",
+      "name": {
+        "zh": "猫脸",
+        "en": "Cat face",
+        "th": "หน้าแมว"
+      },
+      "keywords": {
+        "zh": "猫脸",
+        "en": "cat face",
+        "th": "หน้าแมว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/cat-face-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "dog",
+      "category": "creative",
+      "name": {
+        "zh": "小狗",
+        "en": "Dog",
+        "th": "สุนัข"
+      },
+      "keywords": {
+        "zh": "小狗",
+        "en": "dog",
+        "th": "สุนัข"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/dog-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "rabbit",
+      "category": "creative",
+      "name": {
+        "zh": "兔子",
+        "en": "Rabbit",
+        "th": "กระต่าย"
+      },
+      "keywords": {
+        "zh": "兔子",
+        "en": "rabbit",
+        "th": "กระต่าย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/rabbit-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "bear",
+      "category": "creative",
+      "name": {
+        "zh": "小熊",
+        "en": "Bear",
+        "th": "หมี"
+      },
+      "keywords": {
+        "zh": "小熊",
+        "en": "bear",
+        "th": "หมี"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/bear-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "fish",
+      "category": "creative",
+      "name": {
+        "zh": "小鱼",
+        "en": "Fish",
+        "th": "ปลา"
+      },
+      "keywords": {
+        "zh": "小鱼",
+        "en": "fish",
+        "th": "ปลา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/fish-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "turtle",
+      "category": "creative",
+      "name": {
+        "zh": "乌龟",
+        "en": "Turtle",
+        "th": "เต่า"
+      },
+      "keywords": {
+        "zh": "乌龟",
+        "en": "turtle",
+        "th": "เต่า"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/turtle-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "bird",
+      "category": "creative",
+      "name": {
+        "zh": "小鸟",
+        "en": "Bird",
+        "th": "นก"
+      },
+      "keywords": {
+        "zh": "小鸟",
+        "en": "bird",
+        "th": "นก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/bird-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "duck",
+      "category": "creative",
+      "name": {
+        "zh": "小鸭",
+        "en": "Duck",
+        "th": "เป็ด"
+      },
+      "keywords": {
+        "zh": "小鸭",
+        "en": "duck",
+        "th": "เป็ด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/duck-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "elephant",
+      "category": "creative",
+      "name": {
+        "zh": "大象",
+        "en": "Elephant",
+        "th": "ช้าง"
+      },
+      "keywords": {
+        "zh": "大象",
+        "en": "elephant",
+        "th": "ช้าง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/elephant-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "baby-elephant",
+      "category": "creative",
+      "name": {
+        "zh": "小象",
+        "en": "Baby elephant",
+        "th": "ลูกช้าง"
+      },
+      "keywords": {
+        "zh": "小象",
+        "en": "baby elephant",
+        "th": "ลูกช้าง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/baby-elephant-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "animals",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "flower-elephant",
+      "category": "creative",
+      "name": {
+        "zh": "花象",
+        "en": "Elephant with flower",
+        "th": "ช้างกับดอกไม้"
+      },
+      "keywords": {
+        "zh": "花象",
+        "en": "elephant with flower",
+        "th": "ช้างกับดอกไม้"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/flower-elephant-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "transport",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "tuktuk",
+      "category": "creative",
+      "name": {
+        "zh": "嘟嘟车",
+        "en": "Tuk-tuk",
+        "th": "รถตุ๊กตุ๊ก"
+      },
+      "keywords": {
+        "zh": "嘟嘟车",
+        "en": "tuk-tuk",
+        "th": "รถตุ๊กตุ๊ก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/tuktuk-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "transport",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "truck",
+      "category": "creative",
+      "name": {
+        "zh": "红色双条车",
+        "en": "Songthaew",
+        "th": "รถสองแถว"
+      },
+      "keywords": {
+        "zh": "红色双条车",
+        "en": "songthaew",
+        "th": "รถสองแถว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/truck-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "transport",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "scooter",
+      "category": "creative",
+      "name": {
+        "zh": "小摩托",
+        "en": "Scooter",
+        "th": "สกู๊ตเตอร์"
+      },
+      "keywords": {
+        "zh": "小摩托",
+        "en": "scooter",
+        "th": "สกู๊ตเตอร์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/scooter-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "mango-rice",
+      "category": "creative",
+      "name": {
+        "zh": "芒果糯米饭",
+        "en": "Mango sticky rice",
+        "th": "ข้าวเหนียวมะม่วง"
+      },
+      "keywords": {
+        "zh": "芒果糯米饭",
+        "en": "mango sticky rice",
+        "th": "ข้าวเหนียวมะม่วง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/mango-rice-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "boba",
+      "category": "creative",
+      "name": {
+        "zh": "珍珠奶茶",
+        "en": "Boba tea",
+        "th": "ชานมไข่มุก"
+      },
+      "keywords": {
+        "zh": "珍珠奶茶",
+        "en": "boba tea",
+        "th": "ชานมไข่มุก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/boba-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "mango",
+      "category": "creative",
+      "name": {
+        "zh": "芒果",
+        "en": "Mango",
+        "th": "มะม่วง"
+      },
+      "keywords": {
+        "zh": "芒果",
+        "en": "mango",
+        "th": "มะม่วง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/mango-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "coconut",
+      "category": "creative",
+      "name": {
+        "zh": "椰子",
+        "en": "Coconut",
+        "th": "มะพร้าว"
+      },
+      "keywords": {
+        "zh": "椰子",
+        "en": "coconut",
+        "th": "มะพร้าว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/coconut-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "noodles",
+      "category": "creative",
+      "name": {
+        "zh": "面碗",
+        "en": "Noodle bowl",
+        "th": "ชามก๋วยเตี๋ยว"
+      },
+      "keywords": {
+        "zh": "面碗",
+        "en": "noodle bowl",
+        "th": "ชามก๋วยเตี๋ยว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/noodles-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "food",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "icecream",
+      "category": "creative",
+      "name": {
+        "zh": "冰淇淋",
+        "en": "Ice cream",
+        "th": "ไอศกรีม"
+      },
+      "keywords": {
+        "zh": "冰淇淋",
+        "en": "ice cream",
+        "th": "ไอศกรีม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/icecream-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "donut",
+      "category": "creative",
+      "name": {
+        "zh": "甜甜圈",
+        "en": "Donut",
+        "th": "โดนัท"
+      },
+      "keywords": {
+        "zh": "甜甜圈",
+        "en": "donut",
+        "th": "โดนัท"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/donut-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "smile",
+      "category": "creative",
+      "name": {
+        "zh": "微笑",
+        "en": "Smile",
+        "th": "ยิ้ม"
+      },
+      "keywords": {
+        "zh": "微笑",
+        "en": "smile",
+        "th": "ยิ้ม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/smile-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wink",
+      "category": "creative",
+      "name": {
+        "zh": "眨眼",
+        "en": "Wink",
+        "th": "ขยิบตา"
+      },
+      "keywords": {
+        "zh": "眨眼",
+        "en": "wink",
+        "th": "ขยิบตา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/wink-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "love-face",
+      "category": "creative",
+      "name": {
+        "zh": "爱心眼",
+        "en": "Love eyes",
+        "th": "ตาหัวใจ"
+      },
+      "keywords": {
+        "zh": "爱心眼",
+        "en": "love eyes",
+        "th": "ตาหัวใจ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/love-face-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "laugh",
+      "category": "creative",
+      "name": {
+        "zh": "大笑",
+        "en": "Laugh",
+        "th": "หัวเราะ"
+      },
+      "keywords": {
+        "zh": "大笑",
+        "en": "laugh",
+        "th": "หัวเราะ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/laugh-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "cool",
+      "category": "creative",
+      "name": {
+        "zh": "酷酷脸",
+        "en": "Cool face",
+        "th": "หน้ายิ้มเท่"
+      },
+      "keywords": {
+        "zh": "酷酷脸",
+        "en": "cool face",
+        "th": "หน้ายิ้มเท่"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/cool-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "surprised",
+      "category": "creative",
+      "name": {
+        "zh": "惊喜脸",
+        "en": "Surprised",
+        "th": "หน้าตกใจ"
+      },
+      "keywords": {
+        "zh": "惊喜脸",
+        "en": "surprised",
+        "th": "หน้าตกใจ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/surprised-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "faces",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "sleepy",
+      "category": "creative",
+      "name": {
+        "zh": "困困脸",
+        "en": "Sleepy",
+        "th": "หน้าง่วง"
+      },
+      "keywords": {
+        "zh": "困困脸",
+        "en": "sleepy",
+        "th": "หน้าง่วง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/sleepy-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "star-eyes",
+      "category": "creative",
+      "name": {
+        "zh": "星星眼",
+        "en": "Star eyes",
+        "th": "ตาดาว"
+      },
+      "keywords": {
+        "zh": "星星眼",
+        "en": "star eyes",
+        "th": "ตาดาว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/star-eyes-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "full-moon",
+      "category": "creative",
+      "name": {
+        "zh": "满月",
+        "en": "Full moon",
+        "th": "พระจันทร์เต็มดวง"
+      },
+      "keywords": {
+        "zh": "满月",
+        "en": "full moon",
+        "th": "พระจันทร์เต็มดวง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/full-moon-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "cloud",
+      "category": "creative",
+      "name": {
+        "zh": "云朵",
+        "en": "Cloud",
+        "th": "เมฆ"
+      },
+      "keywords": {
+        "zh": "云朵",
+        "en": "cloud",
+        "th": "เมฆ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/cloud-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "rainbow",
+      "category": "creative",
+      "name": {
+        "zh": "彩虹",
+        "en": "Rainbow",
+        "th": "สายรุ้ง"
+      },
+      "keywords": {
+        "zh": "彩虹",
+        "en": "rainbow",
+        "th": "สายรุ้ง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/rainbow-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "sun",
+      "category": "creative",
+      "name": {
+        "zh": "太阳",
+        "en": "Sun",
+        "th": "ดวงอาทิตย์"
+      },
+      "keywords": {
+        "zh": "太阳",
+        "en": "sun",
+        "th": "ดวงอาทิตย์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/sun-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "sky",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "burst",
+      "category": "creative",
+      "name": {
+        "zh": "光芒",
+        "en": "Burst",
+        "th": "ประกายแฉก"
+      },
+      "keywords": {
+        "zh": "光芒",
+        "en": "burst",
+        "th": "ประกายแฉก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/burst-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "love",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "double-heart",
+      "category": "creative",
+      "name": {
+        "zh": "双心",
+        "en": "Double heart",
+        "th": "หัวใจคู่"
+      },
+      "keywords": {
+        "zh": "双心",
+        "en": "double heart",
+        "th": "หัวใจคู่"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/double-heart-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "love",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "wing-heart",
+      "category": "creative",
+      "name": {
+        "zh": "飞翔的心",
+        "en": "Winged heart",
+        "th": "หัวใจมีปีก"
+      },
+      "keywords": {
+        "zh": "飞翔的心",
+        "en": "winged heart",
+        "th": "หัวใจมีปีก"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/wing-heart-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "lanna",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "lantern",
+      "category": "creative",
+      "name": {
+        "zh": "兰纳灯笼",
+        "en": "Lanna lantern",
+        "th": "โคมล้านนา"
+      },
+      "keywords": {
+        "zh": "兰纳灯笼",
+        "en": "lanna lantern",
+        "th": "โคมล้านนา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/lantern-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "lanna",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "umbrella",
+      "category": "creative",
+      "name": {
+        "zh": "兰纳伞",
+        "en": "Lanna umbrella",
+        "th": "ร่มล้านนา"
+      },
+      "keywords": {
+        "zh": "兰纳伞",
+        "en": "lanna umbrella",
+        "th": "ร่มล้านนา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/umbrella-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "lanna",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "sky-lantern",
+      "category": "creative",
+      "name": {
+        "zh": "天灯",
+        "en": "Sky lantern",
+        "th": "โคมลอย"
+      },
+      "keywords": {
+        "zh": "天灯",
+        "en": "sky lantern",
+        "th": "โคมลอย"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/sky-lantern-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "lanna",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "lotus-flower",
+      "category": "creative",
+      "name": {
+        "zh": "莲花",
+        "en": "Lotus",
+        "th": "ดอกบัว"
+      },
+      "keywords": {
+        "zh": "莲花",
+        "en": "lotus",
+        "th": "ดอกบัว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/lotus-flower-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "leaf",
+      "category": "creative",
+      "name": {
+        "zh": "叶子",
+        "en": "Leaf",
+        "th": "ใบไม้"
+      },
+      "keywords": {
+        "zh": "叶子",
+        "en": "leaf",
+        "th": "ใบไม้"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/leaf-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "robot",
+      "category": "creative",
+      "name": {
+        "zh": "机器人",
+        "en": "Robot",
+        "th": "หุ่นยนต์"
+      },
+      "keywords": {
+        "zh": "机器人",
+        "en": "robot",
+        "th": "หุ่นยนต์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/robot-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "robot-round",
+      "category": "creative",
+      "name": {
+        "zh": "圆机器人",
+        "en": "Round robot",
+        "th": "หุ่นยนต์กลม"
+      },
+      "keywords": {
+        "zh": "圆机器人",
+        "en": "round robot",
+        "th": "หุ่นยนต์กลม"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/robot-round-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "rocket",
+      "category": "creative",
+      "name": {
+        "zh": "火箭",
+        "en": "Rocket",
+        "th": "จรวด"
+      },
+      "keywords": {
+        "zh": "火箭",
+        "en": "rocket",
+        "th": "จรวด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/rocket-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "planet",
+      "category": "creative",
+      "name": {
+        "zh": "星球",
+        "en": "Planet",
+        "th": "ดาวเคราะห์"
+      },
+      "keywords": {
+        "zh": "星球",
+        "en": "planet",
+        "th": "ดาวเคราะห์"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/planet-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "laptop",
+      "category": "creative",
+      "name": {
+        "zh": "笔记本电脑",
+        "en": "Laptop",
+        "th": "แล็ปท็อป"
+      },
+      "keywords": {
+        "zh": "笔记本电脑",
+        "en": "laptop",
+        "th": "แล็ปท็อป"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/laptop-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "coffee",
+      "category": "creative",
+      "name": {
+        "zh": "咖啡杯",
+        "en": "Coffee cup",
+        "th": "กาแฟ"
+      },
+      "keywords": {
+        "zh": "咖啡杯",
+        "en": "coffee cup",
+        "th": "กาแฟ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/coffee-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "palm",
+      "category": "creative",
+      "name": {
+        "zh": "椰子树",
+        "en": "Palm tree",
+        "th": "ต้นมะพร้าว"
+      },
+      "keywords": {
+        "zh": "椰子树",
+        "en": "palm tree",
+        "th": "ต้นมะพร้าว"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/palm-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "mountain",
+      "category": "creative",
+      "name": {
+        "zh": "山",
+        "en": "Mountain",
+        "th": "ภูเขา"
+      },
+      "keywords": {
+        "zh": "山",
+        "en": "mountain",
+        "th": "ภูเขา"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/mountain-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "temple",
+      "category": "creative",
+      "name": {
+        "zh": "寺庙屋顶",
+        "en": "Temple roof",
+        "th": "หลังคาวัด"
+      },
+      "keywords": {
+        "zh": "寺庙屋顶",
+        "en": "temple roof",
+        "th": "หลังคาวัด"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/temple-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "boat",
+      "category": "creative",
+      "name": {
+        "zh": "纸船",
+        "en": "Paper boat",
+        "th": "เรือกระดาษ"
+      },
+      "keywords": {
+        "zh": "纸船",
+        "en": "paper boat",
+        "th": "เรือกระดาษ"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/boat-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "music",
+      "category": "creative",
+      "name": {
+        "zh": "音符",
+        "en": "Music note",
+        "th": "โน้ตเพลง"
+      },
+      "keywords": {
+        "zh": "音符",
+        "en": "music note",
+        "th": "โน้ตเพลง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/music-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "camera",
+      "category": "creative",
+      "name": {
+        "zh": "相机",
+        "en": "Camera",
+        "th": "กล้อง"
+      },
+      "keywords": {
+        "zh": "相机",
+        "en": "camera",
+        "th": "กล้อง"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/camera-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
+      "defaultScale": 1,
+      "zHint": 50,
+      "snap": "top",
+      "anchor": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "w": 200,
+      "h": 200
+    },
+    {
+      "id": "pin-map",
+      "category": "creative",
+      "name": {
+        "zh": "地图定位",
+        "en": "Map pin",
+        "th": "หมุดแผนที่"
+      },
+      "keywords": {
+        "zh": "地图定位",
+        "en": "map pin",
+        "th": "หมุดแผนที่"
+      },
+      "variants": [
+        {
+          "id": "0",
+          "file": "creative/pin-map-0.svg",
+          "colour": "#f7ebc7"
+        }
+      ],
+      "group": "other",
       "defaultScale": 1,
       "zHint": 50,
       "snap": "top",
